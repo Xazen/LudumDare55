@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="LudumDare55_WwiseProject" GUID="{F4B0C0FA-3795-41F0-B015-76AFC5AC5E65}" Generator="2023.1.0.8367"/>
+	<CacheRoot>../../../../LudumDare55_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Windows" GUID="{C3FBFC34-CE17-4A8B-9ED4-314253A3BA2C}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../LudumDare55_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{50779A79-3397-46BD-AACD-B850F510452B}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{0957F2A0-6176-4B9D-14E2-E409CF8EA5C3}</FileHash>
+</ProjectInfo>
