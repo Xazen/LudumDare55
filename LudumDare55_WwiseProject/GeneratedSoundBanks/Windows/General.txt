@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	test			\Default Work Unit\test	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	599441268	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\empty\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	863968328	Drums_Test_01	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Drums_Test_2_933B15E1.wem		\Interactive Music Hierarchy\Default Work Unit\trets\Music Test\Drums_Test_01		238
+
