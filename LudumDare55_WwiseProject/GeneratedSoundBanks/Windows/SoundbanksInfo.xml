@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{A84E17F8-D716-C222-5DC8-3EFF37A2B86C}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{3864DF60-1181-1717-EDB9-B17CD6E108C2}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -17,9 +17,9 @@
 					<ShortName>Drums_Dennis.wav</ShortName>
 					<CachePath>SFX/Drums_Dennis_FBC78EF0.wem</CachePath>
 				</File>
-				<File Id="774732815" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Drums_Dennis.mid</ShortName>
-					<CachePath>SFX/Drums_Dennis_6D86D124.wem</CachePath>
+				<File Id="1069815367" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drums_Dennis_v2.mid</ShortName>
+					<CachePath>SFX/Drums_Dennis_v2_6D86D124.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -31,7 +31,7 @@
 				<Event Id="3157003241" Name="test" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="558017979"/>
-						<MediaRef Id="774732815"/>
+						<MediaRef Id="1069815367"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
@@ -55,5 +55,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{147D14B4-B77C-85F2-6884-3B6C2D015A02}</FileHash>
+	<FileHash>{88800CF4-7925-01FC-80B5-E0E887F8ACF6}</FileHash>
 </SoundBanksInfo>

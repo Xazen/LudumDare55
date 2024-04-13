@@ -150,11 +150,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="Drums_Dennis" ID="{68D52E53-B764-409B-9B4A-EB7237CC06D9}" ShortID="774732815">
+										<MidiFileSource Name="Drums_Dennis_v2" ID="{0C7580A6-B2B7-4405-A3BA-55C9C2A5904A}" ShortID="1069815367">
 											<Language>SFX</Language>
-											<MidiFile>Drums_Dennis.mid</MidiFile>
+											<MidiFile>Drums_Dennis_v2.mid</MidiFile>
 											<MediaIDList>
-												<MediaID ID="774732815"/>
+												<MediaID ID="1069815367"/>
 											</MediaIDList>
 										</MidiFileSource>
 									</ChildrenList>
@@ -167,11 +167,11 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="Drums_Dennis" ID="{1DA22713-420D-4F26-A4DC-75CA34C14228}">
+																		<MusicClipMidi Name="Drums_Dennis_v2" ID="{E5D131F8-CE66-4425-916B-4B320EC28585}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="Drums_Dennis" ID="{68D52E53-B764-409B-9B4A-EB7237CC06D9}"/>
+																			<MidiSourceRef Name="Drums_Dennis_v2" ID="{0C7580A6-B2B7-4405-A3BA-55C9C2A5904A}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
@@ -265,11 +265,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="Drums_Dennis" ID="{C2FE78F6-B765-471D-9187-7F2834390AD0}" ShortID="208155100">
+										<MidiFileSource Name="Drums_Dennis_v2" ID="{57A28331-EF9B-409F-93F4-E623672EFCF9}" ShortID="1057886888">
 											<Language>SFX</Language>
-											<MidiFile>Drums_Dennis.mid</MidiFile>
+											<MidiFile>Drums_Dennis_v2.mid</MidiFile>
 											<MediaIDList>
-												<MediaID ID="774732815"/>
+												<MediaID ID="1069815367"/>
 											</MediaIDList>
 										</MidiFileSource>
 									</ChildrenList>
@@ -282,11 +282,11 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="Drums_Dennis" ID="{6D4E8240-CEC5-4C5D-B0BA-1B3ED396CC6C}">
+																		<MusicClipMidi Name="Drums_Dennis_v2" ID="{64E7C778-447D-42B7-8D9B-0D0829F85CEE}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="Drums_Dennis" ID="{C2FE78F6-B765-471D-9187-7F2834390AD0}"/>
+																			<MidiSourceRef Name="Drums_Dennis_v2" ID="{57A28331-EF9B-409F-93F4-E623672EFCF9}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
