@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -11,6 +12,11 @@ namespace DefaultNamespace
         private NoteView notePrefab;
 
         private readonly Queue<NoteView> _notePrefabPool = new ();
+
+        private void Awake()
+        {
+            Singletons.RegisterNotePool(this);
+        }
 
         private void Start()
         {
