@@ -11,6 +11,12 @@ namespace DefaultNamespace
 
         private void Start()
         {
+            StartGame();
+        }
+
+        private void StartGame()
+        {
+            Singletons.ResetGameModel(new GameModel());
             Singletons.AudioManager.StartGameMusic();
             Singletons.PauseMenu.OnPaused += OnPaused;
             Singletons.GameModel.OnHealthZero += OnHealthZero;
