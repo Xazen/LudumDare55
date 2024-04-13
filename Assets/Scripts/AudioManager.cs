@@ -15,8 +15,16 @@ public class AudioManager : MonoBehaviour
         Singletons.RegisterAudioManager(this);
     }
 
-    public void StartGameMusic()
+    /// <summary>
+    /// Start Level Music, set difficult via param
+    /// </summary>
+    /// <param name="difficulty"> between 0 and 2, 0 is easiest</param>
+    public void StartGameMusic(int difficulty = 1)
     {
+        if(difficulty >= 0 && difficulty < 3)
+        { 
+            AkSoundEngine.SetRTPCValue("Difficulty", difficulty); 
+        }        
         MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue, MidiCallback);
     }
 

@@ -1,3 +1,11 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	290942698	Difficulty			\Default Work Unit\Difficulty	
+
+Switch	ID	Name	Switch Group			Notes
+	529018163	Easy	Difficulty			
+	2849147824	Medium	Difficulty			
+	3599861390	Hard	Difficulty			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

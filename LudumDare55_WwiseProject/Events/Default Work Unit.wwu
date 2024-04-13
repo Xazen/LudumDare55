@@ -25,12 +25,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="StartGameMusic" ID="{AF02A7F4-78E9-44FA-8681-CF07E89ECF3B}">
+				<Event Name="StartGameMusic" ID="{6697A837-B4E2-480D-A297-C797164B37B4}">
 					<ChildrenList>
-						<Action Name="" ID="{0658D464-0C87-43C9-B32E-9A316B7E15F0}" ShortID="679299074">
+						<Action Name="" ID="{8EA4B3C6-6B2C-415B-98B8-D63A12D392AA}" ShortID="870888646">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GameMusic" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+									<ObjectRef Name="GameMusic_Easy" ID="{9AC1A854-899B-494A-A7E0-D20A96338673}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

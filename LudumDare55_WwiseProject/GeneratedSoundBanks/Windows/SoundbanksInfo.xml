@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{1BEC1E16-EA43-8005-8CB3-6FF8B0F45C0E}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{97839BA6-BAB0-1C20-8ED5-310DA7AA8BC2}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -17,9 +17,9 @@
 					<ShortName>GameMusic.wav</ShortName>
 					<CachePath>SFX/GameMusic_56CEF360.wem</CachePath>
 				</File>
-				<File Id="271268207" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Temp_MIDI.mid</ShortName>
-					<CachePath>SFX/Temp_MIDI_36E4615E.wem</CachePath>
+				<File Id="599029832" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>easy.mid</ShortName>
+					<CachePath>SFX/easy_B2FF15BB.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -33,7 +33,7 @@
 				<Event Id="1568977742" Name="StartGameMusic" DurationType="OneShot" DurationMin="111.844666" DurationMax="111.844666">
 					<MediaRefs>
 						<MediaRef Id="245429244"/>
-						<MediaRef Id="271268207"/>
+						<MediaRef Id="599029832"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
@@ -42,8 +42,11 @@
 					</PluginRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="290942698" Name="Difficulty"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D99FD475-90DE-DB2B-8078-97B90265E393}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D7B145DB-2825-0EBA-C252-3F1D1FCE543B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -55,7 +58,20 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="290942698" Name="Difficulty"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="290942698" Name="Difficulty">
+					<GameParameterRef Id="290942698"/>
+					<Switches>
+						<Switch Id="529018163" Name="Easy"/>
+						<Switch Id="2849147824" Name="Medium"/>
+						<Switch Id="3599861390" Name="Hard"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{476B6DB4-EB69-1ED9-A920-6954CC5D5DBD}</FileHash>
+	<FileHash>{78B9B460-1D47-9E66-5931-45710D30DB78}</FileHash>
 </SoundBanksInfo>
