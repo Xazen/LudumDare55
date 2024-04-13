@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField]private AK.Wwise.Event MusicEvent;
     [HideInInspector] public Action<int> RhythmCallback;
-    public const float TIMEOFFSET = 0f;
+    public const float TIMEOFFSET = 8f;
         
     void Start()
     {
@@ -21,6 +21,7 @@ public class AudioManager : MonoBehaviour
         if(midiEvent.byParam1 >= 36 && midiEvent.byParam1 <= 39 && midiEvent.byParam2 ==127)
         {
             RhythmCallback?.Invoke(midiEvent.byParam1 - 36);
+            Debug.Log("HIT: " + (midiEvent.byParam1 - 36));
         }
     }
 }

@@ -5,5 +5,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	599441268	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\empty\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	863968328	Drums_Test_01	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Drums_Test_2_933B15E1.wem		\Interactive Music Hierarchy\Default Work Unit\trets\Music Test\Drums_Test_01		238
+	558017979	Drums_test	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Drums_Dennis_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\trets\Music Test\Drums_test		1536096
+	774732815	Drums_Test_01	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Drums_Dennis_6D86D124.wem		\Interactive Music Hierarchy\Default Work Unit\trets\Music Test\Drums_Test_01		542
 
