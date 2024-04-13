@@ -12,17 +12,280 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5652f4202c917a4c900fd7d35393c71, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e7c225b4fff91a4fa3dd596d675978fc
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: e7c225b4fff91a4fa3dd596d675978fc
+    GuidInternal: 
+    m_lastTime: -8584886484087257647
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ccacdac48f67754f89bb0cfd8df9ae3f
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: ccacdac48f67754f89bb0cfd8df9ae3f
+    GuidInternal: 
+    m_lastTime: -8584886484086559555
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: ccacdac48f67754f89bb0cfd8df9ae3f
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e72cc8e0dcbac349b7f08b0c170ec636
+    ParentPath: SoundBanks\Default Work Unit
+    guid: e72cc8e0dcbac349b7f08b0c170ec636
+    GuidInternal: 
+    m_lastTime: -8584886484086755192
+    List:
+    - name: General
+      guid: ef43457491949145b06983747ccfda57
+      id: 133642231
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e72cc8e0dcbac349b7f08b0c170ec636
+      - ElementName: General
+        ObjectType: 7
+        guid: ef43457491949145b06983747ccfda57
+      Path: SoundBanks\Default Work Unit\General
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a880a669ad975348b22237f1dfee1322
+    ParentPath: Events\Default Work Unit
+    guid: a880a669ad975348b22237f1dfee1322
+    GuidInternal: 
+    m_lastTime: -8584885738488643185
+    List:
+    - name: Pause
+      guid: 6f5b35b589808d4fbdf3c73fcd07233e
+      id: 3092587493
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a880a669ad975348b22237f1dfee1322
+      - ElementName: Pause
+        ObjectType: 3
+        guid: 6f5b35b589808d4fbdf3c73fcd07233e
+      Path: Events\Default Work Unit\Pause
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Resume
+      guid: c81da7624a99ee4d89142f1262dce565
+      id: 953277036
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a880a669ad975348b22237f1dfee1322
+      - ElementName: Resume
+        ObjectType: 3
+        guid: c81da7624a99ee4d89142f1262dce565
+      Path: Events\Default Work Unit\Resume
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: StartGameMusic
+      guid: 37a89766e2b40d48a297c797164b37b4
+      id: 1568977742
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a880a669ad975348b22237f1dfee1322
+      - ElementName: StartGameMusic
+        ObjectType: 3
+        guid: 37a89766e2b40d48a297c797164b37b4
+      Path: Events\Default Work Unit\StartGameMusic
+      maxAttenuation: 0
+      maxDuration: 111.844666
+      minDuration: 111.844666
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: a12da0b1c07e8d41afa5f590fb14b9f5
+    ParentPath: Game Parameters\Default Work Unit
+    guid: a12da0b1c07e8d41afa5f590fb14b9f5
+    GuidInternal: 
+    m_lastTime: -8584885736874928651
+    List:
+    - name: Difficulty
+      guid: c8c1c3b3a61c404f828c206651011d11
+      id: 290942698
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a12da0b1c07e8d41afa5f590fb14b9f5
+      - ElementName: Difficulty
+        ObjectType: 13
+        guid: c8c1c3b3a61c404f828c206651011d11
+      Path: Game Parameters\Default Work Unit\Difficulty
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: d64710a95d604447a7612ddc43210b7a
+    ParentPath: States\Default Work Unit
+    guid: d64710a95d604447a7612ddc43210b7a
+    GuidInternal: 
+    m_lastTime: -8584886484086358633
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 9a5d7c667e86a245b9c31367c1fc4950
+    ParentPath: Switches\Default Work Unit
+    guid: 9a5d7c667e86a245b9c31367c1fc4950
+    GuidInternal: 
+    m_lastTime: -8584885736875033734
+    List:
+    - name: Difficulty
+      guid: eedbd547c3cccc4487b5558e5346d7e1
+      id: 290942698
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9a5d7c667e86a245b9c31367c1fc4950
+      - ElementName: Difficulty
+        ObjectType: 11
+        guid: eedbd547c3cccc4487b5558e5346d7e1
+      Path: Switches\Default Work Unit\Difficulty
+      values:
+      - name: Easy
+        guid: 954764ce9cee6340938d05106d7a5c45
+        id: 529018163
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9a5d7c667e86a245b9c31367c1fc4950
+        - ElementName: Difficulty
+          ObjectType: 11
+          guid: eedbd547c3cccc4487b5558e5346d7e1
+        - ElementName: Easy
+          ObjectType: 10
+          guid: 954764ce9cee6340938d05106d7a5c45
+      - name: Hard
+        guid: 85419b53fcb6f94cb58d3ecc8f2527f5
+        id: 3599861390
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9a5d7c667e86a245b9c31367c1fc4950
+        - ElementName: Difficulty
+          ObjectType: 11
+          guid: eedbd547c3cccc4487b5558e5346d7e1
+        - ElementName: Hard
+          ObjectType: 10
+          guid: 85419b53fcb6f94cb58d3ecc8f2527f5
+      - name: Medium
+        guid: 230819b7946a5c4c8911150bf0aa8d42
+        id: 2849147824
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9a5d7c667e86a245b9c31367c1fc4950
+        - ElementName: Difficulty
+          ObjectType: 11
+          guid: eedbd547c3cccc4487b5558e5346d7e1
+        - ElementName: Medium
+          ObjectType: 10
+          guid: 230819b7946a5c4c8911150bf0aa8d42
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: e0677c8c40c13d4d92f7bf6d0f902e66
+    ParentPath: Triggers\Default Work Unit
+    guid: e0677c8c40c13d4d92f7bf6d0f902e66
+    GuidInternal: 
+    m_lastTime: -8584886484087358125
+    List: []
+  ExpandedFileSystemItemIds: 0f00000010000000
+  ExpandedWaapiItemIds: 0200000003000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

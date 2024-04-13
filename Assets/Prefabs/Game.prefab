@@ -79,7 +79,7 @@ MonoBehaviour:
   MusicEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 27df370cddd947746affa61e926e3792,
+    WwiseObjectReference: {fileID: 11400000, guid: 0bde0f60db7b01d4d8edf3c16bc659e7,
       type: 2}
 --- !u!114 &7769756626313226501
 MonoBehaviour:
