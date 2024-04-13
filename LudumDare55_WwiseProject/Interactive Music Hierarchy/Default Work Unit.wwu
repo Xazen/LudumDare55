@@ -1,6 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}" SchemaVersion="119">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicPlaylistContainer Name="trets" ID="{3A4FAFB9-5B3E-48F5-A947-8197D4ED3C6B}" ShortID="857973490">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="200"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C4DAACCC-678F-4F75-89BB-0CFD8DF9AE3F}"/>
+						</Reference>
+						<Reference Name="PlaylistRoot">
+							<Custom>
+								<MusicPlaylistItem Name="" ID="{A3BF9ED0-4935-46E6-9DEC-36D942B014D4}" ShortID="658271434">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{601EBDC0-EA68-4BE8-A77D-172867B7CA1D}" ShortID="548260584">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="Music Test" ID="{DD7EED7A-C931-4D7C-BD8B-618251CD97D0}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Custom>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{5CE5C2E3-0B16-484D-BD0A-D14F7829DFB0}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{20F89170-055B-4430-88FD-525A8038ABA2}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="Music Test" ID="{DD7EED7A-C931-4D7C-BD8B-618251CD97D0}" ShortID="763588822">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="21125"/>
+								<Property Name="OverrideMidiTarget" Type="bool" Value="True"/>
+								<Property Name="OverrideMidiTempo" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
+								</Reference>
+								<Reference Name="MidiTarget">
+									<ObjectRef Name="empty" ID="{D4508E30-E137-4FF1-9E6C-7DBBC1093F3C}" WorkUnitID="{A23D6C7F-326B-48B9-A62A-C5F324920728}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C4DAACCC-678F-4F75-89BB-0CFD8DF9AE3F}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Drums_test" ID="{8491F46A-3893-4B81-983E-C21C67F148CE}" ShortID="270694371">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C4DAACCC-678F-4F75-89BB-0CFD8DF9AE3F}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{F0E054E7-2763-4017-8011-1B56ED41B347}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{51337F2D-CED6-4D3D-95A7-C09343E9BF98}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="Drums_Test_01" ID="{765E7462-F406-4612-9AF6-D1C0FBB13220}" ShortID="108045140">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C4DAACCC-678F-4F75-89BB-0CFD8DF9AE3F}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{23D9C0E4-1572-48F1-B32A-244E730EC93D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MidiFileSource Name="Drums_Test_2" ID="{B1F9900F-604F-42FD-BECD-08F25FC85767}" ShortID="587360541">
+											<Language>SFX</Language>
+											<MidiFile>Drums_Test_2.mid</MidiFile>
+											<MediaIDList>
+												<MediaID ID="863968328"/>
+											</MediaIDList>
+										</MidiFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C1BF4A41-B2A6-461C-BC46-C3008B851776}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClipMidi Name="Drums_Test_2" ID="{BCA4ACE6-A99A-420C-8DAE-70A849ECFB64}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="4531.25"/>
+																			</PropertyList>
+																			<MidiSourceRef Name="Drums_Test_2" ID="{B1F9900F-604F-42FD-BECD-08F25FC85767}"/>
+																		</MusicClipMidi>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{CFC6D51F-4DAB-48E7-8D33-EE4E5CCCA25B}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{C7B96D05-5C4E-46D1-A0AD-C6F6982C34F2}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="4800"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

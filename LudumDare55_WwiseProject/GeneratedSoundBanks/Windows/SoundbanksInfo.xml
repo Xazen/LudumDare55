@@ -9,11 +9,34 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{8F51B547-19ED-B6B1-31AB-26D627F8FE30}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{D23BD418-4971-1C14-C2A2-4BA2F7C5E584}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
+			<Media>
+				<File Id="863968328" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Drums_Test_2.mid</ShortName>
+					<CachePath>SFX/Drums_Test_2_933B15E1.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="599441268" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="3157003241" Name="test" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="863968328"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="599441268"/>
+						</Custom>
+					</PluginRefs>
+				</Event>
+			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D99FD475-90DE-DB2B-8078-97B90265E393}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -27,5 +50,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6C57687D-62CF-1147-EF6B-A64623D7BA77}</FileHash>
+	<FileHash>{B9DD174A-2BC7-3FF0-0252-0825B9578DCD}</FileHash>
 </SoundBanksInfo>
