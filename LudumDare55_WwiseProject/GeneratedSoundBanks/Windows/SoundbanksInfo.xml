@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{EB146B8F-072A-175B-BE1C-9349EA1644ED}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{35813240-F5E4-BEA2-0ACB-D22F13BF7FCD}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -28,6 +28,8 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="953277036" Name="Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3157003241" Name="test" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="558017979"/>
@@ -55,5 +57,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A0EB0A5B-0EAF-4847-BBB8-893C69C44BE6}</FileHash>
+	<FileHash>{921FDAC2-5471-88A5-ED17-47327A533332}</FileHash>
 </SoundBanksInfo>

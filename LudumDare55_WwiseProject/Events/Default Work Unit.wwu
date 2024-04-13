@@ -14,6 +14,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Pause" ID="{B5355B6F-8089-4F8D-BDF3-C73FCD07233E}">
+					<ChildrenList>
+						<Action Name="" ID="{FD3B7969-182D-488A-B14A-D7D010D49487}" ShortID="869821459">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="8"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Resume" ID="{62A71DC8-994A-4DEE-8914-2F1262DCE565}">
+					<ChildrenList>
+						<Action Name="" ID="{5FEB08DD-963E-4AF0-977A-C46084BE8A5D}" ShortID="795852657">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
