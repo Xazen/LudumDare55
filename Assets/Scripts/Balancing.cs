@@ -55,7 +55,6 @@ namespace DefaultNamespace
             return transformPosition;
         }
 
-        [CanBeNull]
         public ScoreType GetScoreType(float distance)
         {
             foreach (var scoreType in scoreTypes)
@@ -66,7 +65,7 @@ namespace DefaultNamespace
                 }
             }
 
-            return null;
+            return scoreTypes[^1];
         }
     }
 }

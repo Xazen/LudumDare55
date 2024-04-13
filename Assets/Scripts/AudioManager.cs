@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 
@@ -11,7 +10,12 @@ public class AudioManager : MonoBehaviour
     [SerializeField]private AK.Wwise.Event MusicEvent;
     [HideInInspector] public Action<int, bool> RhythmCallback;
 
-    void StartGameMusic()
+    private void Awake()
+    {
+        Singletons.RegisterAudioManager(this);
+    }
+
+    public void StartGameMusic()
     {
         MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue, MidiCallback);
     }

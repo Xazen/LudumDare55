@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,6 +12,13 @@ namespace DefaultNamespace
         [SerializeField] private Button continueButton;
         [SerializeField] private Button menuButton;
         [SerializeField] private Button restartButton;
+
+        public Action<bool> OnPaused;
+
+        private void Awake()
+        {
+            Singletons.RegisterPauseMenu(this);
+        }
 
         private void Start()
         {
@@ -41,12 +49,14 @@ namespace DefaultNamespace
                 {
                     EventSystem.current.SetSelectedGameObject(continueButton.gameObject);
                 }
+                OnPaused?.Invoke(pauseContainer.activeSelf);
             }
         }
 
         private void ContinueGame()
         {
             pauseContainer.SetActive(false);
+            OnPaused?.Invoke(false);
         }
     }
 }

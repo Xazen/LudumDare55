@@ -36,6 +36,10 @@ namespace DefaultNamespace
 
         public void PlayNote(int trackIndex)
         {
+            if (_currentNotes[trackIndex].Count == 0)
+            {
+                return;
+            }
             var balancing = Singletons.Balancing;
             var note = _currentNotes[trackIndex].Dequeue();
             var distance = Math.Abs(note.transform.position.z);
@@ -45,15 +49,13 @@ namespace DefaultNamespace
             Debug.Log($"{trackIndex}: {millisOff}ms {distance}u (miss: {balancing.NoteEndDistance / noteSpeed}s)");
 
             var scoreType = balancing.GetScoreType(distance);
-            if (scoreType == null)
-            {
-                SetCombo(0);
-                return;
-            }
-
             if (scoreType.IsCombo)
             {
                 SetCombo(Combo + 1);
+            }
+            else
+            {
+                SetCombo(0);
             }
 
             int scoreMultiplier = Math.Max(1, Combo);

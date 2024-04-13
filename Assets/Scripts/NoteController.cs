@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using DefaultNamespace;
 using DG.Tweening;
 using UnityEngine;
@@ -6,6 +8,9 @@ public class NoteController : MonoBehaviour
 {
     [SerializeField]
     private AudioManager audioManager;
+
+    public Action<NoteView> OnNoteReachedEnd;
+    private Dictionary<NoteView, Tween> _noteTweens = new ();
 
     private void Awake()
     {
@@ -26,6 +31,7 @@ public class NoteController : MonoBehaviour
     private void OnNotePlayed(int trackIndex, NoteView note, ScoreType scoreType)
     {
         Singletons.NotePool.ReturnNote(note);
+        _noteTweens.Remove(note);
     }
 
     private void OnNoteReceived(int trackIndex, bool isDragonBall)
@@ -41,7 +47,7 @@ public class NoteController : MonoBehaviour
         note.transform.position = Singletons.Balancing.GetNoteSpawnPosition(trackIndex);
         note.transform.localScale = Vector3.one;
 
-        note.transform.DOMoveZ(Singletons.Balancing.NoteEndDistance, Singletons.Balancing.GetNoteSpeed())
+        var tweenerCore = note.transform.DOMoveZ(Singletons.Balancing.NoteEndDistance, Singletons.Balancing.GetNoteSpeed())
             .SetDelay(Singletons.Balancing.NoteSpeed)
             .SetSpeedBased(true)
             .SetEase(Ease.Linear)
@@ -61,6 +67,27 @@ public class NoteController : MonoBehaviour
             {
                 Singletons.GameModel.RemoveNoteFromTrack(trackIndex);
                 Singletons.NotePool.ReturnNote(note);
+                OnNoteReachedEnd?.Invoke(note);
+                _noteTweens.Remove(note);
             });
+
+        _noteTweens.Add(note, tweenerCore);
+    }
+
+    public void Pause()
+    {
+
+        foreach (var noteTween in _noteTweens)
+        {
+            noteTween.Value.Pause();
+        }
+    }
+
+    public void Resume()
+    {
+        foreach (var noteTween in _noteTweens)
+        {
+            noteTween.Value.Play();
+        }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using DefaultNamespace;
 using DG.Tweening;
@@ -27,6 +28,7 @@ public class Hud : MonoBehaviour
     {
         Init();
 
+        Singletons.NoteController.OnNoteReachedEnd += OnNoteReachedEnd;
         Singletons.GameModel.OnScoreChanged += SetScore;
         Singletons.GameModel.OnComboChanged += SetCombo;
         Singletons.GameModel.OnNotePlayed += OnNotePlayed;
@@ -40,13 +42,6 @@ public class Hud : MonoBehaviour
         comboText.gameObject.SetActive(false);
     }
 
-    void OnDestroy()
-    {
-        Singletons.GameModel.OnScoreChanged -= SetScore;
-        Singletons.GameModel.OnComboChanged -= SetCombo;
-        Singletons.GameModel.OnNotePlayed -= OnNotePlayed;
-    }
-
     private void HideAllTimingObjects()
     {
         foreach (var timingObject in timingObjects)
@@ -55,16 +50,38 @@ public class Hud : MonoBehaviour
         }
     }
 
+    void OnDestroy()
+    {
+        Singletons.GameModel.OnScoreChanged -= SetScore;
+        Singletons.GameModel.OnComboChanged -= SetCombo;
+        Singletons.GameModel.OnNotePlayed -= OnNotePlayed;
+    }
+
+    private void OnNoteReachedEnd(NoteView noteView)
+    {
+        ShowTimingObject(TimingType.Miss);
+    }
+
     private void OnNotePlayed(int _, NoteView noteView, ScoreType scoreType)
+    {
+        ShowTimingObject(scoreType.TimingType);
+    }
+
+    private void ShowTimingObject(TimingType timingType)
     {
         foreach (var timingObject in timingObjects)
         {
-            timingObject.GameObject.SetActive(timingObject.TimingType == scoreType.TimingType);
-            if (timingObject.TimingType == scoreType.TimingType)
+            timingObject.GameObject.SetActive(timingObject.TimingType == timingType);
+            if (timingObject.TimingType == timingType)
             {
-                PlayScaleAnimation(timingObject.GameObject.transform);
+                PlayScaleAnimation(timingObject.GameObject.transform, () => HideObject(timingObject.GameObject.transform));
             }
         }
+    }
+
+    private void HideObject(Transform transform)
+    {
+        transform.DOScale(Vector3.zero, scaleDuration).OnComplete(() => transform.gameObject.SetActive(false));
     }
 
     private void SetCombo(int combo)
@@ -98,9 +115,9 @@ public class Hud : MonoBehaviour
             });
     }
 
-    private void PlayScaleAnimation(Transform t)
+    private void PlayScaleAnimation(Transform t, Action onComplete = null)
     {
         t.localScale = Vector3.one;
-        t.DOScale(scaleMultiplier, scaleDuration).SetLoops(2, LoopType.Yoyo);
+        t.DOScale(scaleMultiplier, scaleDuration).SetLoops(2, LoopType.Yoyo).OnComplete(() => onComplete?.Invoke());
     }
 }
