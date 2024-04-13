@@ -6,10 +6,11 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public const float TimeOffset = 8f;
+
     [SerializeField]private AK.Wwise.Event MusicEvent;
     [HideInInspector] public Action<int> RhythmCallback;
-    public const float TIMEOFFSET = 8f;
-        
+
     void Start()
     {
         MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent, MidiCallback);
