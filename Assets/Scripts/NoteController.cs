@@ -1,70 +1,59 @@
-using System.Collections.Generic;
+using DefaultNamespace;
 using DG.Tweening;
 using UnityEngine;
 
 public class NoteController : MonoBehaviour
 {
-    private const int TrackCount = 4;
-    private const int PoolCount = 100;
-
     [SerializeField]
     private AudioManager audioManager;
 
-    [SerializeField]
-    private NoteView notePrefab;
-
     [SerializeField] private float noteStartDistance = 30f;
+    [SerializeField] private float noteEndDistance = -10f;
     [SerializeField] private float trackTargetXStart = -1.5f;
     [SerializeField] private float trackTargetXEnd = 1.5f;
+    [SerializeField] private NotePool notePool;
 
     private float _trackStepDistance;
-
-    private readonly Queue<NoteView> _notePrefabPool = new ();
+    private GameModel _gameModel;
 
 
     // Start is called before the first frame update
     void Start()
     {
         var trackDistance = trackTargetXEnd - trackTargetXStart;
-        _trackStepDistance = trackDistance / (TrackCount - 1);
+        _trackStepDistance = trackDistance / (GameModel.TrackCount - 1);
+
         audioManager.RhythmCallback += OnNoteReceived;
 
-        for (int i = 0; i < PoolCount; i++)
-        {
-            var note = Instantiate(notePrefab, transform);
-            note.gameObject.SetActive(false);
-            _notePrefabPool.Enqueue(note);
-        }
+        _gameModel = new GameModel();
     }
 
     private void OnNoteReceived(int trackIndex)
     {
-        if (_notePrefabPool.Count == 0)
-        {
-            // Optionally, create a new note if the pool is empty.
-            // This depends on whether you want a fixed-size pool or a flexible one.
-            var newNote = Instantiate(notePrefab, transform);
-            newNote.gameObject.SetActive(false);
-            _notePrefabPool.Enqueue(newNote);
-        }
+        SpawnNote(trackIndex);
+    }
 
-        var note = _notePrefabPool.Dequeue();
+    private void SpawnNote(int trackIndex)
+    {
+        var note = notePool.GetNote();
 
         note.SetTrack(trackIndex);
         var noteXPosition = trackTargetXStart + _trackStepDistance * trackIndex;
         note.transform.position = new Vector3(noteXPosition, 0, noteStartDistance);
-        note.transform.DOMoveZ(0, AudioManager.TimeOffset).SetEase(Ease.Linear).OnComplete(() =>
-        {
-            note.gameObject.SetActive(false);
-            _notePrefabPool.Enqueue(note);
-        });
+        note.transform.localScale = Vector3.one;
+
+        note.transform.DOMoveZ(noteEndDistance, noteStartDistance / AudioManager.TimeOffset)
+            .SetSpeedBased(true)
+            .SetEase(Ease.Linear)
+            .OnUpdate(() =>
+            {
+                if (note.transform.position.z < 0)
+                {
+                    note.transform.localScale = Vector3.one * 0.5f;
+                }
+            })
+            .OnComplete(() => { notePool.ReturnNote(note); });
 
         note.gameObject.SetActive(true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
