@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e7c225b4fff91a4fa3dd596d675978fc
     GuidInternal: 
-    m_lastTime: -8584886484087257647
+    m_lastTime: -8584886447021633079
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ccacdac48f67754f89bb0cfd8df9ae3f
     GuidInternal: 
-    m_lastTime: -8584886484086559555
+    m_lastTime: -8584886447021663080
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e72cc8e0dcbac349b7f08b0c170ec636
     GuidInternal: 
-    m_lastTime: -8584886484086755192
+    m_lastTime: -8584886447021643080
     List:
     - name: General
       guid: ef43457491949145b06983747ccfda57
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a880a669ad975348b22237f1dfee1322
     GuidInternal: 
-    m_lastTime: -8584885738488643185
+    m_lastTime: -8584885727709447081
     List:
     - name: Pause
       guid: 6f5b35b589808d4fbdf3c73fcd07233e
@@ -159,7 +159,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a12da0b1c07e8d41afa5f590fb14b9f5
     GuidInternal: 
-    m_lastTime: -8584885736874928651
+    m_lastTime: -8584885727709417053
     List:
     - name: Difficulty
       guid: c8c1c3b3a61c404f828c206651011d11
@@ -187,7 +187,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d64710a95d604447a7612ddc43210b7a
     GuidInternal: 
-    m_lastTime: -8584886484086358633
+    m_lastTime: -8584886447021643080
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -201,7 +201,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 9a5d7c667e86a245b9c31367c1fc4950
     GuidInternal: 
-    m_lastTime: -8584885736875033734
+    m_lastTime: -8584885727709117471
     List:
     - name: Difficulty
       guid: eedbd547c3cccc4487b5558e5346d7e1
@@ -281,7 +281,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e0677c8c40c13d4d92f7bf6d0f902e66
     GuidInternal: 
-    m_lastTime: -8584886484087358125
+    m_lastTime: -8584886447021643080
     List: []
   ExpandedFileSystemItemIds: 0f00000010000000
   ExpandedWaapiItemIds: 0200000003000000
