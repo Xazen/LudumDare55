@@ -6,29 +6,36 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public const float TimeOffset = 8f;
+    public const float TimeOffset = 6.21359223301f;
 
     [SerializeField]private AK.Wwise.Event MusicEvent;
     [HideInInspector] public Action<int, bool> RhythmCallback;
 
-    void Start()
+    void StartGameMusic()
     {
-        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent, MidiCallback);
+        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue, MidiCallback);
     }
 
     private void MidiCallback(object in_cookie, AkCallbackType in_type, object in_info)
     {
-        var midiEvent = (AkMIDIEventCallbackInfo)in_info;
-        if(midiEvent.byParam1 >= 36 && midiEvent.byParam1 <= 39 && midiEvent.byParam2 == 127)
+        if (in_type == AkCallbackType.AK_MIDIEvent)
         {
-            RhythmCallback?.Invoke(midiEvent.byParam1 - 36, false);
-            //Debug.Log("HIT: " + (midiEvent.byParam1 - 36));
+            var midiEvent = (AkMIDIEventCallbackInfo)in_info;
+            if (midiEvent.byParam1 >= 36 && midiEvent.byParam1 <= 39 && midiEvent.byParam2 == 127)
+            {
+                RhythmCallback?.Invoke(midiEvent.byParam1 - 36, false);
+                //Debug.Log("HIT: " + (midiEvent.byParam1 - 36));
+            }
+            if (midiEvent.byParam1 >= 40 && midiEvent.byParam1 <= 43 && midiEvent.byParam2 == 127)
+            {
+                RhythmCallback?.Invoke(midiEvent.byParam1 - 40, true);
+                //Debug.Log("HIT: " + (midiEvent.byParam1 - 40));
+            }
         }
-        if (midiEvent.byParam1 >= 40 && midiEvent.byParam1 <= 43 && midiEvent.byParam2 == 127)
-        {
-            RhythmCallback?.Invoke(midiEvent.byParam1 - 40, true);
-            //Debug.Log("HIT: " + (midiEvent.byParam1 - 40));
-        }
+        //if (in_type == AkCallbackType.AK_MusicSyncUserCue)
+        //{
+        //    if()
+        //}
     }
 
     public void PauseMusic()

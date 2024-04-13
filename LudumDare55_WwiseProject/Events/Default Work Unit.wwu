@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{69A680A8-97AD-4853-B222-37F1DFEE1322}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="test" ID="{6D014DE9-9DFA-493E-A411-53F46C2B736E}">
-					<ChildrenList>
-						<Action Name="" ID="{16C14A00-1FA6-46F7-85C2-3518235BF6E0}" ShortID="960457794">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="trets" ID="{3A4FAFB9-5B3E-48F5-A947-8197D4ED3C6B}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Pause" ID="{B5355B6F-8089-4F8D-BDF3-C73FCD07233E}">
 					<ChildrenList>
 						<Action Name="" ID="{FD3B7969-182D-488A-B14A-D7D010D49487}" ShortID="869821459">
@@ -33,6 +22,17 @@
 								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
 							</PropertyList>
 							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartGameMusic" ID="{AF02A7F4-78E9-44FA-8681-CF07E89ECF3B}">
+					<ChildrenList>
+						<Action Name="" ID="{0658D464-0C87-43C9-B32E-9A316B7E15F0}" ShortID="679299074">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameMusic" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+								</Reference>
+							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>

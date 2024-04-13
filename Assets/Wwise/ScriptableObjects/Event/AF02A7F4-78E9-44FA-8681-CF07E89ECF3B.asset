@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c96458f81502c8a4494831b0d52ee233, type: 3}
-  m_Name: 6D014DE9-9DFA-493E-A411-53F46C2B736E
+  m_Name: AF02A7F4-78E9-44FA-8681-CF07E89ECF3B
   m_EditorClassIdentifier: 
-  objectName: test
-  id: 3157003241
-  guid: 6D014DE9-9DFA-493E-A411-53F46C2B736E
+  objectName: StartGameMusic
+  id: 1568977742
+  guid: AF02A7F4-78E9-44FA-8681-CF07E89ECF3B
