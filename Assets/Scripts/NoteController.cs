@@ -11,8 +11,7 @@ public class NoteController : MonoBehaviour
     private AudioManager audioManager;
 
     [SerializeField]
-    private GameObject notePrefab;
-
+    private NoteView notePrefab;
 
     [SerializeField] private float noteStartDistance = 30f;
     [SerializeField] private float trackTargetXStart = -1.5f;
@@ -20,7 +19,7 @@ public class NoteController : MonoBehaviour
 
     private float _trackStepDistance;
 
-    private Queue<GameObject> notePrefabPool = new ();
+    private readonly Queue<NoteView> _notePrefabPool = new ();
 
 
     // Start is called before the first frame update
@@ -33,33 +32,34 @@ public class NoteController : MonoBehaviour
         for (int i = 0; i < PoolCount; i++)
         {
             var note = Instantiate(notePrefab, transform);
-            note.SetActive(false);
-            notePrefabPool.Enqueue(note);
+            note.gameObject.SetActive(false);
+            _notePrefabPool.Enqueue(note);
         }
     }
 
     private void OnNoteReceived(int trackIndex)
     {
-        if (notePrefabPool.Count == 0)
+        if (_notePrefabPool.Count == 0)
         {
             // Optionally, create a new note if the pool is empty.
             // This depends on whether you want a fixed-size pool or a flexible one.
             var newNote = Instantiate(notePrefab, transform);
-            newNote.SetActive(false);
-            notePrefabPool.Enqueue(newNote);
+            newNote.gameObject.SetActive(false);
+            _notePrefabPool.Enqueue(newNote);
         }
 
-        var note = notePrefabPool.Dequeue();
+        var note = _notePrefabPool.Dequeue();
 
+        note.SetTrack(trackIndex);
         var noteXPosition = trackTargetXStart + _trackStepDistance * trackIndex;
         note.transform.position = new Vector3(noteXPosition, 0, noteStartDistance);
         note.transform.DOMoveZ(0, AudioManager.TimeOffset).SetEase(Ease.Linear).OnComplete(() =>
         {
-            note.SetActive(false);
-            notePrefabPool.Enqueue(note);
+            note.gameObject.SetActive(false);
+            _notePrefabPool.Enqueue(note);
         });
 
-        note.SetActive(true);
+        note.gameObject.SetActive(true);
     }
 
     // Update is called once per frame

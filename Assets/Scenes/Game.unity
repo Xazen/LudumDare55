@@ -1328,7 +1328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioManager: {fileID: 1518116450}
-  notePrefab: {fileID: 6704545210795759825, guid: 52e9aae7a9fe7224bb851f6be04898fc,
+  notePrefab: {fileID: 8858296310724140027, guid: 52e9aae7a9fe7224bb851f6be04898fc,
     type: 3}
   noteStartDistance: 30
   trackTargetXStart: -1.5
