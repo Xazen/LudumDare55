@@ -1,4 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
+	953277036	Resume			\Default Work Unit\Resume	
+	3092587493	Pause			\Default Work Unit\Pause	
 	3157003241	test			\Default Work Unit\test	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
