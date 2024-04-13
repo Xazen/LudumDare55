@@ -9,17 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{35813240-F5E4-BEA2-0ACB-D22F13BF7FCD}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{1BEC1E16-EA43-8005-8CB3-6FF8B0F45C0E}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
-				<File Id="558017979" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Drums_Dennis.wav</ShortName>
-					<CachePath>SFX/Drums_Dennis_FBC78EF0.wem</CachePath>
+				<File Id="245429244" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GameMusic.wav</ShortName>
+					<CachePath>SFX/GameMusic_56CEF360.wem</CachePath>
 				</File>
-				<File Id="697879470" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Groove Agent SE 01.mid</ShortName>
-					<CachePath>SFX/Groove Agent SE 01_C6BD09E8.wem</CachePath>
+				<File Id="271268207" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Temp_MIDI.mid</ShortName>
+					<CachePath>SFX/Temp_MIDI_36E4615E.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -30,10 +30,10 @@
 			<Events>
 				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="953277036" Name="Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3157003241" Name="test" DurationType="Infinite">
+				<Event Id="1568977742" Name="StartGameMusic" DurationType="OneShot" DurationMin="111.844666" DurationMax="111.844666">
 					<MediaRefs>
-						<MediaRef Id="558017979"/>
-						<MediaRef Id="697879470"/>
+						<MediaRef Id="245429244"/>
+						<MediaRef Id="271268207"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
@@ -57,5 +57,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{921FDAC2-5471-88A5-ED17-47327A533332}</FileHash>
+	<FileHash>{476B6DB4-EB69-1ED9-A920-6954CC5D5DBD}</FileHash>
 </SoundBanksInfo>

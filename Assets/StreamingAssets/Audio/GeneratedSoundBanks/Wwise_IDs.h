@@ -15,7 +15,7 @@ namespace AK
     {
         static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID RESUME = 953277036U;
-        static const AkUniqueID TEST = 3157003241U;
+        static const AkUniqueID STARTGAMEMUSIC = 1568977742U;
     } // namespace EVENTS
 
     namespace BANKS

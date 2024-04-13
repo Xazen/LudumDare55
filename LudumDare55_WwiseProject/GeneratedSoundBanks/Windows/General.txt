@@ -1,12 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	953277036	Resume			\Default Work Unit\Resume	
+	1568977742	StartGameMusic			\Default Work Unit\StartGameMusic	
 	3092587493	Pause			\Default Work Unit\Pause	
-	3157003241	test			\Default Work Unit\test	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	599441268	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\empty\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	558017979	Drums_test	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Drums_Dennis_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\trets\Music Test\Drums_test		1536096
-	697879470	Drums_Test_01	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Groove Agent SE 01_C6BD09E8.wem		\Interactive Music Hierarchy\Default Work Unit\trets\Music Test\Drums_Test_01		358
+	245429244	New Music Track	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\New Music Track		1702891
+	271268207	MIDI	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Temp_MIDI_36E4615E.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\MIDI		4706
 
