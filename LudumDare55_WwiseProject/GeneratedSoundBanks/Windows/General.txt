@@ -7,6 +7,6 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	599441268	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\empty\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	245429244	New Music Track	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\New Music Track		21474272
+	245429244	New Music Track	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\New Music Track		1702891
 	271268207	MIDI	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Temp_MIDI_36E4615E.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\MIDI		4706
 

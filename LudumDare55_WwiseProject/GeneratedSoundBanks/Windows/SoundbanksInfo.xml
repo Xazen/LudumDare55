@@ -9,13 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{E4DB2B40-AA20-9186-C27E-9D5E041490DA}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{1BEC1E16-EA43-8005-8CB3-6FF8B0F45C0E}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
 				<File Id="245429244" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GameMusic.wav</ShortName>
-					<CachePath>SFX/GameMusic_FBC78EF0.wem</CachePath>
+					<CachePath>SFX/GameMusic_56CEF360.wem</CachePath>
 				</File>
 				<File Id="271268207" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Temp_MIDI.mid</ShortName>
@@ -57,5 +57,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3E8D9C79-A453-94B9-B97D-2464209E8262}</FileHash>
+	<FileHash>{476B6DB4-EB69-1ED9-A920-6954CC5D5DBD}</FileHash>
 </SoundBanksInfo>
