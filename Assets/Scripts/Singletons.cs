@@ -3,7 +3,7 @@
     public static class Singletons
     {
         private static GameModel _gameModel;
-        public static GameModel GameModel => _gameModel ??= new GameModel();
+        public static GameModel GameModel => _gameModel;
 
         private static NotePool _notePool;
         public static NotePool NotePool => _notePool;
@@ -45,12 +45,17 @@
 
         public static void RegisterGameManager(GameManager gameManager)
         {
-_gameManager = gameManager;
+            _gameManager = gameManager;
         }
 
         public static void RegisterPauseMenu(PauseMenu pauseMenu)
         {
-_pauseMenu = pauseMenu;
+            _pauseMenu = pauseMenu;
+        }
+
+        public static void ResetGameModel(GameModel gameModel)
+        {
+            _gameModel = gameModel;
         }
     }
 }
