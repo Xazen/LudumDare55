@@ -132,6 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79ee83fb0f8455faac7679fd9b10e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dragonBallCount: 7
+  maxHealth: 100
+  healthDecrease: 10
+  healthIncrease: 1
+  minComboForHeal: 5
   noteStartDistance: 30
   trackTargetXStart: -2.7
   trackTargetXEnd: 2.7

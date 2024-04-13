@@ -11,15 +11,15 @@ namespace DefaultNamespace
                 PlayNote(0);
 
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 PlayNote(1);
             }
-            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 PlayNote(2);
             }
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 PlayNote(3);
             }

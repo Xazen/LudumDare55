@@ -1,13 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace DefaultNamespace
 {
     public class Balancing : MonoBehaviour
     {
+        [Header("General")]
+        [SerializeField] private int dragonBallCount = 7;
+        public int DragonBallCount => dragonBallCount;
+
+        [Header("Health")]
+        [SerializeField] private int maxHealth = 100;
+        [SerializeField] private int healthDecrease = 1;
+        [SerializeField] private int healthIncrease = 1;
+        [SerializeField] private int minComboForHeal = 5;
+        public int MaxHealth => maxHealth;
+        public int HealthDecrease => healthDecrease;
+        public int MinComboForHeal => minComboForHeal;
+        public int HealthIncrease => healthIncrease;
+
         [Header("Note Settings")]
         [SerializeField] private float noteStartDistance = 30f;
 
@@ -62,6 +74,7 @@ namespace DefaultNamespace
         }
 
         public float NoteSpeed => noteSpeed;
+
 
         private void Awake()
         {

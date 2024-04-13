@@ -13,20 +13,36 @@ namespace DefaultNamespace
         {
             Singletons.AudioManager.StartGameMusic();
             Singletons.PauseMenu.OnPaused += OnPaused;
+            Singletons.GameModel.OnHealthZero += OnHealthZero;
+        }
+
+        private void OnHealthZero(int _)
+        {
+            Pause();
         }
 
         private void OnPaused(bool isPaused)
         {
             if (isPaused)
             {
-                Singletons.AudioManager.PauseMusic();
-                Singletons.NoteController.Pause();
+                Pause();
             }
             else
             {
-                Singletons.AudioManager.ResumeMusic();
-                Singletons.NoteController.Resume();
+                Resume();
             }
+        }
+
+        private static void Resume()
+        {
+            Singletons.AudioManager.ResumeMusic();
+            Singletons.NoteController.Resume();
+        }
+
+        private static void Pause()
+        {
+            Singletons.AudioManager.PauseMusic();
+            Singletons.NoteController.Pause();
         }
     }
 }

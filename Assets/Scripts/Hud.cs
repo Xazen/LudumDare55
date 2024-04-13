@@ -6,12 +6,15 @@ using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Hud : MonoBehaviour
 {
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private TMP_Text comboText;
     [SerializeField] private List<TimingObject> timingObjects;
+    [SerializeField] private Image healthImage;
+    [SerializeField] private Image dragonBallImage;
 
     [SerializeField]
     private float scoreAnimDuration = 0.1f;
@@ -19,8 +22,6 @@ public class Hud : MonoBehaviour
     private float scaleDuration = 0.1f;
     [SerializeField]
     private float scaleMultiplier = 1.3f;
-    [SerializeField]
-    private int minComboForShow = 5;
 
     private TweenerCore<int, int, NoOptions> _scoreTween;
 
@@ -32,11 +33,25 @@ public class Hud : MonoBehaviour
         Singletons.GameModel.OnScoreChanged += SetScore;
         Singletons.GameModel.OnComboChanged += SetCombo;
         Singletons.GameModel.OnNotePlayed += OnNotePlayed;
+        Singletons.GameModel.OnHealthChanged += OnHealthChanged;
+        Singletons.GameModel.OnDragonBallFound += OnDragonBallFound;
+    }
+
+    private void OnDragonBallFound(int dragonBallFound)
+    {
+        dragonBallImage.fillAmount = (float) dragonBallFound / Singletons.Balancing.DragonBallCount;
+    }
+
+    private void OnHealthChanged(int health)
+    {
+        healthImage.fillAmount = (float) health / Singletons.Balancing.MaxHealth;
     }
 
     private void Init()
     {
         HideAllTimingObjects();
+        dragonBallImage.fillAmount = 0;
+        healthImage.fillAmount = 1;
         scoreText.text = "0";
         comboText.text = "x0";
         comboText.gameObject.SetActive(false);
@@ -86,8 +101,9 @@ public class Hud : MonoBehaviour
 
     private void SetCombo(int combo)
     {
-        comboText.gameObject.SetActive(combo >= minComboForShow);
-        if (combo < minComboForShow)
+        var minCombo = Singletons.Balancing.MinComboForHeal;
+        comboText.gameObject.SetActive(combo >= minCombo);
+        if (combo < minCombo)
         {
             return;
         }

@@ -12,6 +12,8 @@ public class NoteController : MonoBehaviour
     public Action<NoteView> OnNoteReachedEnd;
     private Dictionary<NoteView, Tween> _noteTweens = new ();
 
+    private int dragonBallCount;
+
     private void Awake()
     {
         Singletons.RegisterNoteController(this);
@@ -19,6 +21,7 @@ public class NoteController : MonoBehaviour
 
     private void Start()
     {
+        dragonBallCount = 0;
         audioManager.RhythmCallback += OnNoteReceived;
         Singletons.GameModel.OnNotePlayed += OnNotePlayed;
     }
@@ -41,14 +44,20 @@ public class NoteController : MonoBehaviour
 
     private void OnNoteReceived(int trackIndex, bool isDragonBall)
     {
-        SpawnNote(trackIndex);
+        SpawnNote(trackIndex, isDragonBall);
     }
 
-    private void SpawnNote(int trackIndex)
+    private void SpawnNote(int trackIndex, bool isDragonBall)
     {
         var note = Singletons.NotePool.GetNote();
 
         note.SetTrack(trackIndex);
+
+        note.SetIsDragonBall(isDragonBall, dragonBallCount);
+        if (isDragonBall)
+        {
+            dragonBallCount++;
+        }
         note.transform.position = Singletons.Balancing.GetNoteSpawnPosition(trackIndex);
         note.transform.localScale = Vector3.one;
 
