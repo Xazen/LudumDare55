@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -45,6 +46,7 @@ namespace DefaultNamespace
 
         public void ReturnNote(NoteView note)
         {
+            note.transform.DOKill();
             note.gameObject.SetActive(false);
             _notePrefabPool.Enqueue(note);
         }

@@ -218,6 +218,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1011895747}
+  - {fileID: 1404065831}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1238,6 +1239,41 @@ RectTransform:
   m_AnchoredPosition: {x: 427.84262, y: -338.75525}
   m_SizeDelta: {x: 855.68524, y: 135.5021}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1404065830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404065831}
+  m_Layer: 5
+  m_Name: GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1404065831
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404065830}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 92194276}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1555739686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,26 +1783,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
-        type: 3}
-      propertyPath: noteSpeed
-      value: 6.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
-        type: 3}
-      propertyPath: noteEndDistance
-      value: -1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
-        type: 3}
-      propertyPath: trackTargetXEnd
-      value: 2.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
-        type: 3}
-      propertyPath: trackTargetXStart
-      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 6872728303268569313, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
         type: 3}

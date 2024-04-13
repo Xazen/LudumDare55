@@ -1,3 +1,4 @@
+using System;
 using DefaultNamespace;
 using DG.Tweening;
 using UnityEngine;
@@ -15,6 +16,17 @@ public class NoteController : MonoBehaviour
     private void Start()
     {
         audioManager.RhythmCallback += OnNoteReceived;
+        Singletons.GameModel.OnNotePlayed += OnNotePlayed;
+    }
+
+    private void OnDestroy()
+    {
+        Singletons.GameModel.OnNotePlayed -= OnNotePlayed;
+    }
+
+    private void OnNotePlayed(int trackIndex, NoteView note)
+    {
+        Singletons.NotePool.ReturnNote(note);
     }
 
     private void OnNoteReceived(int trackIndex)
@@ -34,7 +46,11 @@ public class NoteController : MonoBehaviour
             .SetDelay(Singletons.Balancing.NoteSpeed)
             .SetSpeedBased(true)
             .SetEase(Ease.Linear)
-            .OnStart(() => { note.gameObject.SetActive(true); })
+            .OnStart(() =>
+            {
+                note.gameObject.SetActive(true);
+                Singletons.GameModel.RegisterNote(note, trackIndex);
+            })
             .OnUpdate(() =>
             {
                 if (note.transform.position.z < 0)
@@ -42,6 +58,10 @@ public class NoteController : MonoBehaviour
                     note.transform.localScale = Vector3.one * 0.5f;
                 }
             })
-            .OnComplete(() => { Singletons.NotePool.ReturnNote(note); });
+            .OnComplete(() =>
+            {
+                Singletons.GameModel.RemoveNoteFromTrack(trackIndex);
+                Singletons.NotePool.ReturnNote(note);
+            });
     }
 }

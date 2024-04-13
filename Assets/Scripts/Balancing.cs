@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using JetBrains.Annotations;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace DefaultNamespace
@@ -13,6 +15,14 @@ namespace DefaultNamespace
         [SerializeField]
         [Range(0, AudioManager.TimeOffset - 0.5f)]
         private float noteSpeed = 4f;
+
+        // speed: 4
+        // 1.5: 200 ms (bad)
+        // 0.75: 100 ms (good)
+        // 0.375: 50 ms (great)
+        // 0.1875: 25 ms (perfect)
+        [Header("Timings")]
+        [SerializeField] private List<ScoreType> scoreTypes;
 
         private float _trackStepDistance;
         public float TrackTargetXStart => trackTargetXStart;
@@ -30,6 +40,7 @@ namespace DefaultNamespace
         {
             var trackDistance = trackTargetXEnd - trackTargetXStart;
             _trackStepDistance = trackDistance / (GameModel.TrackCount - 1);
+            scoreTypes.Sort((a, b) => a.Distance.CompareTo(b.Distance));
         }
 
         public float GetNoteSpeed()
@@ -42,6 +53,20 @@ namespace DefaultNamespace
             var noteXPosition = Singletons.Balancing.TrackTargetXStart + Singletons.Balancing.TrackStepDistance * trackIndex;
             var transformPosition = new Vector3(noteXPosition, 0, Singletons.Balancing.NoteStartDistance);
             return transformPosition;
+        }
+
+        [CanBeNull]
+        public ScoreType GetScoreType(float distance)
+        {
+            foreach (var scoreType in scoreTypes)
+            {
+                if (distance < scoreType.Distance)
+                {
+                    return scoreType;
+                }
+            }
+
+            return null;
         }
     }
 }

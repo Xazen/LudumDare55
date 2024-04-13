@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8771153277021635590}
   - component: {fileID: 167230780666235637}
   - component: {fileID: 2900983170622384220}
+  - component: {fileID: 3463506084880733263}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -133,5 +134,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteStartDistance: 30
   noteEndDistance: -1.5
-  trackTargetXStart: -1.5
-  trackTargetXEnd: 1.5
+  trackTargetXStart: -2.7
+  trackTargetXEnd: 2.7
+  noteSpeed: 4
+  scoreTypes:
+  - Distance: 0.1875
+    Score: 100
+    IsCombo: 1
+  - Distance: 0.375
+    Score: 30
+    IsCombo: 1
+  - Distance: 0.75
+    Score: 10
+    IsCombo: 1
+  - Distance: 1.5
+    Score: 5
+    IsCombo: 0
+--- !u!114 &3463506084880733263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6872728303268569313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2604b8fefd98412d931b2825c839a294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
