@@ -918,6 +918,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
+        type: 3}
+      propertyPath: scoreTypes.Array.data[1].TimingType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
+        type: 3}
+      propertyPath: scoreTypes.Array.data[2].TimingType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
+        type: 3}
+      propertyPath: scoreTypes.Array.data[3].TimingType
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6872728303268569313, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
         type: 3}
       propertyPath: m_Name
@@ -936,11 +951,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 92194276}
     m_Modifications:
+    - target: {fileID: 4171350569548759831, guid: cf02465f854dbe94e9f71efe1b80d8fe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fa424b443837ee8489ce6be5bd78c157,
+        type: 3}
+    - target: {fileID: 6878699594057251532, guid: cf02465f854dbe94e9f71efe1b80d8fe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dfc4f0041a9612c4d9ef223e9896adb6,
+        type: 3}
     - target: {fileID: 7304713149277335475, guid: cf02465f854dbe94e9f71efe1b80d8fe,
         type: 3}
       propertyPath: m_Name
       value: GUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7461872604440894091, guid: cf02465f854dbe94e9f71efe1b80d8fe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5e2454d9cb58fea43ab5b6e13ad1b2a3,
+        type: 3}
     - target: {fileID: 8611345487291273145, guid: cf02465f854dbe94e9f71efe1b80d8fe,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1041,6 +1074,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8686363824183030754, guid: cf02465f854dbe94e9f71efe1b80d8fe,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 43e720c4d41e1c34a8916d4390670657,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

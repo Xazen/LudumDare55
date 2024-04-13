@@ -23,7 +23,7 @@ public class NoteController : MonoBehaviour
         Singletons.GameModel.OnNotePlayed -= OnNotePlayed;
     }
 
-    private void OnNotePlayed(int trackIndex, NoteView note)
+    private void OnNotePlayed(int trackIndex, NoteView note, ScoreType scoreType)
     {
         Singletons.NotePool.ReturnNote(note);
     }

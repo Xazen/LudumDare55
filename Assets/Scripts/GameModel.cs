@@ -7,10 +7,14 @@ namespace DefaultNamespace
     public class GameModel
     {
         public const int TrackCount = 4;
-        public int Score = 0;
-        public int Combo = 0;
+        public int Score;
+        public int Combo;
 
         private readonly Dictionary<int, Queue<NoteView>> _currentNotes = new ();
+
+        public Action<int, NoteView, ScoreType> OnNotePlayed;
+        public Action<int> OnComboChanged;
+        public Action<int> OnScoreChanged;
 
         public GameModel()
         {
@@ -19,8 +23,6 @@ namespace DefaultNamespace
                 _currentNotes[i] = new Queue<NoteView>();
             }
         }
-
-        public Action<int, NoteView> OnNotePlayed;
 
         public void RegisterNote(NoteView note, int trackIndex)
         {
@@ -39,24 +41,44 @@ namespace DefaultNamespace
             var distance = Math.Abs(note.transform.position.z);
             var noteSpeed = balancing.GetNoteSpeed();
             var timing = distance / noteSpeed;
-            OnNotePlayed?.Invoke(trackIndex, note);
             var millisOff = timing * 100;
             Debug.Log($"{trackIndex}: {millisOff}ms {distance}u (miss: {balancing.NoteEndDistance / noteSpeed}s)");
 
             var scoreType = balancing.GetScoreType(distance);
             if (scoreType == null)
             {
-                Combo = 0;
+                SetCombo(0);
                 return;
             }
 
             if (scoreType.IsCombo)
             {
-                Combo++;
+                SetCombo(Combo + 1);
             }
 
             int scoreMultiplier = Math.Max(1, Combo);
-            Score += scoreType.Score * scoreMultiplier;
+            SetScore(Score + scoreType.Score * scoreMultiplier);
+            OnNotePlayed?.Invoke(trackIndex, note, scoreType);
+        }
+
+        private void SetScore(int score)
+        {
+            if (score == Score)
+            {
+                return;
+            }
+            Score = score;
+            OnScoreChanged?.Invoke(score);
+        }
+
+        private void SetCombo(int combo)
+        {
+            if (combo == Combo)
+            {
+                return;
+            }
+            Combo = combo;
+            OnComboChanged?.Invoke(combo);
         }
     }
 }

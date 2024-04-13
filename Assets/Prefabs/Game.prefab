@@ -138,16 +138,20 @@ MonoBehaviour:
   trackTargetXEnd: 2.7
   noteSpeed: 4
   scoreTypes:
-  - Distance: 0.1875
+  - TimingType: 0
+    Distance: 0.1875
     Score: 100
     IsCombo: 1
-  - Distance: 0.375
+  - TimingType: 1
+    Distance: 0.375
     Score: 30
     IsCombo: 1
-  - Distance: 0.75
+  - TimingType: 2
+    Distance: 0.75
     Score: 10
     IsCombo: 1
-  - Distance: 1.5
+  - TimingType: 3
+    Distance: 1.5
     Score: 5
     IsCombo: 0
 --- !u!114 &3463506084880733263
