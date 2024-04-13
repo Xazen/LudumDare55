@@ -322,6 +322,9 @@
 					</ChildrenList>
 				</MusicPlaylistContainer>
 				<MusicSwitchContainer Name="GameMusic" ID="{80E46C1A-4C32-4E4F-96D8-AA0E0556CBBD}" ShortID="982344855">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="154.5"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
@@ -383,7 +386,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="easy" ID="{57D3DFAA-BC07-4490-B6C6-2E3DC3D0671A}" ShortID="599029832">
+										<MidiFileSource Name="easy" ID="{653E8634-7A9E-4FEF-951C-4CF06C238490}" ShortID="679873365">
 											<Language>SFX</Language>
 											<MidiFile>easy.mid</MidiFile>
 											<MediaIDList>
@@ -400,11 +403,11 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="easy" ID="{A26CB42D-27EE-4AD2-87B2-16FAD2628E28}">
+																		<MusicClipMidi Name="easy" ID="{D7BFEAB6-94A1-4E47-A617-7F3FD6E89CC1}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="95826.0517799353"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="easy" ID="{57D3DFAA-BC07-4490-B6C6-2E3DC3D0671A}"/>
+																			<MidiSourceRef Name="easy" ID="{653E8634-7A9E-4FEF-951C-4CF06C238490}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
@@ -481,7 +484,7 @@
 											<MusicCue Name="Exit Cue" ID="{457157DC-21CC-416E-A2B8-8EFC802FE201}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="97577.6628102608"/>
+													<Property Name="TimeMs" Type="Real64" Value="102524.27184466"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -491,7 +494,7 @@
 											<MusicCue Name="ENDE" ID="{2CECDC85-04B4-41CE-9D47-30A40001BAEC}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="2"/>
-													<Property Name="TimeMs" Type="Real64" Value="93203.8834951456"/>
+													<Property Name="TimeMs" Type="Real64" Value="101036.279366089"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -536,7 +539,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="middle" ID="{25C70B87-13D2-4D3F-8742-6669FD27E04D}" ShortID="364323461">
+										<MidiFileSource Name="middle" ID="{1BFB4FB3-EA52-4B81-9826-7253EBB5E71D}" ShortID="673320002">
 											<Language>SFX</Language>
 											<MidiFile>middle.mid</MidiFile>
 											<MediaIDList>
@@ -553,11 +556,11 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="middle" ID="{EC3450E6-43D3-4403-9804-EAD18C1AE44E}">
+																		<MusicClipMidi Name="middle" ID="{6822ACC8-1C8D-4BDA-BCF9-562C9157C964}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="95826.0517799353"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="middle" ID="{25C70B87-13D2-4D3F-8742-6669FD27E04D}"/>
+																			<MidiSourceRef Name="middle" ID="{1BFB4FB3-EA52-4B81-9826-7253EBB5E71D}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
@@ -634,7 +637,7 @@
 											<MusicCue Name="Exit Cue" ID="{F8B2CCC3-557E-4B81-ABA8-C7180D15D1BB}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="97577.6628102608"/>
+													<Property Name="TimeMs" Type="Real64" Value="102524.27184466"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -644,7 +647,7 @@
 											<MusicCue Name="ENDE" ID="{A9D68027-D570-4F7B-8757-308C945B7629}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="2"/>
-													<Property Name="TimeMs" Type="Real64" Value="93203.8834951456"/>
+													<Property Name="TimeMs" Type="Real64" Value="101174.435602619"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -689,11 +692,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="Temp_MIDI" ID="{8712F483-9216-4790-8F22-141191CD8F47}" ShortID="271268207">
+										<MidiFileSource Name="extrem" ID="{901468AC-18BC-44E0-800E-2AF0435D08C5}" ShortID="63106106">
 											<Language>SFX</Language>
-											<MidiFile>Temp_MIDI.mid</MidiFile>
+											<MidiFile>extrem.mid</MidiFile>
 											<MediaIDList>
-												<MediaID ID="271268207"/>
+												<MediaID ID="63106106"/>
 											</MediaIDList>
 										</MidiFileSource>
 									</ChildrenList>
@@ -706,11 +709,11 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="Temp_MIDI" ID="{882A9B65-ED67-405C-81C0-20B2B515AB41}">
+																		<MusicClipMidi Name="extrem" ID="{2FDFE3D5-1F19-4E04-A641-E7789A4964AE}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="95826.0517799353"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="Temp_MIDI" ID="{8712F483-9216-4790-8F22-141191CD8F47}"/>
+																			<MidiSourceRef Name="extrem" ID="{901468AC-18BC-44E0-800E-2AF0435D08C5}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
@@ -787,7 +790,7 @@
 											<MusicCue Name="Exit Cue" ID="{855475F1-A08D-4403-916A-382B1214C3FA}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="97577.6628102608"/>
+													<Property Name="TimeMs" Type="Real64" Value="102808.714450206"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
@@ -797,7 +800,7 @@
 											<MusicCue Name="ENDE" ID="{993176A6-553E-4961-A292-B631DB07DC1E}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="2"/>
-													<Property Name="TimeMs" Type="Real64" Value="93203.8834951456"/>
+													<Property Name="TimeMs" Type="Real64" Value="101296.359909702"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
