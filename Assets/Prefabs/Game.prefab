@@ -133,26 +133,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   noteStartDistance: 30
-  noteEndDistance: -1.5
   trackTargetXStart: -2.7
   trackTargetXEnd: 2.7
-  noteSpeed: 4
+  noteSpeed: 1.71
+  noteCalculationType: 3
   scoreTypes:
   - TimingType: 0
     Distance: 0.1875
+    MillisEasy: 50
+    MillisMid: 33
+    MillisHard: 16
     Score: 100
     IsCombo: 1
   - TimingType: 1
     Distance: 0.375
+    MillisEasy: 80
+    MillisMid: 63
+    MillisHard: 46
     Score: 30
     IsCombo: 1
   - TimingType: 2
     Distance: 0.75
+    MillisEasy: 180
+    MillisMid: 155
+    MillisHard: 130
     Score: 10
     IsCombo: 1
   - TimingType: 3
     Distance: 1.5
+    MillisEasy: 250
+    MillisMid: 225
+    MillisHard: 200
     Score: 5
+    IsCombo: 0
+  - TimingType: 4
+    Distance: 1e+20
+    MillisEasy: 1e+20
+    MillisMid: 1e+20
+    MillisHard: 1e+20
+    Score: 0
     IsCombo: 0
 --- !u!114 &3463506084880733263
 MonoBehaviour:

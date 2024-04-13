@@ -41,15 +41,10 @@ namespace DefaultNamespace
             {
                 return;
             }
+
             var balancing = Singletons.Balancing;
             var note = _currentNotes[trackIndex].Dequeue();
-            var distance = Math.Abs(note.transform.position.z);
-            var noteSpeed = balancing.GetNoteSpeed();
-            var timing = distance / noteSpeed;
-            var millisOff = timing * 100;
-            Debug.Log($"{trackIndex}: {millisOff}ms {distance}u (miss: {balancing.NoteEndDistance / noteSpeed}s)");
-
-            var scoreType = balancing.GetScoreType(distance);
+            var scoreType = balancing.GetScoreTypeByNote(note);
             if (scoreType.IsCombo)
             {
                 SetCombo(Combo + 1);
