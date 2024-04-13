@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{667C5D9A-867E-45A2-B9C3-1367C1FC4950}" SchemaVersion="119">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{667C5D9A-867E-45A2-B9C3-1367C1FC4950}" PersistMode="Standalone">
-			<ChildrenList>
-				<SwitchGroup Name="Difficulty" ID="{47D5DBEE-CCC3-44CC-87B5-558E5346D7E1}">
-					<PropertyList>
-						<Property Name="UseGameParameter" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Switch Name="Easy" ID="{CE644795-EE9C-4063-938D-05106D7A5C45}"/>
-						<Switch Name="Medium" ID="{B7190823-6A94-4C5C-8911-150BF0AA8D42}"/>
-						<Switch Name="Hard" ID="{539B4185-B6FC-4CF9-B58D-3ECC8F2527F5}"/>
-					</ChildrenList>
-					<SwitchOnRTPC>
-						<GameParameterRef Name="Difficulty" ID="{B3C3C1C8-1CA6-4F40-828C-206651011D11}"/>
-						<Curve Name="" ID="{0078DEE6-E00D-4814-B23F-5C59BEA9BC36}">
-							<PropertyList>
-								<Property Name="Flags" Type="int32" Value="65537"/>
-							</PropertyList>
-							<PointList>
-								<Point>
-									<XPos>0</XPos>
-									<YPos>1</YPos>
-									<Flags>5</Flags>
-								</Point>
-								<Point>
-									<XPos>0.89819</XPos>
-									<YPos>2</YPos>
-									<Flags>0</Flags>
-								</Point>
-								<Point>
-									<XPos>1.90148</XPos>
-									<YPos>3</YPos>
-									<Flags>0</Flags>
-								</Point>
-								<Point>
-									<XPos>3</XPos>
-									<YPos>0</YPos>
-									<Flags>37</Flags>
-								</Point>
-							</PointList>
-						</Curve>
-					</SwitchOnRTPC>
-				</SwitchGroup>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{667C5D9A-867E-45A2-B9C3-1367C1FC4950}" PersistMode="Standalone"/>
 	</Switches>
 </WwiseDocument>

@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e7c225b4fff91a4fa3dd596d675978fc
     GuidInternal: 
-    m_lastTime: -8584886447021633079
+    m_lastTime: -8584886484087257647
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ccacdac48f67754f89bb0cfd8df9ae3f
     GuidInternal: 
-    m_lastTime: -8584886447021663080
+    m_lastTime: -8584886484086559555
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e72cc8e0dcbac349b7f08b0c170ec636
     GuidInternal: 
-    m_lastTime: -8584886447021643080
+    m_lastTime: -8584886484086755192
     List:
     - name: General
       guid: ef43457491949145b06983747ccfda57
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a880a669ad975348b22237f1dfee1322
     GuidInternal: 
-    m_lastTime: -8584885727709447081
+    m_lastTime: -8584885606710114522
     List:
     - name: Pause
       guid: 6f5b35b589808d4fbdf3c73fcd07233e
@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: 37a89766e2b40d48a297c797164b37b4
       Path: Events\Default Work Unit\StartGameMusic
       maxAttenuation: 0
-      maxDuration: 111.844666
-      minDuration: 111.844666
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -159,22 +159,8 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a12da0b1c07e8d41afa5f590fb14b9f5
     GuidInternal: 
-    m_lastTime: -8584885727709417053
-    List:
-    - name: Difficulty
-      guid: c8c1c3b3a61c404f828c206651011d11
-      id: 290942698
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: a12da0b1c07e8d41afa5f590fb14b9f5
-      - ElementName: Difficulty
-        ObjectType: 13
-        guid: c8c1c3b3a61c404f828c206651011d11
-      Path: Game Parameters\Default Work Unit\Difficulty
+    m_lastTime: -8584885613853233198
+    List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -187,8 +173,90 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d64710a95d604447a7612ddc43210b7a
     GuidInternal: 
-    m_lastTime: -8584886447021643080
-    List: []
+    m_lastTime: -8584885613853308261
+    List:
+    - name: Difficulty
+      guid: 9ad051eb9570884d9b11385354111907
+      id: 290942698
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d64710a95d604447a7612ddc43210b7a
+      - ElementName: Difficulty
+        ObjectType: 9
+        guid: 9ad051eb9570884d9b11385354111907
+      Path: States\Default Work Unit\Difficulty
+      values:
+      - name: Easy
+        guid: dab532433d684d479c693bfb5dbe5000
+        id: 529018163
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d64710a95d604447a7612ddc43210b7a
+        - ElementName: Difficulty
+          ObjectType: 9
+          guid: 9ad051eb9570884d9b11385354111907
+        - ElementName: Easy
+          ObjectType: 8
+          guid: dab532433d684d479c693bfb5dbe5000
+      - name: Hard
+        guid: e5a7a08dd87d2741a33d463f84cfb391
+        id: 3599861390
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d64710a95d604447a7612ddc43210b7a
+        - ElementName: Difficulty
+          ObjectType: 9
+          guid: 9ad051eb9570884d9b11385354111907
+        - ElementName: Hard
+          ObjectType: 8
+          guid: e5a7a08dd87d2741a33d463f84cfb391
+      - name: Medium
+        guid: 157c5e30e79d55468c49347d6eaa9fcf
+        id: 2849147824
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d64710a95d604447a7612ddc43210b7a
+        - ElementName: Difficulty
+          ObjectType: 9
+          guid: 9ad051eb9570884d9b11385354111907
+        - ElementName: Medium
+          ObjectType: 8
+          guid: 157c5e30e79d55468c49347d6eaa9fcf
+      - name: None
+        guid: 91da7d84c73c2646a6910461535e58c2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d64710a95d604447a7612ddc43210b7a
+        - ElementName: Difficulty
+          ObjectType: 9
+          guid: 9ad051eb9570884d9b11385354111907
+        - ElementName: None
+          ObjectType: 8
+          guid: 91da7d84c73c2646a6910461535e58c2
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -201,74 +269,8 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 9a5d7c667e86a245b9c31367c1fc4950
     GuidInternal: 
-    m_lastTime: -8584885727709117471
-    List:
-    - name: Difficulty
-      guid: eedbd547c3cccc4487b5558e5346d7e1
-      id: 290942698
-      PathAndIcons:
-      - ElementName: Switches
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 9a5d7c667e86a245b9c31367c1fc4950
-      - ElementName: Difficulty
-        ObjectType: 11
-        guid: eedbd547c3cccc4487b5558e5346d7e1
-      Path: Switches\Default Work Unit\Difficulty
-      values:
-      - name: Easy
-        guid: 954764ce9cee6340938d05106d7a5c45
-        id: 529018163
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 9a5d7c667e86a245b9c31367c1fc4950
-        - ElementName: Difficulty
-          ObjectType: 11
-          guid: eedbd547c3cccc4487b5558e5346d7e1
-        - ElementName: Easy
-          ObjectType: 10
-          guid: 954764ce9cee6340938d05106d7a5c45
-      - name: Hard
-        guid: 85419b53fcb6f94cb58d3ecc8f2527f5
-        id: 3599861390
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 9a5d7c667e86a245b9c31367c1fc4950
-        - ElementName: Difficulty
-          ObjectType: 11
-          guid: eedbd547c3cccc4487b5558e5346d7e1
-        - ElementName: Hard
-          ObjectType: 10
-          guid: 85419b53fcb6f94cb58d3ecc8f2527f5
-      - name: Medium
-        guid: 230819b7946a5c4c8911150bf0aa8d42
-        id: 2849147824
-        PathAndIcons:
-        - ElementName: Switches
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 9a5d7c667e86a245b9c31367c1fc4950
-        - ElementName: Difficulty
-          ObjectType: 11
-          guid: eedbd547c3cccc4487b5558e5346d7e1
-        - ElementName: Medium
-          ObjectType: 10
-          guid: 230819b7946a5c4c8911150bf0aa8d42
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8584885613853388335
+    List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -281,11 +283,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e0677c8c40c13d4d92f7bf6d0f902e66
     GuidInternal: 
-    m_lastTime: -8584886447021643080
+    m_lastTime: -8584886484087358125
     List: []
-  ExpandedFileSystemItemIds: 0f00000010000000
-  ExpandedWaapiItemIds: 0200000003000000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
-  currentDataSource: 1
+  currentDataSource: 0
   CurrentPluginConfig: 

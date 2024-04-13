@@ -3,21 +3,19 @@ Event	ID	Name			Wwise Object Path	Notes
 	1568977742	StartGameMusic			\Default Work Unit\StartGameMusic	
 	3092587493	Pause			\Default Work Unit\Pause	
 
-Switch Group	ID	Name			Wwise Object Path	Notes
+State Group	ID	Name			Wwise Object Path	Notes
 	290942698	Difficulty			\Default Work Unit\Difficulty	
 
-Switch	ID	Name	Switch Group			Notes
+State	ID	Name	State Group			Notes
 	529018163	Easy	Difficulty			
+	748895195	None	Difficulty			
 	2849147824	Medium	Difficulty			
 	3599861390	Hard	Difficulty			
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	290942698	Difficulty			\Default Work Unit\Difficulty	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	599441268	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\empty\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	245429244	New Music Track	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Easy\New Music Track		1702891
-	599029832	MIDI	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\easy_B2FF15BB.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Easy\MIDI		1692
+	63106106	MIDI	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\extrem_36E4615E.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Hard\MIDI		4706
+	245429244	New Music Track	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Hard\New Music Track		1702891
 

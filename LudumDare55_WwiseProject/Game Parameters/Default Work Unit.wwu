@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B1A02DA1-7EC0-418D-AFA5-F590FB14B9F5}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{B1A02DA1-7EC0-418D-AFA5-F590FB14B9F5}" PersistMode="Standalone">
-			<ChildrenList>
-				<GameParameter Name="Difficulty" ID="{B3C3C1C8-1CA6-4F40-828C-206651011D11}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="1"/>
-						<Property Name="Max" Type="Real64" Value="3"/>
-					</PropertyList>
-				</GameParameter>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{B1A02DA1-7EC0-418D-AFA5-F590FB14B9F5}" PersistMode="Standalone"/>
 	</GameParameters>
 </WwiseDocument>

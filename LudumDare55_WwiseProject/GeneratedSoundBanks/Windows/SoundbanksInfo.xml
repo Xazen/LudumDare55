@@ -9,17 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{89F51640-1E01-4B87-3606-2C3FE7C10DBF}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{A31F9C93-8E9E-560A-5889-946D8DAD5935}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
+				<File Id="63106106" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>extrem.mid</ShortName>
+					<CachePath>SFX/extrem_36E4615E.wem</CachePath>
+				</File>
 				<File Id="245429244" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GameMusic.wav</ShortName>
 					<CachePath>SFX/GameMusic_56CEF360.wem</CachePath>
-				</File>
-				<File Id="599029832" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>easy.mid</ShortName>
-					<CachePath>SFX/easy_B2FF15BB.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -30,23 +30,83 @@
 			<Events>
 				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="953277036" Name="Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1568977742" Name="StartGameMusic" DurationType="OneShot" DurationMin="111.844666" DurationMax="111.844666">
-					<MediaRefs>
-						<MediaRef Id="245429244"/>
-						<MediaRef Id="599029832"/>
-					</MediaRefs>
-					<PluginRefs>
-						<Custom>
-							<PluginRef Id="599441268"/>
-						</Custom>
-					</PluginRefs>
+				<Event Id="1568977742" Name="StartGameMusic" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="290942698" Id="2849147824"/>
+							<MediaRefs>
+								<MediaRef Id="63106106"/>
+								<MediaRef Id="245429244"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="599441268"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="290942698" Id="748895195"/>
+							<MediaRefs>
+								<MediaRef Id="63106106"/>
+								<MediaRef Id="245429244"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="599441268"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+							<MediaRefs>
+								<MediaRef Id="63106106"/>
+								<MediaRef Id="245429244"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="599441268"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="290942698" Id="0"/>
+							<MediaRefs>
+								<MediaRef Id="63106106"/>
+								<MediaRef Id="245429244"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="599441268"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+							<MediaRefs>
+								<MediaRef Id="63106106"/>
+								<MediaRef Id="245429244"/>
+							</MediaRefs>
+							<PluginRefs>
+								<Custom>
+									<PluginRef Id="599441268"/>
+								</Custom>
+							</PluginRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="290942698" Name="Difficulty"/>
-			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="290942698" Name="Difficulty">
+					<States>
+						<State Id="529018163" Name="Easy"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2849147824" Name="Medium"/>
+						<State Id="3599861390" Name="Hard"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D7B145DB-2825-0EBA-C252-3F1D1FCE543B}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5A7ADAA3-A04A-4866-0BC0-90BDFCB1052D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -58,20 +118,17 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
-			<GameParameters>
-				<GameParameter Id="290942698" Name="Difficulty"/>
-			</GameParameters>
-			<SwitchGroups>
-				<SwitchGroup Id="290942698" Name="Difficulty">
-					<GameParameterRef Id="290942698"/>
-					<Switches>
-						<Switch Id="529018163" Name="Easy"/>
-						<Switch Id="2849147824" Name="Medium"/>
-						<Switch Id="3599861390" Name="Hard"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
+			<StateGroups>
+				<StateGroup Id="290942698" Name="Difficulty">
+					<States>
+						<State Id="529018163" Name="Easy"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2849147824" Name="Medium"/>
+						<State Id="3599861390" Name="Hard"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D80B66BA-59D8-17F2-93B4-7187DC93A02C}</FileHash>
+	<FileHash>{6448E425-C709-8568-79DE-04465F60527A}</FileHash>
 </SoundBanksInfo>

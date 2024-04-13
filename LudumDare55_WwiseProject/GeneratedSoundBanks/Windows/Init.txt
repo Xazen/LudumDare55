@@ -1,8 +1,9 @@
-Switch Group	ID	Name			Wwise Object Path	Notes
+State Group	ID	Name			Wwise Object Path	Notes
 	290942698	Difficulty			\Default Work Unit\Difficulty	
 
-Switch	ID	Name	Switch Group			Notes
+State	ID	Name	State Group			Notes
 	529018163	Easy	Difficulty			
+	748895195	None	Difficulty			
 	2849147824	Medium	Difficulty			
 	3599861390	Hard	Difficulty			
 

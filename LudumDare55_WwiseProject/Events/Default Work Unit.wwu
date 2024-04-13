@@ -30,7 +30,7 @@
 						<Action Name="" ID="{8EA4B3C6-6B2C-415B-98B8-D63A12D392AA}" ShortID="870888646">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GameMusic_Easy" ID="{9AC1A854-899B-494A-A7E0-D20A96338673}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+									<ObjectRef Name="GameMusic" ID="{80E46C1A-4C32-4E4F-96D8-AA0E0556CBBD}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

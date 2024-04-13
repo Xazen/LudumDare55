@@ -888,6 +888,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 167230780666235637, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
+        type: 3}
+      propertyPath: difficulty
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 428064199513028566, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
         type: 3}
       propertyPath: m_LocalPosition.x

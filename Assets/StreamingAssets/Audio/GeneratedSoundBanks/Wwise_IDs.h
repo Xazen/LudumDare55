@@ -18,26 +18,22 @@ namespace AK
         static const AkUniqueID STARTGAMEMUSIC = 1568977742U;
     } // namespace EVENTS
 
-    namespace SWITCHES
+    namespace STATES
     {
         namespace DIFFICULTY
         {
             static const AkUniqueID GROUP = 290942698U;
 
-            namespace SWITCH
+            namespace STATE
             {
                 static const AkUniqueID EASY = 529018163U;
                 static const AkUniqueID HARD = 3599861390U;
                 static const AkUniqueID MEDIUM = 2849147824U;
-            } // namespace SWITCH
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
         } // namespace DIFFICULTY
 
-    } // namespace SWITCHES
-
-    namespace GAME_PARAMETERS
-    {
-        static const AkUniqueID DIFFICULTY = 290942698U;
-    } // namespace GAME_PARAMETERS
+    } // namespace STATES
 
     namespace BANKS
     {

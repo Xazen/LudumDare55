@@ -5,6 +5,13 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public enum Difficulty
+    {
+        Easy,
+        Medium,
+        Hard
+    }
+
     public const float TimeOffset = 6.21359223301f;
 
     [SerializeField]private AK.Wwise.Event MusicEvent;
@@ -19,12 +26,10 @@ public class AudioManager : MonoBehaviour
     /// Start Level Music, set difficult via param
     /// </summary>
     /// <param name="difficulty"> between 0 and 2, 0 is easiest</param>
-    public void StartGameMusic(int difficulty = 1)
+    public void StartGameMusic(Difficulty difficulty)
     {
-        if(difficulty >= 0 && difficulty < 3)
-        { 
-            AkSoundEngine.SetRTPCValue("Difficulty", difficulty); 
-        }        
+        AkSoundEngine.SetState("Difficulty", difficulty.ToString());
+        Debug.Log("Difficulty: " + difficulty.ToString());
         MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue, MidiCallback);
     }
 

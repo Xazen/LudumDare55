@@ -812,31 +812,13 @@
 					<ObjectLists>
 						<ObjectList Name="Arguments">
 							<Reference>
-								<ObjectRef Name="Difficulty" ID="{47D5DBEE-CCC3-44CC-87B5-558E5346D7E1}" WorkUnitID="{667C5D9A-867E-45A2-B9C3-1367C1FC4950}"/>
+								<ObjectRef Name="Difficulty" ID="{EB51D09A-7095-4D88-9B11-385354111907}" WorkUnitID="{A91047D6-605D-4744-A761-2DDC43210B7A}"/>
 							</Reference>
 						</ObjectList>
 						<ObjectList Name="Entries">
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{96B2B98A-9894-4052-A6E2-2CB852191A5A}">
-										<ReferenceList>
-											<Reference Name="AudioNode">
-												<ObjectRef Name="GameMusic_Easy" ID="{9AC1A854-899B-494A-A7E0-D20A96338673}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
-											</Reference>
-										</ReferenceList>
-										<ObjectLists>
-											<ObjectList Name="EntryPath">
-												<Reference>
-													<ObjectRef Name="Easy" ID="{CE644795-EE9C-4063-938D-05106D7A5C45}" WorkUnitID="{667C5D9A-867E-45A2-B9C3-1367C1FC4950}"/>
-												</Reference>
-											</ObjectList>
-										</ObjectLists>
-									</MultiSwitchEntry>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MultiSwitchEntry Name="" ID="{49F3B686-3CBB-4810-B615-B3EE952D533E}">
+									<MultiSwitchEntry Name="" ID="{5B23C2C4-D894-46B7-805F-36218537EDD6}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
 												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
@@ -845,7 +827,7 @@
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Hard" ID="{539B4185-B6FC-4CF9-B58D-3ECC8F2527F5}" WorkUnitID="{667C5D9A-867E-45A2-B9C3-1367C1FC4950}"/>
+													<ObjectRef Name="Medium" ID="{305E7C15-9DE7-4655-8C49-347D6EAA9FCF}" WorkUnitID="{A91047D6-605D-4744-A761-2DDC43210B7A}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -854,16 +836,16 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{0FAA118C-7CFB-44DB-ACEB-1F8928093E09}">
+									<MultiSwitchEntry Name="" ID="{EA0C5822-0F2E-45D4-9B6D-166C703ACDC1}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="GameMusic_Medium" ID="{985FEBAF-DD6B-46BB-A90E-73774C078224}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Medium" ID="{B7190823-6A94-4C5C-8911-150BF0AA8D42}" WorkUnitID="{667C5D9A-867E-45A2-B9C3-1367C1FC4950}"/>
+													<ObjectRef Name="None" ID="{847DDA91-3CC7-4626-A691-0461535E58C2}" WorkUnitID="{A91047D6-605D-4744-A761-2DDC43210B7A}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>
@@ -872,16 +854,52 @@
 							</Reference>
 							<Reference>
 								<Local>
-									<MultiSwitchEntry Name="" ID="{3FEBB618-3222-4D10-BEB3-E6B0CF408C71}">
+									<MultiSwitchEntry Name="" ID="{64AABD58-2B24-411C-9D57-7B03E0485290}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="GameMusic_Medium" ID="{985FEBAF-DD6B-46BB-A90E-73774C078224}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
 											<ObjectList Name="EntryPath">
 												<Reference>
-													<ObjectRef Name="Difficulty" ID="{47D5DBEE-CCC3-44CC-87B5-558E5346D7E1}" WorkUnitID="{667C5D9A-867E-45A2-B9C3-1367C1FC4950}"/>
+													<ObjectRef Name="Hard" ID="{8DA0A7E5-7DD8-4127-A33D-463F84CFB391}" WorkUnitID="{A91047D6-605D-4744-A761-2DDC43210B7A}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{89918EE0-D1FB-4193-A8FB-A3100BBAD814}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Difficulty" ID="{EB51D09A-7095-4D88-9B11-385354111907}" WorkUnitID="{A91047D6-605D-4744-A761-2DDC43210B7A}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{D5347DAA-3B3D-4EC1-A538-92C73452D711}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Easy" ID="{4332B5DA-683D-474D-9C69-3BFB5DBE5000}" WorkUnitID="{A91047D6-605D-4744-A761-2DDC43210B7A}"/>
 												</Reference>
 											</ObjectList>
 										</ObjectLists>

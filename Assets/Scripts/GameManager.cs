@@ -4,6 +4,8 @@ namespace DefaultNamespace
 {
     public class GameManager : MonoBehaviour
     {
+        [SerializeField] private AudioManager.Difficulty difficulty;
+
         private void Awake()
         {
             Singletons.RegisterGameManager(this);
@@ -11,7 +13,7 @@ namespace DefaultNamespace
 
         private void Start()
         {
-            Singletons.AudioManager.StartGameMusic();
+            Singletons.AudioManager.StartGameMusic(difficulty);
             Singletons.PauseMenu.OnPaused += OnPaused;
             Singletons.GameModel.OnHealthZero += OnHealthZero;
         }
