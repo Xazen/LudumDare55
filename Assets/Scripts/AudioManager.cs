@@ -19,7 +19,7 @@ public class AudioManager : MonoBehaviour
     private void MidiCallback(object in_cookie, AkCallbackType in_type, object in_info)
     {
         var midiEvent = (AkMIDIEventCallbackInfo)in_info;
-        if(midiEvent.byParam1 >= 36 && midiEvent.byParam1 <= 39 && midiEvent.byParam2 ==127)
+        if(midiEvent.byParam1 >= 36 && midiEvent.byParam1 <= 39 && midiEvent.byParam2 == 127)
         {
             RhythmCallback?.Invoke(midiEvent.byParam1 - 36);
             Debug.Log("HIT: " + (midiEvent.byParam1 - 36));

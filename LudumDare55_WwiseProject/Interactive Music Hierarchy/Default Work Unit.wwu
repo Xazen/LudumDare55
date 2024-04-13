@@ -150,11 +150,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="Drums_Dennis_v2" ID="{0C7580A6-B2B7-4405-A3BA-55C9C2A5904A}" ShortID="1069815367">
+										<MidiFileSource Name="Groove Agent SE 01" ID="{35B978CB-D157-4257-9B13-279CAFEEBA6E}" ShortID="697879470">
 											<Language>SFX</Language>
-											<MidiFile>Drums_Dennis_v2.mid</MidiFile>
+											<MidiFile>Groove Agent SE 01.mid</MidiFile>
 											<MediaIDList>
-												<MediaID ID="1069815367"/>
+												<MediaID ID="697879470"/>
 											</MediaIDList>
 										</MidiFileSource>
 									</ChildrenList>
@@ -167,11 +167,11 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="Drums_Dennis_v2" ID="{E5D131F8-CE66-4425-916B-4B320EC28585}">
+																		<MusicClipMidi Name="Groove Agent SE 01" ID="{BECD71A7-0217-4FD0-BC0F-54B448486BE6}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="8000.00000000001"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="Drums_Dennis_v2" ID="{0C7580A6-B2B7-4405-A3BA-55C9C2A5904A}"/>
+																			<MidiSourceRef Name="Groove Agent SE 01" ID="{35B978CB-D157-4257-9B13-279CAFEEBA6E}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
@@ -206,7 +206,7 @@
 						</MusicSegment>
 						<MusicSegment Name="onlyMIDI" ID="{816F36C7-6B34-4BE0-8E97-E33F087E3096}" ShortID="614388436">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="11787.1376811594"/>
+								<Property Name="EndPosition" Type="Real64" Value="13300"/>
 								<Property Name="OverrideMidiTarget" Type="bool" Value="True"/>
 								<Property Name="OverrideMidiTempo" Type="bool" Value="True"/>
 							</PropertyList>
@@ -265,11 +265,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="Drums_Dennis_v2" ID="{57A28331-EF9B-409F-93F4-E623672EFCF9}" ShortID="1057886888">
+										<MidiFileSource Name="Groove Agent SE 01" ID="{D7217136-8356-4439-8824-B7F9B70B00EB}" ShortID="104342906">
 											<Language>SFX</Language>
-											<MidiFile>Drums_Dennis_v2.mid</MidiFile>
+											<MidiFile>Groove Agent SE 01.mid</MidiFile>
 											<MediaIDList>
-												<MediaID ID="1069815367"/>
+												<MediaID ID="697879470"/>
 											</MediaIDList>
 										</MidiFileSource>
 									</ChildrenList>
@@ -282,11 +282,11 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="Drums_Dennis_v2" ID="{64E7C778-447D-42B7-8D9B-0D0829F85CEE}">
+																		<MusicClipMidi Name="Groove Agent SE 01" ID="{68F1F269-D9C6-4B07-B349-A16D7EABE4BC}">
 																			<PropertyList>
 																				<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="Drums_Dennis_v2" ID="{57A28331-EF9B-409F-93F4-E623672EFCF9}"/>
+																			<MidiSourceRef Name="Groove Agent SE 01" ID="{D7217136-8356-4439-8824-B7F9B70B00EB}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
