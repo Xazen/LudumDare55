@@ -1,4 +1,3 @@
-using System;
 using DefaultNamespace;
 using DG.Tweening;
 using UnityEngine;
@@ -29,7 +28,7 @@ public class NoteController : MonoBehaviour
         Singletons.NotePool.ReturnNote(note);
     }
 
-    private void OnNoteReceived(int trackIndex)
+    private void OnNoteReceived(int trackIndex, bool isDragonBall)
     {
         SpawnNote(trackIndex);
     }
