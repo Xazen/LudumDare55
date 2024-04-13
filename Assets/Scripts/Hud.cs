@@ -118,6 +118,8 @@ public class Hud : MonoBehaviour
     private void PlayScaleAnimation(Transform t, Action onComplete = null)
     {
         t.localScale = Vector3.one;
-        t.DOScale(scaleMultiplier, scaleDuration).SetLoops(2, LoopType.Yoyo).OnComplete(() => onComplete?.Invoke());
+        t.DOScale(scaleMultiplier, scaleDuration).SetLoops(2, LoopType.Yoyo)
+            .SetEase(Ease.OutQuint)
+            .OnComplete(() => onComplete?.Invoke());
     }
 }

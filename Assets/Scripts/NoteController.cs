@@ -32,6 +32,11 @@ public class NoteController : MonoBehaviour
     {
         Singletons.NotePool.ReturnNote(note);
         _noteTweens.Remove(note);
+
+        if (scoreType.TimingType != TimingType.Miss)
+        {
+            note.transform.localScale = Vector3.one * 0.5f;
+        }
     }
 
     private void OnNoteReceived(int trackIndex, bool isDragonBall)
@@ -56,16 +61,9 @@ public class NoteController : MonoBehaviour
                 note.gameObject.SetActive(true);
                 Singletons.GameModel.RegisterNote(note, trackIndex);
             })
-            .OnUpdate(() =>
-            {
-                if (note.transform.position.z < 0)
-                {
-                    note.transform.localScale = Vector3.one * 0.5f;
-                }
-            })
             .OnComplete(() =>
             {
-                Singletons.GameModel.RemoveNoteFromTrack(trackIndex);
+                Singletons.GameModel.RegisterMiss(trackIndex);
                 Singletons.NotePool.ReturnNote(note);
                 OnNoteReachedEnd?.Invoke(note);
                 _noteTweens.Remove(note);

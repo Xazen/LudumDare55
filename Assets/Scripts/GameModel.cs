@@ -29,9 +29,10 @@ namespace DefaultNamespace
             _currentNotes[trackIndex].Enqueue(note);
         }
 
-        public void RemoveNoteFromTrack(int trackIndex)
+        public void RegisterMiss(int trackIndex)
         {
             _currentNotes[trackIndex].Dequeue();
+            SetCombo(0);
         }
 
         public void PlayNote(int trackIndex)
