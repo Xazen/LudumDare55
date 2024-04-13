@@ -1748,6 +1748,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
+        type: 3}
+      propertyPath: noteSpeed
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
+        type: 3}
+      propertyPath: noteEndDistance
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
+        type: 3}
+      propertyPath: trackTargetXEnd
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900983170622384220, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
+        type: 3}
+      propertyPath: trackTargetXStart
+      value: -2.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6872728303268569313, guid: 6cfd8ef7ea1e9a746a37798c4d6340f4,
         type: 3}
       propertyPath: m_Name

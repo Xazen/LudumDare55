@@ -27,13 +27,14 @@ public class NoteController : MonoBehaviour
         var note = Singletons.NotePool.GetNote();
 
         note.SetTrack(trackIndex);
-        var noteXPosition = Singletons.Balancing.TrackTargetXStart + Singletons.Balancing.TrackStepDistance * trackIndex;
-        note.transform.position = new Vector3(noteXPosition, 0, Singletons.Balancing.NoteStartDistance);
+        note.transform.position = Singletons.Balancing.GetNoteSpawnPosition(trackIndex);
         note.transform.localScale = Vector3.one;
 
-        note.transform.DOMoveZ(Singletons.Balancing.NoteEndDistance, Singletons.Balancing.NoteStartDistance / AudioManager.TimeOffset)
+        note.transform.DOMoveZ(Singletons.Balancing.NoteEndDistance, Singletons.Balancing.GetNoteSpeed())
+            .SetDelay(Singletons.Balancing.NoteSpeed)
             .SetSpeedBased(true)
             .SetEase(Ease.Linear)
+            .OnStart(() => { note.gameObject.SetActive(true); })
             .OnUpdate(() =>
             {
                 if (note.transform.position.z < 0)
@@ -42,7 +43,5 @@ public class NoteController : MonoBehaviour
                 }
             })
             .OnComplete(() => { Singletons.NotePool.ReturnNote(note); });
-
-        note.gameObject.SetActive(true);
     }
 }
