@@ -24,6 +24,9 @@ State	ID	Name	State Group			Notes
 	1521187885	StartGame	GameState			
 	3604647259	MainMenu	GameState			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3588017774	PitchModifier			\Default Work Unit\PitchModifier	
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	599441268	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\empty\Silence	
 

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{B401C0DE-8C1D-38E8-75D6-7D38D8A28D65}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{6B1A7C92-90CD-E0CD-1264-08CD5EFED936}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -487,6 +487,9 @@
 					</SwitchContainers>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3588017774" Name="PitchModifier"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="290942698" Name="Difficulty">
 					<States>
@@ -507,7 +510,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FD4CBD0D-3C9C-772E-8904-5AD2BC0BE82F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6294CC2A-0202-BADD-CD7F-1E2BBACF65EC}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -519,6 +522,9 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="3588017774" Name="PitchModifier"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="290942698" Name="Difficulty">
 					<States>
@@ -540,5 +546,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{32FC374A-85A3-10F2-FA06-A43053811F75}</FileHash>
+	<FileHash>{8450B19A-F613-C0A8-7A82-D69674EBC901}</FileHash>
 </SoundBanksInfo>

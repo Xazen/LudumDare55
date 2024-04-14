@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public const float TimeOffset = 6.21359223301f;
 
     [SerializeField] private AK.Wwise.Event MusicEvent;
+    [SerializeField] private GameObject[] ArrowObjects; 
     [HideInInspector] public Action<int, bool> RhythmCallback;
     [HideInInspector] public Action<bool> GameEnded;
     [HideInInspector] public Action<WonTriggers> WonTrigger;
@@ -110,12 +111,14 @@ public class AudioManager : MonoBehaviour
 
     public void Play_Hit(int arrowNumber)
     {
-        AkSoundEngine.PostEvent("Play_hit", gameObject);
+        AkSoundEngine.SetRTPCValue("PitchModifier", arrowNumber, ArrowObjects[arrowNumber]);
+        AkSoundEngine.PostEvent("Play_hit", ArrowObjects[arrowNumber]);
     }
 
     public void Play_pressArrow(int arrowNumber)
     {
-        AkSoundEngine.PostEvent("Play_reflect_deflect", gameObject);
+        AkSoundEngine.SetRTPCValue("PitchModifier", arrowNumber, ArrowObjects[arrowNumber]);
+        AkSoundEngine.PostEvent("Play_reflect_deflect", ArrowObjects[arrowNumber]);
     }
 
     private void PostMusicEvent()

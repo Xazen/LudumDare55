@@ -5,7 +5,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	529018163	Easy	Difficulty			
 	748895195	None	Difficulty			
-	2849147824	Medium	Difficulty			
+	1160234136	Normal	Difficulty			
 	3599861390	Hard	Difficulty			
 	221232711	Lost	GameState			
 	748895195	None	GameState			
