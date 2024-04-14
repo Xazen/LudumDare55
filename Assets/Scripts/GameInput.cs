@@ -6,7 +6,7 @@ namespace DefaultNamespace
     {
         private void Update()
         {
-            if (Singletons.PauseMenu.IsPaused)
+            if (Singletons.PauseMenu.IsPaused || GlobalSettings.BlockInput)
             {
                 return;
             }

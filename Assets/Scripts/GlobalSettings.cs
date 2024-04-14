@@ -13,5 +13,6 @@
         public static NoteCalculationType NoteTiming { get; set; } = NoteCalculationType.Normal;
         public static int NoteOffsetMillis { get; set; } = 0;
         public static bool PendingRestart { get; set; }
+        public static bool BlockInput;
     }
 }

@@ -46,6 +46,11 @@ namespace DefaultNamespace
 
         private void Update()
         {
+            if (Singletons.GameOver.IsOpen || GlobalSettings.BlockInput)
+            {
+                return;
+            }
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 pauseContainer.SetActive(!pauseContainer.activeSelf);
