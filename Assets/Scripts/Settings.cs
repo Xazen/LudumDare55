@@ -57,6 +57,14 @@ public class Settings : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(difficultyControl.GetLeftButton());
     }
 
+    private void Update()
+    {
+        if (!EventSystem.current.currentSelectedGameObject)
+        {
+            EventSystem.current.SetSelectedGameObject(difficultyControl.GetLeftButton());
+        }
+    }
+
     private void OnNotePlayed(int arg1, NoteView arg2, ScoreType arg3)
     {
         PlayScaleAnimation(notePreview.transform);

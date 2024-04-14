@@ -1,3 +1,4 @@
+using System;
 using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -18,6 +19,14 @@ public class MainMenu : MonoBehaviour
         settingsButton.onClick.AddListener(OpenSettings);
 
         EventSystem.current.SetSelectedGameObject(startButton.gameObject);
+    }
+
+    private void Update()
+    {
+        if (!EventSystem.current.currentSelectedGameObject)
+        {
+            EventSystem.current.SetSelectedGameObject(startButton.gameObject);
+        }
     }
 
     private void OpenSettings()

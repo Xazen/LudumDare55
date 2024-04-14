@@ -33,11 +33,14 @@ namespace DefaultNamespace
 
         private void RestartGame()
         {
+            GlobalSettings.PendingRestart = true;
             SceneManager.LoadScene("Game");
         }
 
         private void OpenMenu()
         {
+            Singletons.AudioManager.ResumeMusic();
+            Singletons.AudioManager.ToMenu();
             SceneManager.LoadScene("MainMenu");
         }
 
@@ -52,6 +55,14 @@ namespace DefaultNamespace
                 }
                 IsPaused = pauseContainer.activeSelf;
                 OnPaused?.Invoke(pauseContainer.activeSelf);
+            }
+
+            if (IsPaused)
+            {
+                if (!EventSystem.current.currentSelectedGameObject)
+                {
+                    EventSystem.current.SetSelectedGameObject(continueButton.gameObject);
+                }
             }
         }
 
