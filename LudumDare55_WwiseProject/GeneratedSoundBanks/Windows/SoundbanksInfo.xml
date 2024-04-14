@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{9ADB01EE-C463-34C7-1D65-508E771335EA}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{AB12A380-573C-5B6F-6E35-6BE9F41FD699}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -43,7 +43,7 @@
 				</File>
 				<File Id="599029832" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>easy.mid</ShortName>
-					<CachePath>SFX/easy_36468A77.wem</CachePath>
+					<CachePath>SFX/easy_1939BFF3.wem</CachePath>
 				</File>
 				<File Id="832335081" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MenuMusic.wav</ShortName>
@@ -55,7 +55,7 @@
 				</File>
 				<File Id="956268283" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>db_glowing.wav</ShortName>
-					<CachePath>SFX/db_glowing_56CEF360.wem</CachePath>
+					<CachePath>SFX/db_glowing_0A5E057F.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -64,7 +64,11 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="223291225" Name="DragonballTrigger" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="223291225" Name="DragonballTrigger" DurationType="OneShot" DurationMin="1.2713786" DurationMax="1.2713786">
+					<MediaRefs>
+						<MediaRef Id="956268283"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2960666077" Name="Play_hit" DurationType="OneShot" DurationMin="0.26889583" DurationMax="0.26889583">
 					<MediaRefs>
@@ -527,5 +531,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8AB17F10-4BCD-1E18-EFB4-110AD4EAB2E6}</FileHash>
+	<FileHash>{58FF5D7E-56D1-8BFB-769A-FDAE52D652B8}</FileHash>
 </SoundBanksInfo>

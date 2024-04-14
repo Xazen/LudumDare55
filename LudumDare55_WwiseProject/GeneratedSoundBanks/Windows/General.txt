@@ -34,8 +34,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	384659675	reflect_deflect	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\reflect_deflect_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\reflect_deflect		2768
 	506408390	hit	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\hit_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\hit		2772
 	532671255	Winning_Cue	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Winning_Cue_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Won\Winning_Cue\Winning_Cue		378296
-	599029832	easy	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\easy_36468A77.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy\easy		3902
-	832335081	MenuMusic	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\MenuMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MenuMusic\menumusic\MenuMusic		448167
+	599029832	easy	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\easy_1939BFF3.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy\easy		3892
+	832335081	MenuMusic	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\MenuMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MenuMusic\menumusic\MenuMusic		449916
 	864535348	Lost_Cue	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Lost_Cue_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Lost\Lost\Lost_Cue		67688
-	956268283	Dragonball Glow	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\db_glowing_56CEF360.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragonball Glow		34468
+	956268283	Dragonball Glow	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\db_glowing_0A5E057F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragonball Glow		12128
 

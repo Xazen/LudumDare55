@@ -67,7 +67,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="DragonballTrigger" ID="{26D388EC-ECDF-47D4-AAD2-504BE5C54134}"/>
+				<Event Name="DragonballTrigger" ID="{26D388EC-ECDF-47D4-AAD2-504BE5C54134}">
+					<ChildrenList>
+						<Action Name="" ID="{409346E4-3251-4BD5-A25F-595837662C00}" ShortID="477119055">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dragonball Glow" ID="{78CF7EF8-9D00-4CD9-AF5E-DBB6D44FDF9C}" WorkUnitID="{A23D6C7F-326B-48B9-A62A-C5F324920728}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Play_hit" ID="{C386F61A-AF31-4475-8120-B1DA1737AF7A}">
 					<ChildrenList>
 						<Action Name="" ID="{67CF5874-DC52-4E3F-AE5B-3381164A971C}" ShortID="565937417">
