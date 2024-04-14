@@ -323,6 +323,7 @@
 				</MusicPlaylistContainer>
 				<MusicSwitchContainer Name="GameMusic" ID="{80E46C1A-4C32-4E4F-96D8-AA0E0556CBBD}" ShortID="982344855">
 					<PropertyList>
+						<Property Name="MidiTempoSource" Type="int16" Value="1"/>
 						<Property Name="Tempo" Type="Real64" Value="154.5"/>
 					</PropertyList>
 					<ReferenceList>
@@ -351,7 +352,7 @@
 					<ChildrenList>
 						<MusicSegment Name="GameMusic_Easy" ID="{9AC1A854-899B-494A-A7E0-D20A96338673}" ShortID="1035752507">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="207851.099537635"/>
+								<Property Name="EndPosition" Type="Real64" Value="310988.882483819"/>
 								<Property Name="Tempo" Type="Real64" Value="154.5"/>
 							</PropertyList>
 							<ReferenceList>
@@ -386,7 +387,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="easy" ID="{653E8634-7A9E-4FEF-951C-4CF06C238490}" ShortID="679873365">
+										<MidiFileSource Name="easy" ID="{47DB236F-8673-4816-B921-0EA0FE82A826}" ShortID="714286610">
 											<Language>SFX</Language>
 											<MidiFile>easy.mid</MidiFile>
 											<MediaIDList>
@@ -403,11 +404,12 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="easy" ID="{D7BFEAB6-94A1-4E47-A617-7F3FD6E89CC1}">
+																		<MusicClipMidi Name="easy" ID="{154FF3C6-4EE1-462B-9AD8-B0F1F1391DCC}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="95826.0517799353"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="300708.796068796"/>
+																				<Property Name="PlayAt" Type="Real64" Value="3106.79611650485"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="easy" ID="{653E8634-7A9E-4FEF-951C-4CF06C238490}"/>
+																			<MidiSourceRef Name="easy" ID="{47DB236F-8673-4816-B921-0EA0FE82A826}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
@@ -436,11 +438,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="GameMusic" ID="{FC841BAC-49FC-48DB-B611-6DACD23344B1}">
+										<AudioFileSource Name="GameMusic_v2" ID="{D41CBA67-4227-4DE5-A5E6-A16747A4AC87}">
 											<Language>SFX</Language>
-											<AudioFile>GameMusic.wav</AudioFile>
+											<AudioFile>GameMusic_v2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="245429244"/>
+												<MediaID ID="319173140"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -453,13 +455,74 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="GameMusic" ID="{348FE77F-E006-4DEB-BFE7-695B93DCC5C9}">
+																		<MusicClip Name="GameMusic_v2" ID="{D3AEF36F-E751-4CE9-B9A1-428B6C50D6F8}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="111844.666666667"/>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="9320.38834951455"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="320309.270833333"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-9320.38834951455"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="GameMusic" ID="{FC841BAC-49FC-48DB-B611-6DACD23344B1}"/>
+																			<AudioSourceRef Name="GameMusic_v2" ID="{D41CBA67-4227-4DE5-A5E6-A16747A4AC87}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{E3EB83A7-3E6A-4310-AB75-B7CFDEA05BFF}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{EF31F953-EC1E-4FBC-8FBD-FB9FF7388B42}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{7FC2A6D8-AD21-486C-AD2D-F64D8C6EF0CC}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -504,7 +567,7 @@
 						</MusicSegment>
 						<MusicSegment Name="GameMusic_Medium" ID="{985FEBAF-DD6B-46BB-A90E-73774C078224}" ShortID="80452328">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="207851.099537635"/>
+								<Property Name="EndPosition" Type="Real64" Value="323416.066949838"/>
 								<Property Name="Tempo" Type="Real64" Value="154.5"/>
 							</PropertyList>
 							<ReferenceList>
@@ -539,7 +602,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="middle" ID="{1BFB4FB3-EA52-4B81-9826-7253EBB5E71D}" ShortID="673320002">
+										<MidiFileSource Name="middle" ID="{7DB797D1-47F1-4389-A245-D28C9A2BD03C}" ShortID="354309765">
 											<Language>SFX</Language>
 											<MidiFile>middle.mid</MidiFile>
 											<MediaIDList>
@@ -556,11 +619,12 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="middle" ID="{6822ACC8-1C8D-4BDA-BCF9-562C9157C964}">
+																		<MusicClipMidi Name="middle" ID="{EDDD729C-CAB7-4358-B15E-20DD9C6319A6}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="95826.0517799353"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="95825.9287479661"/>
+																				<Property Name="PlayAt" Type="Real64" Value="3106.79611650485"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="middle" ID="{1BFB4FB3-EA52-4B81-9826-7253EBB5E71D}"/>
+																			<MidiSourceRef Name="middle" ID="{7DB797D1-47F1-4389-A245-D28C9A2BD03C}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
@@ -589,11 +653,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="GameMusic" ID="{AA59FD8C-5C09-4091-9599-B9CEFFDC8D9D}">
+										<AudioFileSource Name="GameMusic_v2" ID="{73D93A70-5A3B-4C8D-A89F-67A3991685DB}">
 											<Language>SFX</Language>
-											<AudioFile>GameMusic.wav</AudioFile>
+											<AudioFile>GameMusic_v2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="245429244"/>
+												<MediaID ID="319173140"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -606,13 +670,74 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="GameMusic" ID="{C6E998DF-7824-473C-A717-85E838F88C7F}">
+																		<MusicClip Name="GameMusic_v2" ID="{59A0D2D4-43B0-448A-BA6A-9228D08A977B}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="111844.666666667"/>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="9320.38834951455"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="320309.270833333"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-9320.38834951455"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="GameMusic" ID="{AA59FD8C-5C09-4091-9599-B9CEFFDC8D9D}"/>
+																			<AudioSourceRef Name="GameMusic_v2" ID="{73D93A70-5A3B-4C8D-A89F-67A3991685DB}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{83F1A28A-5F49-4A5F-8908-8E3A8A027839}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{05685C0D-109E-4B54-BC22-85297B711372}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{06799550-FEE3-4B51-AF88-33CF840A0632}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -657,7 +782,7 @@
 						</MusicSegment>
 						<MusicSegment Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" ShortID="846352407">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="207851.099537635"/>
+								<Property Name="EndPosition" Type="Real64" Value="313707.329085761"/>
 								<Property Name="Tempo" Type="Real64" Value="154.5"/>
 							</PropertyList>
 							<ReferenceList>
@@ -692,7 +817,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MidiFileSource Name="extrem" ID="{901468AC-18BC-44E0-800E-2AF0435D08C5}" ShortID="63106106">
+										<MidiFileSource Name="extrem" ID="{26D4FC70-A2E1-43B6-8D31-ABF396F16CF1}" ShortID="910863428">
 											<Language>SFX</Language>
 											<MidiFile>extrem.mid</MidiFile>
 											<MediaIDList>
@@ -709,11 +834,12 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClipMidi Name="extrem" ID="{2FDFE3D5-1F19-4E04-A641-E7789A4964AE}">
+																		<MusicClipMidi Name="extrem" ID="{9DFA9413-7850-444A-8673-4270DD39150A}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="95826.0517799353"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="300708.796068796"/>
+																				<Property Name="PlayAt" Type="Real64" Value="3106.79611650485"/>
 																			</PropertyList>
-																			<MidiSourceRef Name="extrem" ID="{901468AC-18BC-44E0-800E-2AF0435D08C5}"/>
+																			<MidiSourceRef Name="extrem" ID="{26D4FC70-A2E1-43B6-8D31-ABF396F16CF1}"/>
 																		</MusicClipMidi>
 																	</Local>
 																</Reference>
@@ -742,11 +868,11 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="GameMusic" ID="{6C70D7FC-8E6C-4F0C-AB93-AA7322AA5827}">
+										<AudioFileSource Name="GameMusic_v2" ID="{77068D45-A955-45DE-A2FF-CA685C948CC3}">
 											<Language>SFX</Language>
-											<AudioFile>GameMusic.wav</AudioFile>
+											<AudioFile>GameMusic_v2.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="245429244"/>
+												<MediaID ID="319173140"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -759,13 +885,74 @@
 															<ObjectList Name="Clips">
 																<Reference>
 																	<Local>
-																		<MusicClip Name="GameMusic" ID="{4F4D1121-C5E5-407E-A216-65B6A38C8D53}">
+																		<MusicClip Name="GameMusic_v2" ID="{185DCCB1-3180-41DF-B1D7-50592D8219A1}">
 																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="111844.666666667"/>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="9320.38834951455"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="320309.270833333"/>
 																				<Property Name="FadeInMode" Type="int16" Value="0"/>
 																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-9320.38834951455"/>
 																			</PropertyList>
-																			<AudioSourceRef Name="GameMusic" ID="{6C70D7FC-8E6C-4F0C-AB93-AA7322AA5827}"/>
+																			<AudioSourceRef Name="GameMusic_v2" ID="{77068D45-A955-45DE-A2FF-CA685C948CC3}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{DA437C85-5943-45A2-A850-B60D9084A810}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{DB45B1C4-4A46-42F2-842C-5DD873A71AC7}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{92EC0C72-4881-4A67-80FB-97ED55E9065F}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>9.32039</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>320.309270833333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
 																		</MusicClip>
 																	</Local>
 																</Reference>
@@ -821,7 +1008,7 @@
 									<MultiSwitchEntry Name="" ID="{5B23C2C4-D894-46B7-805F-36218537EDD6}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												<ObjectRef Name="GameMusic_Medium" ID="{985FEBAF-DD6B-46BB-A90E-73774C078224}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
@@ -839,7 +1026,7 @@
 									<MultiSwitchEntry Name="" ID="{EA0C5822-0F2E-45D4-9B6D-166C703ACDC1}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												<ObjectRef Name="GameMusic_Medium" ID="{985FEBAF-DD6B-46BB-A90E-73774C078224}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
@@ -875,7 +1062,7 @@
 									<MultiSwitchEntry Name="" ID="{89918EE0-D1FB-4193-A8FB-A3100BBAD814}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												<ObjectRef Name="GameMusic_Medium" ID="{985FEBAF-DD6B-46BB-A90E-73774C078224}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
@@ -893,7 +1080,7 @@
 									<MultiSwitchEntry Name="" ID="{D5347DAA-3B3D-4EC1-A538-92C73452D711}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="GameMusic_Hard" ID="{03BE217B-2450-4043-A415-A7D58CDFBDE4}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												<ObjectRef Name="GameMusic_Easy" ID="{9AC1A854-899B-494A-A7E0-D20A96338673}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
