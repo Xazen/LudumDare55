@@ -12,6 +12,9 @@ public class NoteView : MonoBehaviour
     [SerializeField]
     private GameObject[] dragonBalls;
 
+    private int _trackIndex;
+    public int TrackIndex => _trackIndex;
+
     public bool IsDragonBall { get; private set; } = false;
 
     private void OnDisable()
@@ -26,6 +29,7 @@ public class NoteView : MonoBehaviour
 
     public void SetTrack(int trackIndex)
     {
+        _trackIndex = trackIndex;
         debugTrackText.text = trackIndex.ToString();
     }
 

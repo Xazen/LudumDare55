@@ -124,5 +124,30 @@ namespace DefaultNamespace
             Health = health;
             OnHealthChanged?.Invoke(health);
         }
+
+        public List<NoteView> GetPerfectNotes()
+        {
+            var perfectNotes = new List<NoteView>();
+            foreach (var noteQueue in _currentNotes.Values)
+            {
+                if (noteQueue.Count == 0)
+                {
+                    continue;
+                }
+
+                var note = noteQueue.Peek();
+                if (note.IsDragonBall)
+                {
+                    continue;
+                }
+
+                var score = Singletons.Balancing.GetScoreTypeByNote(note);
+                if (score.TimingType == TimingType.Perfect)
+                {
+                    perfectNotes.Add(note);
+                }
+            }
+            return perfectNotes;
+        }
     }
 }

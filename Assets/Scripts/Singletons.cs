@@ -19,6 +19,8 @@
 
         private static PauseMenu _pauseMenu;
         public static PauseMenu PauseMenu => _pauseMenu;
+        private static Playfield _playfield;
+        public static Playfield Playfield => _playfield;
 
         public static void RegisterNotePool(NotePool notePool)
         {
@@ -48,6 +50,11 @@
         public static void RegisterGameModel(GameModel gameModel)
         {
             _gameModel = gameModel;
+        }
+
+        public static void RegisterPlayfield(Playfield playfield)
+        {
+            _playfield = playfield;
         }
     }
 }
