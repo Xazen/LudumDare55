@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{24AAD697-F993-1BC5-FA38-48EECE60B5EE}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{1E6C0C69-B399-05BE-91D8-3BDD713CBE79}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -37,6 +37,10 @@
 					<ShortName>easy.mid</ShortName>
 					<CachePath>SFX/easy_36468A77.wem</CachePath>
 				</File>
+				<File Id="832335081" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>MenuMusic.wav</ShortName>
+					<CachePath>SFX/MenuMusic_56CEF360.wem</CachePath>
+				</File>
 				<File Id="864535348" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Lost_Cue.wav</ShortName>
 					<CachePath>SFX/Lost_Cue_56CEF360.wem</CachePath>
@@ -53,9 +57,27 @@
 				<Event Id="1568977742" Name="StartGameMusic" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="0"/>
+							<MediaRefs>
+								<MediaRef Id="832335081"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="3604647259"/>
+							<MediaRefs>
+								<MediaRef Id="832335081"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="221232711"/>
 							<MediaRefs>
 								<MediaRef Id="864535348"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="748895195"/>
+							<MediaRefs>
+								<MediaRef Id="832335081"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -188,5 +210,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{32DF37A4-DD76-5213-C0F8-5633C955C0FA}</FileHash>
+	<FileHash>{51C619C0-EB40-3202-435E-BACCB6D30369}</FileHash>
 </SoundBanksInfo>

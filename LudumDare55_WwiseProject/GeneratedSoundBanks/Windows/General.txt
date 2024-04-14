@@ -30,5 +30,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	368359292	Winning_Points	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Winning_Points_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Won\Winning_Points\Winning_Points		757191
 	532671255	Winning_Cue	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Winning_Cue_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Won\Winning_Cue\Winning_Cue		378296
 	599029832	easy	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\easy_36468A77.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy\easy		3902
+	832335081	MenuMusic	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\MenuMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MenuMusic\menumusic\MenuMusic		448167
 	864535348	Lost_Cue	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Lost_Cue_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Lost\Lost\Lost_Cue		67688
 
