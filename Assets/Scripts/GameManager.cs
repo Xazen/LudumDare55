@@ -5,10 +5,12 @@ namespace DefaultNamespace
     public class GameManager : MonoBehaviour
     {
         [SerializeField] private AudioManager.Difficulty difficulty;
+        [SerializeField] private Balancing balancing;
 
         private void Awake()
         {
             Singletons.RegisterGameManager(this);
+            Singletons.RegisterBalancing(balancing);
         }
 
         private void Start()

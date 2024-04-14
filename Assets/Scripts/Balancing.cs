@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class Balancing : MonoBehaviour
+    [CreateAssetMenu(fileName = "Balancing", menuName = "ScriptableObjects/Balancing", order = 1)]
+    public class Balancing : ScriptableObject
     {
         public const int TrackCount = 4;
 
@@ -34,6 +35,13 @@ namespace DefaultNamespace
         public int MinComboForHeal => minComboForHeal;
         public int HealthIncrease => healthIncrease;
 
+        void Init()
+        {
+            scoreTypes.Sort((a, b) => a.Distance.CompareTo(b.Distance));
+
+            LogBalancing();
+        }
+
         public float GetMaxNoteDistance()
         {
             var badType = scoreTypes.Find(type => type.TimingType == TimingType.Bad);
@@ -56,14 +64,7 @@ namespace DefaultNamespace
 
         private void Awake()
         {
-            Singletons.RegisterBalancing(this);
-        }
-
-        void Start()
-        {
-            scoreTypes.Sort((a, b) => a.Distance.CompareTo(b.Distance));
-
-            LogBalancing();
+            Init();
         }
 
         private void LogBalancing()
