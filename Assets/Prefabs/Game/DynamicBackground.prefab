@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7207031836621401263}
+  - component: {fileID: 1917654091634352573}
   m_Layer: 0
   m_Name: DynamicBackground
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 5116970807448760420}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1917654091634352573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652186035007611134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce6812adc06e95479b38f6667dfea12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragonBalls:
+  - {fileID: 5618941818810700998}
+  - {fileID: 8616763592161380705}
+  - {fileID: 2273026195552871590}
+  - {fileID: 8005087153654823968}
+  - {fileID: 3497051749944915030}
+  - {fileID: 995898836957804435}
+  - {fileID: 1141909955214528131}
+  scaleDuration: 0.5
 --- !u!1001 &6580243131262169860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40,6 +62,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7207031836621401263}
     m_Modifications:
+    - target: {fileID: 1633616529119078338, guid: e88cde674cf534b4e8e3b372a3384316,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2040862446625948512, guid: e88cde674cf534b4e8e3b372a3384316,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -185,6 +212,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3226086510731836005, guid: e88cde674cf534b4e8e3b372a3384316,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3766821394696277796, guid: e88cde674cf534b4e8e3b372a3384316,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4543464299435578782, guid: e88cde674cf534b4e8e3b372a3384316,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -223,6 +260,11 @@ PrefabInstance:
     - target: {fileID: 4543464299435578782, guid: e88cde674cf534b4e8e3b372a3384316,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961507786849769378, guid: e88cde674cf534b4e8e3b372a3384316,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5733365617846881560, guid: e88cde674cf534b4e8e3b372a3384316,
@@ -269,6 +311,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DragonBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091498164561296775, guid: e88cde674cf534b4e8e3b372a3384316,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6233998883673719959, guid: e88cde674cf534b4e8e3b372a3384316,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6757735181798186541, guid: e88cde674cf534b4e8e3b372a3384316,
         type: 3}
@@ -375,14 +427,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7771451858954618706, guid: e88cde674cf534b4e8e3b372a3384316,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e88cde674cf534b4e8e3b372a3384316, type: 3}
+--- !u!1 &995898836957804435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6233998883673719959, guid: e88cde674cf534b4e8e3b372a3384316,
+    type: 3}
+  m_PrefabInstance: {fileID: 6580243131262169860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1141909955214528131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6091498164561296775, guid: e88cde674cf534b4e8e3b372a3384316,
+    type: 3}
+  m_PrefabInstance: {fileID: 6580243131262169860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2273026195552871590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4961507786849769378, guid: e88cde674cf534b4e8e3b372a3384316,
+    type: 3}
+  m_PrefabInstance: {fileID: 6580243131262169860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3497051749944915030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7771451858954618706, guid: e88cde674cf534b4e8e3b372a3384316,
+    type: 3}
+  m_PrefabInstance: {fileID: 6580243131262169860}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5116970807448760420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2040862446625948512, guid: e88cde674cf534b4e8e3b372a3384316,
+    type: 3}
+  m_PrefabInstance: {fileID: 6580243131262169860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5618941818810700998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1633616529119078338, guid: e88cde674cf534b4e8e3b372a3384316,
+    type: 3}
+  m_PrefabInstance: {fileID: 6580243131262169860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8005087153654823968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3766821394696277796, guid: e88cde674cf534b4e8e3b372a3384316,
+    type: 3}
+  m_PrefabInstance: {fileID: 6580243131262169860}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8616763592161380705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3226086510731836005, guid: e88cde674cf534b4e8e3b372a3384316,
     type: 3}
   m_PrefabInstance: {fileID: 6580243131262169860}
   m_PrefabAsset: {fileID: 0}
