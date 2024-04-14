@@ -520,10 +520,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1747089435124466083, guid: a01cc9372839aef4689e7a3d4d5595dd,
+        type: 3}
+      propertyPath: autoReturnTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267865950649959036, guid: a01cc9372839aef4689e7a3d4d5595dd,
+        type: 3}
+      propertyPath: autoReturnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3442695959677895125, guid: a01cc9372839aef4689e7a3d4d5595dd,
         type: 3}
       propertyPath: m_Name
       value: Playfield
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708130968264933680, guid: a01cc9372839aef4689e7a3d4d5595dd,
+        type: 3}
+      propertyPath: autoReturnTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7966310281657544405, guid: a01cc9372839aef4689e7a3d4d5595dd,
+        type: 3}
+      propertyPath: autoReturnTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8270085950640927689, guid: a01cc9372839aef4689e7a3d4d5595dd,
         type: 3}

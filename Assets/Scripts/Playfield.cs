@@ -9,7 +9,7 @@ namespace DefaultNamespace
         private GameObject trackObject;
 
         [SerializeField]
-        private GameObject[] trackers;
+        private Tracker[] trackers;
         [SerializeField]
         private float scaleDuration = 0.1f;
         [SerializeField]
@@ -23,7 +23,9 @@ namespace DefaultNamespace
 
         public void AnimateTracker(int index)
         {
-            PlayScaleAnimation(trackers[index].transform);
+            var tracker = trackers[index];
+            tracker.PlaySlashAnimation();
+            PlayScaleAnimation(tracker.transform);
         }
 
         private void PlayScaleAnimation(Transform t)
