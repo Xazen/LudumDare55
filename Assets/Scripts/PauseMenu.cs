@@ -73,6 +73,7 @@ namespace DefaultNamespace
 
         private void ContinueGame()
         {
+            IsPaused = false;
             pauseContainer.SetActive(false);
             OnPaused?.Invoke(false);
         }
