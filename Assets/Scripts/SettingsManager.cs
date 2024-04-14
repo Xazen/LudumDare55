@@ -31,7 +31,7 @@ namespace DefaultNamespace
 
         private void StartGame()
         {
-            Singletons.AudioManager.StartGameMusic(SongDifficulty.Easy);
+            Singletons.AudioManager.ToCalibration(GlobalSettings.Difficulty);
         }
 
         private void PlayNote(int trackIndex)

@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -11,6 +12,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        Singletons.AudioManager.ToMenu();
         startButton.onClick.AddListener(StartGame);
         exitButton.onClick.AddListener(ExitGame);
         settingsButton.onClick.AddListener(OpenSettings);

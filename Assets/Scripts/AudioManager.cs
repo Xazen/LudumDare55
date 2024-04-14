@@ -24,11 +24,21 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        Singletons.RegisterAudioManager(this);
+        Debug.Log("AudioManager Awake");
+        if (Singletons.AudioManager == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Singletons.RegisterAudioManager(this);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
     {
+        Debug.Log("AudioManager Start");
         AkSoundEngine.SetState("GameState", "MainMenu");
         PostMusicEvent();
     }
@@ -39,6 +49,7 @@ public class AudioManager : MonoBehaviour
     /// <param name="difficulty"> between 0 and 2, 0 is easiest</param>
     public void StartGameMusic(SongDifficulty difficulty)
     {
+        Debug.Log("AudioManager StartGameMusic");
         checkWonCues = false;
         AkSoundEngine.SetState("Difficulty", difficulty.ToString());
         Debug.Log("Difficulty: " + difficulty.ToString());
@@ -47,12 +58,14 @@ public class AudioManager : MonoBehaviour
     
     public void ToMenu()
     {
+        Debug.Log("AudioManager ToMenu");
         AkSoundEngine.SetState("GameState", "MainMenu");
         checkWonCues = false;
     }    
 
     public void ToCalibration(SongDifficulty difficulty)
     {
+        Debug.Log("AudioManager ToCalibration");
         checkWonCues = false;
         AkSoundEngine.PostEvent("StopGameMusic", gameObject);
         StartGameMusic(difficulty);
@@ -61,17 +74,20 @@ public class AudioManager : MonoBehaviour
     
     public void StopMusic()
     {
+        Debug.Log("AudioManager StopMusic");
         AkSoundEngine.PostEvent("StopGameMusic_Immeditate", gameObject);
         checkWonCues = false;
     }    
 
     public void PauseMusic()
     {
+        Debug.Log("AudioManager PauseMusic");
         AkSoundEngine.PostEvent("Pause", gameObject);
     }
 
     public void ResumeMusic()
     {
+        Debug.Log("AudioManager ResumeMusic");
         AkSoundEngine.PostEvent("Resume", gameObject);
     }
 

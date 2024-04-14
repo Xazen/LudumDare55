@@ -7,9 +7,6 @@ using UnityEngine;
 public class NoteController : MonoBehaviour
 {
     [SerializeField]
-    private AudioManager audioManager;
-
-    [SerializeField]
     private GameObjectPool impactPool;
 
     public Action<NoteView> OnNoteReachedEnd;
@@ -25,7 +22,7 @@ public class NoteController : MonoBehaviour
     private void Start()
     {
         _dragonBallCount = 0;
-        audioManager.RhythmCallback += OnNoteReceived;
+        Singletons.AudioManager.RhythmCallback += OnNoteReceived;
         var model = Singletons.GameModel;
         if (model != null) model.OnNotePlayed += OnNotePlayed;
     }
