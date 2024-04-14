@@ -15,6 +15,9 @@ public class NoteView : MonoBehaviour
     private int _trackIndex;
     public int TrackIndex => _trackIndex;
 
+    private int _dragonBallIndex;
+    public int DragonBallIndex => _dragonBallIndex;
+
     public bool IsDragonBall { get; private set; } = false;
 
     private void OnDisable()
@@ -49,6 +52,7 @@ public class NoteView : MonoBehaviour
 
     private void MarkDragonBall(int dragonBallCount)
     {
+        _dragonBallIndex = dragonBallCount;
         int dragonBallIndex = Mathf.Min(dragonBallCount, dragonBalls.Length - 1);
         dragonBalls[dragonBallIndex].SetActive(true);
         defaultObject.SetActive(false);

@@ -29,6 +29,8 @@ public class NoteController : MonoBehaviour
 
     private void OnDestroy()
     {
+        Singletons.AudioManager.RhythmCallback -= OnNoteReceived;
+
         var model = Singletons.GameModel;
         if (model != null) model.OnNotePlayed -= OnNotePlayed;
     }
