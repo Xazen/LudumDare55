@@ -9,6 +9,9 @@ public class NoteController : MonoBehaviour
     [SerializeField]
     private AudioManager audioManager;
 
+    [SerializeField]
+    private GameObjectPool impactPool;
+
     public Action<NoteView> OnNoteReachedEnd;
     private readonly Dictionary<NoteView, Tween> _noteTweens = new ();
 
@@ -35,6 +38,10 @@ public class NoteController : MonoBehaviour
 
     private void OnNotePlayed(int trackIndex, NoteView note, ScoreType scoreType)
     {
+        var impactObject = impactPool.GetObject();
+        impactObject.transform.position = note.transform.position;
+        impactObject.SetActive(true);
+
         Singletons.NotePool.ReturnNote(note);
         _noteTweens.Remove(note);
 
