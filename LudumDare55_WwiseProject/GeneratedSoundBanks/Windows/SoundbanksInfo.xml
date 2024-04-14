@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{901615AA-61B8-337F-F3FB-0E160BF2C1BA}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{24AAD697-F993-1BC5-FA38-48EECE60B5EE}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -60,18 +60,68 @@
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="1521187885"/>
-							<MediaRefs>
-								<MediaRef Id="63106106"/>
-								<MediaRef Id="245429244"/>
-								<MediaRef Id="364323461"/>
-								<MediaRef Id="532671255"/>
-								<MediaRef Id="599029832"/>
-							</MediaRefs>
-							<PluginRefs>
-								<Custom>
-									<PluginRef Id="599441268"/>
-								</Custom>
-							</PluginRefs>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="0"/>
+									<MediaRefs>
+										<MediaRef Id="245429244"/>
+										<MediaRef Id="599029832"/>
+									</MediaRefs>
+									<PluginRefs>
+										<Custom>
+											<PluginRef Id="599441268"/>
+										</Custom>
+									</PluginRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<MediaRefs>
+										<MediaRef Id="245429244"/>
+										<MediaRef Id="599029832"/>
+									</MediaRefs>
+									<PluginRefs>
+										<Custom>
+											<PluginRef Id="599441268"/>
+										</Custom>
+									</PluginRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<MediaRefs>
+										<MediaRef Id="63106106"/>
+										<MediaRef Id="245429244"/>
+									</MediaRefs>
+									<PluginRefs>
+										<Custom>
+											<PluginRef Id="599441268"/>
+										</Custom>
+									</PluginRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="2849147824"/>
+									<MediaRefs>
+										<MediaRef Id="245429244"/>
+										<MediaRef Id="364323461"/>
+									</MediaRefs>
+									<PluginRefs>
+										<Custom>
+											<PluginRef Id="599441268"/>
+										</Custom>
+									</PluginRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="748895195"/>
+									<MediaRefs>
+										<MediaRef Id="245429244"/>
+										<MediaRef Id="599029832"/>
+									</MediaRefs>
+									<PluginRefs>
+										<Custom>
+											<PluginRef Id="599441268"/>
+										</Custom>
+									</PluginRefs>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="State" GroupId="4091656514" Id="1080430619"/>
@@ -138,5 +188,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B0C02F7F-C7E4-F935-AD35-3D3D26B9136A}</FileHash>
+	<FileHash>{32DF37A4-DD76-5213-C0F8-5633C955C0FA}</FileHash>
 </SoundBanksInfo>
