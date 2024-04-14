@@ -7,7 +7,7 @@ public class AudioManager : MonoBehaviour
 {
     public enum Difficulty
     {
-        Easy,
+        Easy = 0,
         Medium,
         Hard
     }

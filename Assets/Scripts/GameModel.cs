@@ -5,7 +5,6 @@ namespace DefaultNamespace
 {
     public class GameModel
     {
-        public const int TrackCount = 4;
         public int Score;
         public int Combo;
         public int Health;
@@ -22,7 +21,7 @@ namespace DefaultNamespace
 
         public GameModel()
         {
-            for (int i = 0; i < TrackCount; i++)
+            for (int i = 0; i < Balancing.TrackCount; i++)
             {
                 _currentNotes[i] = new Queue<NoteView>();
             }

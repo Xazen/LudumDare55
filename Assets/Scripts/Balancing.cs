@@ -6,75 +6,53 @@ namespace DefaultNamespace
 {
     public class Balancing : MonoBehaviour
     {
+        public const int TrackCount = 4;
+
         [Header("General")]
         [SerializeField] private int dragonBallCount = 7;
-        public int DragonBallCount => dragonBallCount;
 
         [Header("Health")]
         [SerializeField] private int maxHealth = 100;
-        [SerializeField] private int healthDecrease = 1;
+        [SerializeField] private int healthDecrease = 10;
         [SerializeField] private int healthIncrease = 1;
         [SerializeField] private int minComboForHeal = 5;
+
+        [Header("Note Settings")]
+        [SerializeField] private float noteStartDistance = 13f;
+        [SerializeField] private float trackWidth = 5.4f;
+        [SerializeField]
+        [Range(0.5f, AudioManager.TimeOffset)]
+        private float targetNoteAnimationDuration = 2.5f;
+
+        [Header("Timings")]
+        [SerializeField] private NoteCalculationType noteCalculationType;
+        [SerializeField] private List<ScoreType> scoreTypes;
+
+        public int DragonBallCount => dragonBallCount;
         public int MaxHealth => maxHealth;
         public int HealthDecrease => healthDecrease;
         public int MinComboForHeal => minComboForHeal;
         public int HealthIncrease => healthIncrease;
 
-        [Header("Note Settings")]
-        [SerializeField] private float noteStartDistance = 30f;
-
-        [SerializeField] private float trackTargetXStart = -2.7f;
-        [SerializeField] private float trackTargetXEnd = 1.5f;
-        [SerializeField]
-        [Range(0, AudioManager.TimeOffset - 0.5f)]
-        private float noteSpeed = 4f;
-
-        // speed: 4
-        // 1.5: 200 ms (bad)
-        // 0.75: 100 ms (good)
-        // 0.375: 50 ms (great)
-        // 0.1875: 25 ms (perfect)
-        [Header("Timings")]
-        [SerializeField] private NoteCalculationType noteCalculationType;
-        [SerializeField] private List<ScoreType> scoreTypes;
-
-        private float _trackStepDistance;
-        public float TrackTargetXStart => trackTargetXStart;
-        public float TrackStepDistance => _trackStepDistance;
-        public float NoteStartDistance => noteStartDistance;
-        public float NoteEndDistance
-        {
-            get
-            {
-                return -GetMaxNoteDistance();
-            }
-        }
-
-        private float GetMaxNoteDistance()
+        public float GetMaxNoteDistance()
         {
             var badType = scoreTypes.Find(type => type.TimingType == TimingType.Bad);
-            switch (noteCalculationType)
+            float result = noteCalculationType switch
             {
-                case NoteCalculationType.Distance:
-                    return badType.Distance;
-                case NoteCalculationType.MillisEasy:
-                    return GetMaxNoteDistanceByMillis(badType.MillisEasy);
-                case NoteCalculationType.MillisMid:
-                    return GetMaxNoteDistanceByMillis(badType.MillisMid);
-                case NoteCalculationType.MillisHard:
-                    return GetMaxNoteDistanceByMillis(badType.MillisHard);
-            }
+                NoteCalculationType.MillisEasy => GetMaxNoteDistanceByMillis(badType.MillisEasy),
+                NoteCalculationType.MillisMid => GetMaxNoteDistanceByMillis(badType.MillisMid),
+                NoteCalculationType.MillisHard => GetMaxNoteDistanceByMillis(badType.MillisHard),
+                NoteCalculationType.Distance => badType.Distance,
+                _ => badType.Distance
+            };
 
-            return badType.Distance;
+            return -result;
         }
 
         private float GetMaxNoteDistanceByMillis(float millis)
         {
             return millis / 1000 * GetNoteSpeed();
         }
-
-        public float NoteSpeed => noteSpeed;
-
 
         private void Awake()
         {
@@ -83,8 +61,6 @@ namespace DefaultNamespace
 
         void Start()
         {
-            var trackDistance = trackTargetXEnd - trackTargetXStart;
-            _trackStepDistance = trackDistance / (GameModel.TrackCount - 1);
             scoreTypes.Sort((a, b) => a.Distance.CompareTo(b.Distance));
 
             LogBalancing();
@@ -92,6 +68,7 @@ namespace DefaultNamespace
 
         private void LogBalancing()
         {
+            Debug.Log($"Calculation Type: {noteCalculationType}");
             foreach (var scoreType in scoreTypes)
             {
                 switch (noteCalculationType)
@@ -112,18 +89,31 @@ namespace DefaultNamespace
                         throw new ArgumentOutOfRangeException();
                 }
             }
-            Debug.Log($"NoteDistance: {NoteEndDistance}");
+
+            Debug.Log($"NoteDistance: {GetMaxNoteDistance()}");
+            for (int i = 0; i < TrackCount; i++)
+            {
+                var transformPosition = GetNoteSpawnPosition(i);
+                Debug.Log($"SpawnPosition: {i}:{transformPosition}");
+            }
+
         }
 
         public float GetNoteSpeed()
         {
-            return NoteStartDistance / (AudioManager.TimeOffset - NoteSpeed);
+            return noteStartDistance / targetNoteAnimationDuration;
+        }
+
+        public float GetNoteDelayForTargetDuration()
+        {
+            return AudioManager.TimeOffset - targetNoteAnimationDuration;
         }
 
         public Vector3 GetNoteSpawnPosition(int trackIndex)
         {
-            var noteXPosition = Singletons.Balancing.TrackTargetXStart + Singletons.Balancing.TrackStepDistance * trackIndex;
-            var transformPosition = new Vector3(noteXPosition, 0, Singletons.Balancing.NoteStartDistance);
+            var trackStepDistance = trackWidth / (TrackCount - 1);
+            var noteXPosition = -(trackWidth / 2) + trackStepDistance * trackIndex;
+            var transformPosition = new Vector3(noteXPosition, 0, noteStartDistance);
             return transformPosition;
         }
 

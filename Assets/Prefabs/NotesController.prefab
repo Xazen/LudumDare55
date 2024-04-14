@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6872728303268569313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428064199513028566}
+  - component: {fileID: 7769756626313226501}
+  - component: {fileID: 8771153277021635590}
+  - component: {fileID: 2900983170622384220}
+  m_Layer: 0
+  m_Name: NotesController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428064199513028566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6872728303268569313}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.414567, y: -11.400421, z: -9.665297}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7769756626313226501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6872728303268569313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd91e61051368834aa5ab5acc9b0ade5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+--- !u!114 &8771153277021635590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6872728303268569313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22685a8ad2e4d52b1a9da0d4cdda0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notePrefab: {fileID: 8858296310724140027, guid: 52e9aae7a9fe7224bb851f6be04898fc,
+    type: 3}
+--- !u!114 &2900983170622384220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6872728303268569313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e79ee83fb0f8455faac7679fd9b10e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dragonBallCount: 7
+  maxHealth: 100
+  healthDecrease: 10
+  healthIncrease: 1
+  minComboForHeal: 5
+  noteStartDistance: 13
+  trackWidth: 5.4
+  targetNoteAnimationDuration: 2.5
+  noteCalculationType: 1
+  scoreTypes:
+  - TimingType: 0
+    Distance: 0.1875
+    MillisEasy: 50
+    MillisMid: 33
+    MillisHard: 16
+    Score: 100
+    IsCombo: 1
+  - TimingType: 1
+    Distance: 0.375
+    MillisEasy: 80
+    MillisMid: 63
+    MillisHard: 46
+    Score: 30
+    IsCombo: 1
+  - TimingType: 2
+    Distance: 0.75
+    MillisEasy: 180
+    MillisMid: 155
+    MillisHard: 130
+    Score: 10
+    IsCombo: 1
+  - TimingType: 3
+    Distance: 1.5
+    MillisEasy: 250
+    MillisMid: 225
+    MillisHard: 200
+    Score: 5
+    IsCombo: 0
+  - TimingType: 4
+    Distance: 1e+20
+    MillisEasy: 1e+20
+    MillisMid: 1e+20
+    MillisHard: 1e+20
+    Score: 0
+    IsCombo: 0

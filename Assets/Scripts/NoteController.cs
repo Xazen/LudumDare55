@@ -61,8 +61,8 @@ public class NoteController : MonoBehaviour
         note.transform.position = Singletons.Balancing.GetNoteSpawnPosition(trackIndex);
         note.transform.localScale = Vector3.one;
 
-        var tweenerCore = note.transform.DOMoveZ(Singletons.Balancing.NoteEndDistance, Singletons.Balancing.GetNoteSpeed())
-            .SetDelay(Singletons.Balancing.NoteSpeed)
+        var tweenerCore = note.transform.DOMoveZ(Singletons.Balancing.GetMaxNoteDistance(), Singletons.Balancing.GetNoteSpeed())
+            .SetDelay(Singletons.Balancing.GetNoteDelayForTargetDuration())
             .SetSpeedBased(true)
             .SetEase(Ease.Linear)
             .OnStart(() =>
