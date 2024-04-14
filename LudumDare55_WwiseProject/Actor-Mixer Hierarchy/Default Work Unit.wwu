@@ -59,7 +59,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-11</Value>
+								<Value>-22</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -109,8 +109,67 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Difficulty" ID="{EB51D09A-7095-4D88-9B11-385354111907}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Hard" ID="{8DA0A7E5-7DD8-4127-A33D-463F84CFB391}"/>
+								<CustomState Name="" ID="{F45F2339-A6FA-4DEA-BF50-FC758737CDD6}" ShortID="567703755">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-5"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Normal" ID="{305E7C15-9DE7-4655-8C49-347D6EAA9FCF}"/>
+								<CustomState Name="" ID="{11AF090E-AA5B-4F7A-BFE0-8A19CB5583CC}" ShortID="1029693591"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Easy" ID="{4332B5DA-683D-474D-9C69-3BFB5DBE5000}"/>
+								<CustomState Name="" ID="{13C5B47B-5D33-4E0C-B396-1C96628ECDE5}" ShortID="80631436"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="hit" ID="{346A5FF4-F588-4E12-A8B2-389F637372AA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Game Over" ID="{73393DB9-7C26-41E0-8CA3-F8675DFE146E}" ShortID="422747206">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C4DAACCC-678F-4F75-89BB-0CFD8DF9AE3F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Game Over_Stinger" ID="{A125D947-1F92-4CE7-8019-52DAE659E18C}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="5.85788445378151"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Game Over_Stinger.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="256787006"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Game Over_Stinger" ID="{A125D947-1F92-4CE7-8019-52DAE659E18C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID DRAGONBALLTRIGGER = 223291225U;
         static const AkUniqueID PAUSE = 3092587493U;
+        static const AkUniqueID PLAY_GAME_OVER = 725000905U;
         static const AkUniqueID PLAY_HIT = 2960666077U;
         static const AkUniqueID PLAY_REFLECT_DEFLECT = 3151157893U;
         static const AkUniqueID RESUME = 953277036U;
