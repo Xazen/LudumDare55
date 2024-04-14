@@ -9,13 +9,13 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{AB12A380-573C-5B6F-6E35-6BE9F41FD699}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{5B7A0F9C-3B97-7A70-0EC8-D47E56843DA8}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
 				<File Id="63106106" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>extrem.mid</ShortName>
-					<CachePath>SFX/extrem_C6BD02BE.wem</CachePath>
+					<CachePath>SFX/extrem_99E7DAD1.wem</CachePath>
 				</File>
 				<File Id="245429244" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GameMusic.wav</ShortName>
@@ -23,7 +23,7 @@
 				</File>
 				<File Id="364323461" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>middle.mid</ShortName>
-					<CachePath>SFX/middle_FA28C0F9.wem</CachePath>
+					<CachePath>SFX/middle_71501FF0.wem</CachePath>
 				</File>
 				<File Id="368359292" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Winning_Points.wav</ShortName>
@@ -147,7 +147,7 @@
 									</PluginRefs>
 								</SwitchContainer>
 								<SwitchContainer>
-									<SwitchValue GroupType="State" GroupId="290942698" Id="2849147824"/>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
 									<MediaRefs>
 										<MediaRef Id="245429244"/>
 										<MediaRef Id="364323461"/>
@@ -243,7 +243,7 @@
 									</PluginRefs>
 								</SwitchContainer>
 								<SwitchContainer>
-									<SwitchValue GroupType="State" GroupId="290942698" Id="2849147824"/>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
 									<MediaRefs>
 										<MediaRef Id="245429244"/>
 										<MediaRef Id="364323461"/>
@@ -343,7 +343,7 @@
 									</PluginRefs>
 								</SwitchContainer>
 								<SwitchContainer>
-									<SwitchValue GroupType="State" GroupId="290942698" Id="2849147824"/>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
 									<MediaRefs>
 										<MediaRef Id="245429244"/>
 										<MediaRef Id="364323461"/>
@@ -443,7 +443,7 @@
 									</PluginRefs>
 								</SwitchContainer>
 								<SwitchContainer>
-									<SwitchValue GroupType="State" GroupId="290942698" Id="2849147824"/>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
 									<MediaRefs>
 										<MediaRef Id="245429244"/>
 										<MediaRef Id="364323461"/>
@@ -483,7 +483,7 @@
 					<States>
 						<State Id="529018163" Name="Easy"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="2849147824" Name="Medium"/>
+						<State Id="1160234136" Name="Normal"/>
 						<State Id="3599861390" Name="Hard"/>
 					</States>
 				</StateGroup>
@@ -515,7 +515,7 @@
 					<States>
 						<State Id="529018163" Name="Easy"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="2849147824" Name="Medium"/>
+						<State Id="1160234136" Name="Normal"/>
 						<State Id="3599861390" Name="Hard"/>
 					</States>
 				</StateGroup>
@@ -531,5 +531,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{58FF5D7E-56D1-8BFB-769A-FDAE52D652B8}</FileHash>
+	<FileHash>{5E5BA1F8-2D3D-281A-D07C-62DFB6383585}</FileHash>
 </SoundBanksInfo>

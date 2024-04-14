@@ -31,6 +31,21 @@ public class GameOver : MonoBehaviour
         gameOverContainer.SetActive(false);
 
         EventSystem.current.SetSelectedGameObject(restartButton.gameObject);
+        Singletons.AudioManager.WonTrigger += OnWonTrigger;
+    }
+
+    private void OnDestroy()
+    {
+        Singletons.AudioManager.WonTrigger -= OnWonTrigger;
+    }
+
+    private void OnWonTrigger(AudioManager.WonTriggers obj)
+    {
+        if (obj == AudioManager.WonTriggers.PointsScreen)
+        {
+            GlobalSettings.BlockInput = false;
+            OpenGameOver();
+        }
     }
 
     private void RestartGame()
