@@ -86,6 +86,11 @@ public class AudioManager : MonoBehaviour
         checkWonCues = false;
     }    
 
+    public void GameOverSound()
+    {
+        AkSoundEngine.PostEvent("Play_Game_Over", gameObject);
+    }
+
     public void PauseMusic()
     {
         Debug.Log("AudioManager PauseMusic");

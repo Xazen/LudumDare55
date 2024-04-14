@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{5B7A0F9C-3B97-7A70-0EC8-D47E56843DA8}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{B401C0DE-8C1D-38E8-75D6-7D38D8A28D65}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -20,6 +20,10 @@
 				<File Id="245429244" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>GameMusic.wav</ShortName>
 					<CachePath>SFX/GameMusic_56CEF360.wem</CachePath>
+				</File>
+				<File Id="256787006" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Game Over_Stinger.wav</ShortName>
+					<CachePath>SFX/Game Over_Stinger_15B593D3.wem</CachePath>
 				</File>
 				<File Id="364323461" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>middle.mid</ShortName>
@@ -70,6 +74,11 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="725000905" Name="Play_Game_Over" DurationType="OneShot" DurationMin="13.59225" DurationMax="13.59225">
+					<MediaRefs>
+						<MediaRef Id="256787006"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2960666077" Name="Play_hit" DurationType="OneShot" DurationMin="0.26889583" DurationMax="0.26889583">
 					<MediaRefs>
 						<MediaRef Id="506408390"/>
@@ -531,5 +540,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5E5BA1F8-2D3D-281A-D07C-62DFB6383585}</FileHash>
+	<FileHash>{32FC374A-85A3-10F2-FA06-A43053811F75}</FileHash>
 </SoundBanksInfo>

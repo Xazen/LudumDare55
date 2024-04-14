@@ -100,6 +100,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Game_Over" ID="{C2501E59-1D41-4841-9156-29D789BF373C}">
+					<ChildrenList>
+						<Action Name="" ID="{14DFD870-D2EE-48FD-A1A0-D0D588EE8797}" ShortID="245284437">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Game Over" ID="{73393DB9-7C26-41E0-8CA3-F8675DFE146E}" WorkUnitID="{A23D6C7F-326B-48B9-A62A-C5F324920728}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

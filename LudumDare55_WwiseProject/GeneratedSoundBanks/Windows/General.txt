@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	223291225	DragonballTrigger			\Default Work Unit\DragonballTrigger	
+	725000905	Play_Game_Over			\Default Work Unit\Play_Game_Over	
 	953277036	Resume			\Default Work Unit\Resume	
 	1568977742	StartGameMusic			\Default Work Unit\StartGameMusic	
 	2221504388	StopGameMusic			\Default Work Unit\StopGameMusic	
@@ -29,6 +30,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	63106106	extrem	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\extrem_99E7DAD1.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Hard\extrem		10014
 	245429244	Music	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy\Music		3973664
+	256787006	Game Over	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Game Over_Stinger_15B593D3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Over		153692
 	364323461	middle	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\middle_71501FF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Medium\middle		5042
 	368359292	Winning_Points	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Winning_Points_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Won\Winning_Points\Winning_Points		757191
 	384659675	reflect_deflect	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\reflect_deflect_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\reflect_deflect		2768

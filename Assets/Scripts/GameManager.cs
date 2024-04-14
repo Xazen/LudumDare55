@@ -35,6 +35,7 @@ namespace DefaultNamespace
         private void OnHealthZero(int _)
         {
             Pause();
+            Singletons.AudioManager.GameOverSound();
             if (!Singletons.GameOver.IsOpen)
             {
                 Singletons.GameOver.OpenGameOver();
