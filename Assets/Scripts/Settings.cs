@@ -72,6 +72,6 @@ public class Settings : MonoBehaviour
 
     private void OpenMenu()
     {
-        SceneManager.LoadScene("Boot");
+        SceneManager.LoadScene("MainMenu");
     }
 }
