@@ -19,7 +19,15 @@ namespace DefaultNamespace
 
         private void StartGame()
         {
-            Singletons.AudioManager.StartGameMusic(GlobalSettings.Difficulty);
+            if (GlobalSettings.PendingRestart)
+            {
+                Singletons.AudioManager.Restart(GlobalSettings.Difficulty);
+                GlobalSettings.PendingRestart = false;
+            }
+            else
+            {
+                Singletons.AudioManager.StartGameMusic(GlobalSettings.Difficulty);
+            }
             Singletons.PauseMenu.OnPaused += OnPaused;
             Singletons.GameModel.OnHealthZero += OnHealthZero;
         }
