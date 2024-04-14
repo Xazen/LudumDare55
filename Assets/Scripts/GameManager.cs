@@ -35,6 +35,10 @@ namespace DefaultNamespace
         private void OnHealthZero(int _)
         {
             Pause();
+            if (!Singletons.GameOver.IsOpen)
+            {
+                Singletons.GameOver.OpenGameOver();
+            }
         }
 
         private void OnPaused(bool isPaused)

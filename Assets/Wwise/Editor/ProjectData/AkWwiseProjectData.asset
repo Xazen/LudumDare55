@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a880a669ad975348b22237f1dfee1322
     GuidInternal: 
-    m_lastTime: -8584884985067654574
+    m_lastTime: -8584884937438649845
     List:
+    - name: DragonballTrigger
+      guid: ec88d326dfecd447aad2504be5c54134
+      id: 223291225
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a880a669ad975348b22237f1dfee1322
+      - ElementName: DragonballTrigger
+        ObjectType: 3
+        guid: ec88d326dfecd447aad2504be5c54134
+      Path: Events\Default Work Unit\DragonballTrigger
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Pause
       guid: 6f5b35b589808d4fbdf3c73fcd07233e
       id: 3092587493
@@ -113,6 +130,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_hit
+      guid: 1af686c331af75448120b1da1737af7a
+      id: 2960666077
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a880a669ad975348b22237f1dfee1322
+      - ElementName: Play_hit
+        ObjectType: 3
+        guid: 1af686c331af75448120b1da1737af7a
+      Path: Events\Default Work Unit\Play_hit
+      maxAttenuation: 0
+      maxDuration: 0.26889583
+      minDuration: 0.26889583
+    - name: Play_reflect_deflect
+      guid: 4ae8b6fd8cde604dbc3b13d2c1ffd798
+      id: 3151157893
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a880a669ad975348b22237f1dfee1322
+      - ElementName: Play_reflect_deflect
+        ObjectType: 3
+        guid: 4ae8b6fd8cde604dbc3b13d2c1ffd798
+      Path: Events\Default Work Unit\Play_reflect_deflect
+      maxAttenuation: 0
+      maxDuration: 0.2775
+      minDuration: 0.2775
     - name: Resume
       guid: c81da7624a99ee4d89142f1262dce565
       id: 953277036

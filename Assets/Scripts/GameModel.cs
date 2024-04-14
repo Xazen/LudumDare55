@@ -11,10 +11,12 @@ namespace DefaultNamespace
         public int DragonBallFound;
 
         private readonly Dictionary<int, Queue<NoteView>> _currentNotes = new ();
+        private readonly Dictionary<TimingType, int> timingNotesCount = new ();
+        public Dictionary<TimingType, int> TimingNotesCount => timingNotesCount;
 
         public Action<int, NoteView, ScoreType> OnNotePlayed;
         public Action<int> OnComboChanged;
-        public Action<int> OnScoreChanged;
+        public Action<int, int> OnScoreChanged;
         public Action<int> OnHealthChanged;
         public Action<int> OnDragonBallFound;
         public Action<int> OnHealthZero;
@@ -81,6 +83,8 @@ namespace DefaultNamespace
                 RegisterDragonBall();
             }
 
+            timingNotesCount[scoreType.TimingType] = timingNotesCount.GetValueOrDefault(scoreType.TimingType) + 1;
+
             int scoreMultiplier = Math.Max(1, Combo);
             SetScore(Score + scoreType.Score * scoreMultiplier);
             OnNotePlayed?.Invoke(trackIndex, note, scoreType);
@@ -97,8 +101,10 @@ namespace DefaultNamespace
             {
                 return;
             }
+
+            var diff = score - Score;
             Score = score;
-            OnScoreChanged?.Invoke(score);
+            OnScoreChanged?.Invoke(score, diff);
         }
 
         private void SetCombo(int combo)
@@ -123,6 +129,10 @@ namespace DefaultNamespace
             }
             Health = health;
             OnHealthChanged?.Invoke(health);
+            if (health <= 0)
+            {
+                OnHealthZero?.Invoke(0);
+            }
         }
 
         public List<NoteView> GetPerfectNotes()
