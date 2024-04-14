@@ -1487,6 +1487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d084ea2707df3924495999e152f41bf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  image: {fileID: 8561479456789661364}
+  lostSprite: {fileID: 21300000, guid: 2addc2a8368fe414d9aa14a7d535a045, type: 3}
+  wonSprite: {fileID: 21300000, guid: e121c843f55e3714bb4c6a83b4f1cafd, type: 3}
   gameOverContainer: {fileID: 1546641986728232489}
   menuButton: {fileID: 2825975845667270405}
   restartButton: {fileID: 3506802674149666078}

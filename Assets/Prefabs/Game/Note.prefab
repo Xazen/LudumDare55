@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1620080995661428557}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 6f70be61d16884342960567f5ce8dd8a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -370,7 +370,7 @@ PrefabInstance:
     - target: {fileID: 325152958235943162, guid: 97e5bd9f5dfef9241a5ba7118d7b953f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 325152958235943162, guid: 97e5bd9f5dfef9241a5ba7118d7b953f,
         type: 3}
@@ -417,6 +417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Dragonball_03
       objectReference: {fileID: 0}
+    - target: {fileID: 1137436292479613504, guid: 97e5bd9f5dfef9241a5ba7118d7b953f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -447,6 +452,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Dragonball_02
       objectReference: {fileID: 0}
+    - target: {fileID: 1683197960791011758, guid: 4369a6653f6a8364dbfd1505af73ad64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2022181155434687252, guid: 4369a6653f6a8364dbfd1505af73ad64,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -470,7 +480,7 @@ PrefabInstance:
     - target: {fileID: 2022181155434687252, guid: 4369a6653f6a8364dbfd1505af73ad64,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 2022181155434687252, guid: 4369a6653f6a8364dbfd1505af73ad64,
         type: 3}
@@ -542,6 +552,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Dragonball_06
       objectReference: {fileID: 0}
+    - target: {fileID: 2502382900168464355, guid: 70590a8a648edf349989d871a7098a6b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3022459959506750809, guid: 70590a8a648edf349989d871a7098a6b,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -565,7 +580,7 @@ PrefabInstance:
     - target: {fileID: 3022459959506750809, guid: 70590a8a648edf349989d871a7098a6b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 3022459959506750809, guid: 70590a8a648edf349989d871a7098a6b,
         type: 3}
@@ -655,7 +670,7 @@ PrefabInstance:
     - target: {fileID: 7193187442271470473, guid: acc657c4f4061a846aa8120edd57e158,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 7193187442271470473, guid: acc657c4f4061a846aa8120edd57e158,
         type: 3}
@@ -701,6 +716,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Dragonball_07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7536920703255451955, guid: acc657c4f4061a846aa8120edd57e158,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -750,7 +770,7 @@ PrefabInstance:
     - target: {fileID: 1387981094464006668, guid: a8f1a1d9e966b5346ac6f0920d08d987,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 1387981094464006668, guid: a8f1a1d9e966b5346ac6f0920d08d987,
         type: 3}
@@ -796,6 +816,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Dragonball_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1731856016352243894, guid: a8f1a1d9e966b5346ac6f0920d08d987,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -845,7 +870,7 @@ PrefabInstance:
     - target: {fileID: 1392310174109136019, guid: 8d85b1c85ca31f044952132727f08e02,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 1392310174109136019, guid: 8d85b1c85ca31f044952132727f08e02,
         type: 3}
@@ -891,6 +916,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Dragonball_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1736606145384001065, guid: 8d85b1c85ca31f044952132727f08e02,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -940,7 +970,7 @@ PrefabInstance:
     - target: {fileID: 7459438358937504136, guid: db686c69d93971e4ab9f0ee5ae32cdf0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 7459438358937504136, guid: db686c69d93971e4ab9f0ee5ae32cdf0,
         type: 3}
@@ -986,6 +1016,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SM_Dragonball_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840466814421488434, guid: db686c69d93971e4ab9f0ee5ae32cdf0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

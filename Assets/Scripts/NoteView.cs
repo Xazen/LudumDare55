@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -20,6 +21,11 @@ public class NoteView : MonoBehaviour
 
     public bool IsDragonBall { get; private set; } = false;
 
+    private void Start()
+    {
+        debugTrackText.gameObject.SetActive(false);
+    }
+
     private void OnDisable()
     {
         ResetView();
@@ -27,7 +33,11 @@ public class NoteView : MonoBehaviour
 
     private void ResetView()
     {
-        MarkKiBlast();
+        defaultObject.SetActive(true);
+        foreach (var dragonBall in dragonBalls)
+        {
+            dragonBall.SetActive(false);
+        }
     }
 
     public void SetTrack(int trackIndex)

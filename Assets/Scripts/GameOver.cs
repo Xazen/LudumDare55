@@ -7,6 +7,10 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
+    [SerializeField] private Image image;
+    [SerializeField] private Sprite lostSprite;
+    [SerializeField] private Sprite wonSprite;
+
     [SerializeField] private GameObject gameOverContainer;
     [SerializeField] private Button menuButton;
     [SerializeField] private Button restartButton;
@@ -44,7 +48,7 @@ public class GameOver : MonoBehaviour
         if (obj == AudioManager.WonTriggers.PointsScreen)
         {
             GlobalSettings.BlockInput = false;
-            OpenGameOver();
+            OpenGameOver(true);
         }
     }
 
@@ -63,9 +67,11 @@ public class GameOver : MonoBehaviour
         IsOpen = false;
     }
 
-    public void OpenGameOver()
+    public void OpenGameOver(bool didWin)
     {
         gameOverContainer.SetActive(true);
+
+        image.sprite = didWin ? wonSprite : lostSprite;
 
         UpdateText(TimingType.Perfect, perfectText);
         UpdateText(TimingType.Great, greatText);

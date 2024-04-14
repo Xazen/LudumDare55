@@ -38,7 +38,7 @@ namespace DefaultNamespace
             Singletons.AudioManager.GameOverSound();
             if (!Singletons.GameOver.IsOpen)
             {
-                Singletons.GameOver.OpenGameOver();
+                Singletons.GameOver.OpenGameOver(false);
             }
         }
 
