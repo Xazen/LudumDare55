@@ -7,12 +7,19 @@ public class AudioManager : MonoBehaviour
 {
     public const float TimeOffset = 6.21359223301f;
 
-    [SerializeField]private AK.Wwise.Event MusicEvent;
+    [SerializeField] private AK.Wwise.Event MusicEvent;
     [HideInInspector] public Action<int, bool> RhythmCallback;
+    [HideInInspector] public Action<bool> GameEnded;
 
     private void Awake()
     {
         Singletons.RegisterAudioManager(this);
+    }
+
+    private void Start()
+    {
+        AkSoundEngine.SetState("GameState", "MainMenu");
+        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue, MidiCallback);
     }
 
     /// <summary>
@@ -23,7 +30,24 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.SetState("Difficulty", difficulty.ToString());
         Debug.Log("Difficulty: " + difficulty.ToString());
+        AkSoundEngine.SetState("GameState", "StartGame");
+    }
+    
+    public void ToMenu()
+    {
+        AkSoundEngine.SetState("GameState", "MainMenu");
+    }
+
+    public void ToCalibration(SongDifficulty difficulty)
+    {
+        AkSoundEngine.PostEvent("StopGameMusic", gameObject);
+        StartGameMusic(difficulty);
         MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue, MidiCallback);
+    }
+    
+    public void StopMusic()
+    {
+        AkSoundEngine.PostEvent("StopGameMusic_Immeditate", gameObject);
     }
 
     private void MidiCallback(object in_cookie, AkCallbackType in_type, object in_info)
@@ -42,10 +66,16 @@ public class AudioManager : MonoBehaviour
                 //Debug.Log("HIT: " + (midiEvent.byParam1 - 40));
             }
         }
-        //if (in_type == AkCallbackType.AK_MusicSyncUserCue)
-        //{
-        //    if()
-        //}
+        if (in_type == AkCallbackType.AK_MusicSyncUserCue)
+        {
+            if (((AkMusicSyncCallbackInfo)in_info).userCueName == "ENDE")
+            {
+                bool won = Singletons.GameModel.HaveAllDragonBalls();
+                AkSoundEngine.SetState("GameState", won ? "Won" : "Lost");
+                GameEnded.Invoke(won);
+            }
+
+        }
     }
 
     public void PauseMusic()

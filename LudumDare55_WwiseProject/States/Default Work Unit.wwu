@@ -11,6 +11,18 @@
 						<State Name="Hard" ID="{8DA0A7E5-7DD8-4127-A33D-463F84CFB391}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="GameState" ID="{8244AAA7-C611-4B61-840B-8F60BDF8A622}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{ACD1E479-C01D-40A3-8613-C5DD355A145A}"/>
+						<State Name="StartGame" ID="{02EA7ABC-1C4D-43AE-8A4B-A3CDB76CF31E}"/>
+						<State Name="Won" ID="{FC99039B-8C2F-42B8-BC1F-7B4CE47D89F7}"/>
+						<State Name="Lost" ID="{A51AA567-EE69-444D-93E9-C529B5A123BD}"/>
+						<State Name="MainMenu" ID="{E0C514D4-EBCC-4074-AE4B-FF431682E4FF}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

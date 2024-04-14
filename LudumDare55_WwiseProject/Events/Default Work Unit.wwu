@@ -30,7 +30,38 @@
 						<Action Name="" ID="{8EA4B3C6-6B2C-415B-98B8-D63A12D392AA}" ShortID="870888646">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="GameMusic" ID="{80E46C1A-4C32-4E4F-96D8-AA0E0556CBBD}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+									<ObjectRef Name="Music" ID="{80E46C1A-4C32-4E4F-96D8-AA0E0556CBBD}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopGameMusic" ID="{96631ECC-9741-4216-B1F0-498B900E7A33}">
+					<ChildrenList>
+						<Action Name="" ID="{BF09C557-C0D2-43CA-8F8E-367150DBB02A}" ShortID="1027514854">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{80E46C1A-4C32-4E4F-96D8-AA0E0556CBBD}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopGameMusic_Immediate" ID="{4CD73782-B5FA-4DEB-9239-71D74CA36144}">
+					<ChildrenList>
+						<Action Name="" ID="{FD2B6CEB-819F-432F-B8BC-9FEA3444AE2D}" ShortID="193960290">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{80E46C1A-4C32-4E4F-96D8-AA0E0556CBBD}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

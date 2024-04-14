@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{C547909F-6FC1-E713-06F3-411BE406E19A}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{FD328321-E120-7006-6D83-8540522D2F14}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -17,17 +17,29 @@
 					<ShortName>extrem.mid</ShortName>
 					<CachePath>SFX/extrem_C6BD02BE.wem</CachePath>
 				</File>
-				<File Id="319173140" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>GameMusic_v2.wav</ShortName>
-					<CachePath>SFX/GameMusic_v2_56CEF360.wem</CachePath>
+				<File Id="245429244" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>GameMusic.wav</ShortName>
+					<CachePath>SFX/GameMusic_56CEF360.wem</CachePath>
 				</File>
 				<File Id="364323461" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>middle.mid</ShortName>
 					<CachePath>SFX/middle_FA28C0F9.wem</CachePath>
 				</File>
+				<File Id="368359292" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Winning_Points.wav</ShortName>
+					<CachePath>SFX/Winning_Points_56CEF360.wem</CachePath>
+				</File>
+				<File Id="532671255" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Winning_Cue.wav</ShortName>
+					<CachePath>SFX/Winning_Cue_56CEF360.wem</CachePath>
+				</File>
 				<File Id="599029832" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>easy.mid</ShortName>
 					<CachePath>SFX/easy_36468A77.wem</CachePath>
+				</File>
+				<File Id="864535348" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Lost_Cue.wav</ShortName>
+					<CachePath>SFX/Lost_Cue_56CEF360.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -41,57 +53,18 @@
 				<Event Id="1568977742" Name="StartGameMusic" DurationType="Infinite">
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="290942698" Id="2849147824"/>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="221232711"/>
 							<MediaRefs>
-								<MediaRef Id="319173140"/>
-								<MediaRef Id="364323461"/>
+								<MediaRef Id="864535348"/>
 							</MediaRefs>
-							<PluginRefs>
-								<Custom>
-									<PluginRef Id="599441268"/>
-								</Custom>
-							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="290942698" Id="748895195"/>
-							<MediaRefs>
-								<MediaRef Id="319173140"/>
-								<MediaRef Id="364323461"/>
-							</MediaRefs>
-							<PluginRefs>
-								<Custom>
-									<PluginRef Id="599441268"/>
-								</Custom>
-							</PluginRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="1521187885"/>
 							<MediaRefs>
 								<MediaRef Id="63106106"/>
-								<MediaRef Id="319173140"/>
-							</MediaRefs>
-							<PluginRefs>
-								<Custom>
-									<PluginRef Id="599441268"/>
-								</Custom>
-							</PluginRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="290942698" Id="0"/>
-							<MediaRefs>
-								<MediaRef Id="319173140"/>
+								<MediaRef Id="245429244"/>
 								<MediaRef Id="364323461"/>
-							</MediaRefs>
-							<PluginRefs>
-								<Custom>
-									<PluginRef Id="599441268"/>
-								</Custom>
-							</PluginRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
-							<MediaRefs>
-								<MediaRef Id="319173140"/>
+								<MediaRef Id="532671255"/>
 								<MediaRef Id="599029832"/>
 							</MediaRefs>
 							<PluginRefs>
@@ -100,8 +73,17 @@
 								</Custom>
 							</PluginRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="4091656514" Id="1080430619"/>
+							<MediaRefs>
+								<MediaRef Id="368359292"/>
+								<MediaRef Id="532671255"/>
+							</MediaRefs>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2221504388" Name="StopGameMusic" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3345735074" Name="StopGameMusic_Immediate" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="290942698" Name="Difficulty">
@@ -112,9 +94,18 @@
 						<State Id="3599861390" Name="Hard"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="4091656514" Name="GameState">
+					<States>
+						<State Id="221232711" Name="Lost"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1080430619" Name="Won"/>
+						<State Id="1521187885" Name="StartGame"/>
+						<State Id="3604647259" Name="MainMenu"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5A7ADAA3-A04A-4866-0BC0-90BDFCB1052D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FD4CBD0D-3C9C-772E-8904-5AD2BC0BE82F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -135,8 +126,17 @@
 						<State Id="3599861390" Name="Hard"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="4091656514" Name="GameState">
+					<States>
+						<State Id="221232711" Name="Lost"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1080430619" Name="Won"/>
+						<State Id="1521187885" Name="StartGame"/>
+						<State Id="3604647259" Name="MainMenu"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{513B00B6-5006-442D-A1E6-F4CCB9F43EC1}</FileHash>
+	<FileHash>{FE74DE80-4E6F-B7C2-BEC5-B0442B714B32}</FileHash>
 </SoundBanksInfo>

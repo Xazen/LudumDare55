@@ -1,11 +1,17 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	290942698	Difficulty			\Default Work Unit\Difficulty	
+	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
 	529018163	Easy	Difficulty			
 	748895195	None	Difficulty			
 	2849147824	Medium	Difficulty			
 	3599861390	Hard	Difficulty			
+	221232711	Lost	GameState			
+	748895195	None	GameState			
+	1080430619	Won	GameState			
+	1521187885	StartGame	GameState			
+	3604647259	MainMenu	GameState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
