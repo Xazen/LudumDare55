@@ -55,6 +55,13 @@ public class AudioManager : MonoBehaviour
         Debug.Log("Difficulty: " + difficulty.ToString());
         AkSoundEngine.SetState("GameState", "StartGame");
     }
+
+    public void Restart(SongDifficulty difficulty)
+    {
+        StopMusic();
+        StartGameMusic(difficulty);
+        PostMusicEvent();
+    }
     
     public void ToMenu()
     {
