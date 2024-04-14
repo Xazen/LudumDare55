@@ -31,8 +31,13 @@ namespace DefaultNamespace
 
         private void PlayNote(int trackIndex)
         {
+            Singletons.AudioManager.Play_pressArrow(trackIndex);
             Singletons.Playfield.AnimateTracker(trackIndex);
-            Singletons.GameModel.PlayNote(trackIndex);
+
+            if (Singletons.GameModel.HasNote(trackIndex))
+            {
+                Singletons.GameModel.PlayNote(trackIndex);
+            }
         }
     }
 }

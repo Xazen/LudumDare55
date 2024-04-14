@@ -52,14 +52,26 @@ public class GameOver : MonoBehaviour
     {
         gameOverContainer.SetActive(true);
 
-        var gameModelTimingNotesCount = Singletons.GameModel.TimingNotesCount;
-        perfectText.text = "x"+gameModelTimingNotesCount[TimingType.Perfect];
-        greatText.text = "x"+gameModelTimingNotesCount[TimingType.Great];
-        goodText.text = "x"+gameModelTimingNotesCount[TimingType.Good];
-        badText.text = "x"+gameModelTimingNotesCount[TimingType.Bad];
-        missText.text = "x"+gameModelTimingNotesCount[TimingType.Miss];
+        UpdateText(TimingType.Perfect, perfectText);
+        UpdateText(TimingType.Great, greatText);
+        UpdateText(TimingType.Good, goodText);
+        UpdateText(TimingType.Bad, badText);
+        UpdateText(TimingType.Miss, missText);
 
         IsOpen = true;
+    }
+
+    private void UpdateText(TimingType timingType, TMP_Text text)
+    {
+        var gameModelTimingNotesCount = Singletons.GameModel.TimingNotesCount;
+        if (gameModelTimingNotesCount.TryGetValue(timingType, out var value))
+        {
+            text.text = "x"+value;
+        }
+        else
+        {
+            text.text = "x0";
+        }
     }
 
     private void Update()

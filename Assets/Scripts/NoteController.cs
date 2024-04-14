@@ -37,17 +37,22 @@ public class NoteController : MonoBehaviour
 
     private void OnNotePlayed(int trackIndex, NoteView note, ScoreType scoreType)
     {
+        Debug.Log("Note is dragon ball? " + note.IsDragonBall);
+        if (note.IsDragonBall)
+        {
+            Singletons.AudioManager.PlayDragonballSound();
+        }
+        else
+        {
+            Singletons.AudioManager.Play_Hit(trackIndex);
+        }
+
         var impactObject = impactPool.GetObject();
         impactObject.transform.position = note.transform.position;
         impactObject.SetActive(true);
 
         Singletons.NotePool.ReturnNote(note);
         _noteTweens.Remove(note);
-
-        if (scoreType.TimingType != TimingType.Miss)
-        {
-            note.transform.localScale = Vector3.one * 0.5f;
-        }
     }
 
     private void OnNoteReceived(int trackIndex, bool isDragonBall)

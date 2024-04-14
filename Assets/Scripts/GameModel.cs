@@ -159,5 +159,15 @@ namespace DefaultNamespace
             }
             return perfectNotes;
         }
+
+        public bool HasNote(int trackIndex)
+        {
+            if (_currentNotes[trackIndex].Count > 0)
+            {
+                var noteView = _currentNotes[trackIndex].Peek();
+                return Singletons.Balancing.GetScoreTypeByNote(noteView).TimingType != TimingType.Miss;
+            }
+            return false;
+        }
     }
 }
