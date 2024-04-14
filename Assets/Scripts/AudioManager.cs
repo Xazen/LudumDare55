@@ -20,8 +20,10 @@ public class AudioManager : MonoBehaviour
     [HideInInspector] public Action<int, bool> RhythmCallback;
     [HideInInspector] public Action<bool> GameEnded;
     [HideInInspector] public Action<WonTriggers> WonTrigger;
+    [HideInInspector] public Action LostTrigger;
 
     private bool checkWonCues = false;
+    private bool checkLostCue = false;
 
     private void Awake()
     {
@@ -123,7 +125,7 @@ public class AudioManager : MonoBehaviour
 
     private void PostMusicEvent()
     {
-        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue | (uint)AkCallbackType.AK_MusicSyncExit, MidiCallback);
+        MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue | (uint)AkCallbackType.AK_MusicSyncExit , MidiCallback);
     }
 
     private void MidiCallback(object in_cookie, AkCallbackType in_type, object in_info)
@@ -149,6 +151,7 @@ public class AudioManager : MonoBehaviour
                 bool won = Singletons.GameModel.HaveAllDragonBalls();
                 AkSoundEngine.SetState("GameState", won ? "Won" : "Lost");
                 GameEnded?.Invoke(won);
+                checkLostCue = !won;
             }
             if (((AkMusicSyncCallbackInfo)in_info).userCueName == "WON")
             {
@@ -167,6 +170,10 @@ public class AudioManager : MonoBehaviour
         if(checkWonCues && in_type == AkCallbackType.AK_MusicSyncExit)
         {
             WonTrigger?.Invoke(WonTriggers.PointsScreen);
+        }
+        if(checkLostCue && in_type == AkCallbackType.AK_MusicSyncExit)
+        {
+            LostTrigger?.Invoke();
         }
     }
 }

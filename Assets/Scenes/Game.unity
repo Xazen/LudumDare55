@@ -1503,6 +1503,11 @@ PrefabInstance:
       propertyPath: skyImage
       value: 
       objectReference: {fileID: 5649898165844985300}
+    - target: {fileID: 1917654091634352573, guid: b40150b7c5cb44d459357e2d47b2a411,
+        type: 3}
+      propertyPath: booObject
+      value: 
+      objectReference: {fileID: 5649898165844985301}
     - target: {fileID: 4652186035007611134, guid: b40150b7c5cb44d459357e2d47b2a411,
         type: 3}
       propertyPath: m_Name
@@ -1752,6 +1757,12 @@ PrefabInstance:
 --- !u!212 &5649898165844985300 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 7452961934090759803, guid: ae47d1c862c06dd4281f9bef24131550,
+    type: 3}
+  m_PrefabInstance: {fileID: 5649898165844985299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5649898165844985301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2380307994257441464, guid: ae47d1c862c06dd4281f9bef24131550,
     type: 3}
   m_PrefabInstance: {fileID: 5649898165844985299}
   m_PrefabAsset: {fileID: 0}

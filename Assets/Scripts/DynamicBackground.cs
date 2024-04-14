@@ -12,6 +12,7 @@ public class DynamicBackground : MonoBehaviour
 
     [SerializeField] private SpriteRenderer skyImage;
     [SerializeField] private GameObject shengronObject;
+    [SerializeField] private GameObject booObject;
     [SerializeField] private CanvasGroup shengronAppearShine;
     [SerializeField] private Sprite nightSprite;
 
@@ -88,6 +89,7 @@ public class DynamicBackground : MonoBehaviour
                     shengronAppearShine.alpha = 0;
                     shengronAppearShine.gameObject.SetActive(true);
                 });
+                shenlonAppearSequence.Insert(0, booObject.transform.DOMoveY(-30, 1.8f).SetEase(Ease.OutCubic));
                 shenlonAppearSequence.AppendInterval(3.5f);
 
                 // 8.3

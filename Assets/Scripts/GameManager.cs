@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
@@ -30,6 +31,36 @@ namespace DefaultNamespace
             }
             Singletons.PauseMenu.OnPaused += OnPaused;
             Singletons.GameModel.OnHealthZero += OnHealthZero;
+            Singletons.AudioManager.WonTrigger += OnWonTrigger;
+            Singletons.AudioManager.LostTrigger += OnLostTrigger;
+        }
+
+        private void OnDestroy()
+        {
+            Singletons.PauseMenu.OnPaused -= OnPaused;
+            Singletons.GameModel.OnHealthZero -= OnHealthZero;
+            Singletons.AudioManager.WonTrigger -= OnWonTrigger;
+            Singletons.AudioManager.LostTrigger -= OnLostTrigger;
+        }
+
+        private void OnLostTrigger()
+        {
+            if (!Singletons.GameOver.IsOpen)
+            {
+                Singletons.GameOver.OpenGameOver(false);
+            }
+        }
+
+        private void OnWonTrigger(AudioManager.WonTriggers obj)
+        {
+            if (obj == AudioManager.WonTriggers.PointsScreen)
+            {
+                GlobalSettings.BlockInput = false;
+                if (!Singletons.GameOver.IsOpen)
+                {
+                    Singletons.GameOver.OpenGameOver(true);
+                }
+            }
         }
 
         private void OnHealthZero(int _)
