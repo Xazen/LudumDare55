@@ -14,7 +14,6 @@ namespace DefaultNamespace
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 PlayNote(0);
-
             }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
@@ -32,6 +31,7 @@ namespace DefaultNamespace
 
         private void PlayNote(int trackIndex)
         {
+            Singletons.Playfield.AnimateTracker(trackIndex);
             Singletons.GameModel.PlayNote(trackIndex);
         }
     }
