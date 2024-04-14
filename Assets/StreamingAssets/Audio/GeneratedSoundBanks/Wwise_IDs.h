@@ -33,8 +33,8 @@ namespace AK
             {
                 static const AkUniqueID EASY = 529018163U;
                 static const AkUniqueID HARD = 3599861390U;
-                static const AkUniqueID MEDIUM = 2849147824U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID NORMAL = 1160234136U;
             } // namespace STATE
         } // namespace DIFFICULTY
 
