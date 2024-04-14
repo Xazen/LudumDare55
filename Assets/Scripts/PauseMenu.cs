@@ -56,6 +56,14 @@ namespace DefaultNamespace
                 IsPaused = pauseContainer.activeSelf;
                 OnPaused?.Invoke(pauseContainer.activeSelf);
             }
+
+            if (IsPaused)
+            {
+                if (!EventSystem.current.currentSelectedGameObject)
+                {
+                    EventSystem.current.SetSelectedGameObject(continueButton.gameObject);
+                }
+            }
         }
 
         private void ContinueGame()
