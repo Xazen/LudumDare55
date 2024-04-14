@@ -17,9 +17,6 @@
         private static Balancing _balancing;
         public static Balancing Balancing => _balancing;
 
-        private static GameManager _gameManager;
-        public static GameManager GameManager => _gameManager;
-
         private static PauseMenu _pauseMenu;
         public static PauseMenu PauseMenu => _pauseMenu;
 
@@ -43,17 +40,12 @@
             _audioManager = audioManager;
         }
 
-        public static void RegisterGameManager(GameManager gameManager)
-        {
-            _gameManager = gameManager;
-        }
-
         public static void RegisterPauseMenu(PauseMenu pauseMenu)
         {
             _pauseMenu = pauseMenu;
         }
 
-        public static void ResetGameModel(GameModel gameModel)
+        public static void RegisterGameModel(GameModel gameModel)
         {
             _gameModel = gameModel;
         }

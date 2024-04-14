@@ -9,8 +9,8 @@ namespace DefaultNamespace
 
         private void Awake()
         {
-            Singletons.RegisterGameManager(this);
             Singletons.RegisterBalancing(balancing);
+            Singletons.RegisterGameModel(new GameModel());
         }
 
         private void Start()
@@ -20,7 +20,6 @@ namespace DefaultNamespace
 
         private void StartGame()
         {
-            Singletons.ResetGameModel(new GameModel());
             Singletons.AudioManager.StartGameMusic(difficulty);
             Singletons.PauseMenu.OnPaused += OnPaused;
             Singletons.GameModel.OnHealthZero += OnHealthZero;

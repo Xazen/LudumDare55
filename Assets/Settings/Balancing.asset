@@ -7,7 +7,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e79ee83fb0f8455faac7679fd9b10e44, type: 3}
   m_Name: Balancing
@@ -21,4 +21,39 @@ MonoBehaviour:
   trackWidth: 5.4
   targetNoteAnimationDuration: 2.5
   noteCalculationType: 0
-  scoreTypes: []
+  scoreTypes:
+  - TimingType: 0
+    Distance: 0.1875
+    MillisEasy: 50
+    MillisMid: 33
+    MillisHard: 16
+    Score: 100
+    IsCombo: 1
+  - TimingType: 1
+    Distance: 0.375
+    MillisEasy: 80
+    MillisMid: 63
+    MillisHard: 46
+    Score: 30
+    IsCombo: 1
+  - TimingType: 2
+    Distance: 0.75
+    MillisEasy: 180
+    MillisMid: 155
+    MillisHard: 130
+    Score: 10
+    IsCombo: 1
+  - TimingType: 3
+    Distance: 1.5
+    MillisEasy: 250
+    MillisMid: 225
+    MillisHard: 200
+    Score: 5
+    IsCombo: 0
+  - TimingType: 4
+    Distance: 1e+32
+    MillisEasy: 1e+32
+    MillisMid: 1e+32
+    MillisHard: 1e+32
+    Score: 0
+    IsCombo: 0
