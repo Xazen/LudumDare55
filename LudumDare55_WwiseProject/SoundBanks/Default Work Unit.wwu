@@ -5,7 +5,9 @@
 			<ChildrenList>
 				<SoundBank Name="General" ID="{744543EF-9491-4591-B069-83747CCFDA57}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{69A680A8-97AD-4853-B222-37F1DFEE1322}" WorkUnitID="{69A680A8-97AD-4853-B222-37F1DFEE1322}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{A23D6C7F-326B-48B9-A62A-C5F324920728}" WorkUnitID="{A23D6C7F-326B-48B9-A62A-C5F324920728}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
