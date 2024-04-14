@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{58772D5C-3A8E-7902-1035-AD8E40C8EA21}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{9ADB01EE-C463-34C7-1D65-508E771335EA}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -29,6 +29,14 @@
 					<ShortName>Winning_Points.wav</ShortName>
 					<CachePath>SFX/Winning_Points_56CEF360.wem</CachePath>
 				</File>
+				<File Id="384659675" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>reflect_deflect.wav</ShortName>
+					<CachePath>SFX/reflect_deflect_8E324C96.wem</CachePath>
+				</File>
+				<File Id="506408390" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>hit.wav</ShortName>
+					<CachePath>SFX/hit_8E324C96.wem</CachePath>
+				</File>
 				<File Id="532671255" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Winning_Cue.wav</ShortName>
 					<CachePath>SFX/Winning_Cue_56CEF360.wem</CachePath>
@@ -45,6 +53,10 @@
 					<ShortName>Lost_Cue.wav</ShortName>
 					<CachePath>SFX/Lost_Cue_56CEF360.wem</CachePath>
 				</File>
+				<File Id="956268283" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>db_glowing.wav</ShortName>
+					<CachePath>SFX/db_glowing_56CEF360.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<Custom>
@@ -52,7 +64,18 @@
 				</Custom>
 			</Plugins>
 			<Events>
+				<Event Id="223291225" Name="DragonballTrigger" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2960666077" Name="Play_hit" DurationType="OneShot" DurationMin="0.26889583" DurationMax="0.26889583">
+					<MediaRefs>
+						<MediaRef Id="506408390"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3151157893" Name="Play_reflect_deflect" DurationType="OneShot" DurationMin="0.2775" DurationMax="0.2775">
+					<MediaRefs>
+						<MediaRef Id="384659675"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="953277036" Name="Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1568977742" Name="StartGameMusic" DurationType="Infinite">
 					<SwitchContainers>
@@ -504,5 +527,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C0A5CF6E-5977-FDF7-0F41-5782F1A437E4}</FileHash>
+	<FileHash>{8AB17F10-4BCD-1E18-EFB4-110AD4EAB2E6}</FileHash>
 </SoundBanksInfo>

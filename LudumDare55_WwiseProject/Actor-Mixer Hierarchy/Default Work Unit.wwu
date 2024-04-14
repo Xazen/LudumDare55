@@ -21,6 +21,80 @@
 						<ActiveSource Name="Silence" ID="{E16CD051-E820-4D9A-910B-9E7759FC56F3}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Dragonball Glow" ID="{78CF7EF8-9D00-4CD9-AF5E-DBB6D44FDF9C}" ShortID="385720159">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C4DAACCC-678F-4F75-89BB-0CFD8DF9AE3F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="db_glowing" ID="{CC9F03E9-7BA4-4C35-95B2-8C148891824E}">
+							<Language>SFX</Language>
+							<AudioFile>db_glowing.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="956268283"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="db_glowing" ID="{CC9F03E9-7BA4-4C35-95B2-8C148891824E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="reflect_deflect" ID="{1D0BF4E2-6E14-453A-9ECE-8B8A06A93484}" ShortID="288275386">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C4DAACCC-678F-4F75-89BB-0CFD8DF9AE3F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="reflect_deflect" ID="{ADE44E48-D5B9-4661-91A6-5B3980C256AE}">
+							<Language>SFX</Language>
+							<AudioFile>reflect_deflect.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="384659675"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="reflect_deflect" ID="{ADE44E48-D5B9-4661-91A6-5B3980C256AE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="hit" ID="{B29DA20A-107D-47CD-82AC-5A7719115A8F}" ShortID="505006963">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C4DAACCC-678F-4F75-89BB-0CFD8DF9AE3F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="hit" ID="{346A5FF4-F588-4E12-A8B2-389F637372AA}">
+							<Language>SFX</Language>
+							<AudioFile>hit.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="506408390"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="hit" ID="{346A5FF4-F588-4E12-A8B2-389F637372AA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

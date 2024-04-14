@@ -98,6 +98,21 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.PostEvent("Resume", gameObject);
     }
 
+    public void PlayDragonballSound()
+    {
+        AkSoundEngine.PostEvent("DragonballTrigger", gameObject);
+    }
+
+    public void Play_Hit(int arrowNumber)
+    {
+        AkSoundEngine.PostEvent("Play_hit", gameObject);
+    }
+
+    public void Play_pressArrow(int arrowNumber)
+    {
+        AkSoundEngine.PostEvent("Play_reflect_deflect", gameObject);
+    }
+
     private void PostMusicEvent()
     {
         MusicEvent.Post(gameObject, (uint)AkCallbackType.AK_MIDIEvent | (uint)AkCallbackType.AK_MusicSyncUserCue | (uint)AkCallbackType.AK_MusicSyncExit, MidiCallback);

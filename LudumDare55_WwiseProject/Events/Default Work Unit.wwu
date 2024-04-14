@@ -67,6 +67,29 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="DragonballTrigger" ID="{26D388EC-ECDF-47D4-AAD2-504BE5C54134}"/>
+				<Event Name="Play_hit" ID="{C386F61A-AF31-4475-8120-B1DA1737AF7A}">
+					<ChildrenList>
+						<Action Name="" ID="{67CF5874-DC52-4E3F-AE5B-3381164A971C}" ShortID="565937417">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hit" ID="{B29DA20A-107D-47CD-82AC-5A7719115A8F}" WorkUnitID="{A23D6C7F-326B-48B9-A62A-C5F324920728}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_reflect_deflect" ID="{FDB6E84A-DE8C-4D60-BC3B-13D2C1FFD798}">
+					<ChildrenList>
+						<Action Name="" ID="{057E9E23-00A6-4848-8FAC-8EFA137A1A43}" ShortID="496718128">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="reflect_deflect" ID="{1D0BF4E2-6E14-453A-9ECE-8B8A06A93484}" WorkUnitID="{A23D6C7F-326B-48B9-A62A-C5F324920728}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
