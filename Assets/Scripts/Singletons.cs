@@ -22,6 +22,9 @@
         private static Playfield _playfield;
         public static Playfield Playfield => _playfield;
 
+        private static GameOver _gameOver;
+        public static GameOver GameOver => _gameOver;
+
         public static void RegisterNotePool(NotePool notePool)
         {
             _notePool = notePool;
@@ -55,6 +58,11 @@
         public static void RegisterPlayfield(Playfield playfield)
         {
             _playfield = playfield;
+        }
+
+        public static void RegisterGameOverMenu(GameOver gameOver)
+        {
+            _gameOver = gameOver;
         }
     }
 }

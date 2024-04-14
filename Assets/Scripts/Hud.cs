@@ -11,6 +11,7 @@ using UnityEngine.UI;
 public class Hud : MonoBehaviour
 {
     [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private TMP_Text scoreDiffText;
     [SerializeField] private TMP_Text comboText;
     [SerializeField] private List<TimingObject> timingObjects;
     [SerializeField] private Image healthImage;
@@ -115,7 +116,7 @@ public class Hud : MonoBehaviour
         }
     }
 
-    private void SetScore(int score)
+    private void SetScore(int score, int diff)
     {
         if (_scoreTween != null && _scoreTween.IsActive() && !_scoreTween.IsComplete())
         {
@@ -129,6 +130,10 @@ public class Hud : MonoBehaviour
                 scoreText.text = score.ToString();
                 _scoreTween = null;
             });
+
+        scoreDiffText.gameObject.SetActive(true);
+        scoreDiffText.text = "+"+diff;
+        PlayScaleAnimation(scoreDiffText.transform, () => scoreDiffText.gameObject.SetActive(false));
     }
 
     private void PlayScaleAnimation(Transform t, Action onComplete = null)

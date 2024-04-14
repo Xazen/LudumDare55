@@ -20,6 +20,7 @@ public class DynamicBackground : MonoBehaviour
 
     private void OnNotePlayed(int trackIndex, NoteView note, ScoreType scoreType)
     {
+        Debug.Log("OnNotePlayed in DynamicBackground");
         if (note.IsDragonBall)
         {
             var dragonBall = dragonBalls[note.DragonBallIndex];
