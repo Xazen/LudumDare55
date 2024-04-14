@@ -16,6 +16,8 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	599441268	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\empty\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	63106106	MIDI	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\extrem_36E4615E.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Hard\MIDI		4706
-	245429244	New Music Track	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Hard\New Music Track		1702891
+	63106106	MIDI	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\extrem_C6BD02BE.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Hard\MIDI		9028
+	319173140	New Music Track	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_v2_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Medium\New Music Track		5123355
+	364323461	MIDI	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\middle_FA28C0F9.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Medium\MIDI		1674
+	599029832	MIDI	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\easy_36468A77.wem		\Interactive Music Hierarchy\Default Work Unit\GameMusic\GameMusic_Easy\MIDI		3902
 
