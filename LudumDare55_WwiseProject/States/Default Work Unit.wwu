@@ -7,7 +7,7 @@
 					<ChildrenList>
 						<State Name="None" ID="{847DDA91-3CC7-4626-A691-0461535E58C2}"/>
 						<State Name="Easy" ID="{4332B5DA-683D-474D-9C69-3BFB5DBE5000}"/>
-						<State Name="Normal" ID="{305E7C15-9DE7-4655-8C49-347D6EAA9FCF}"/>
+						<State Name="Medium" ID="{305E7C15-9DE7-4655-8C49-347D6EAA9FCF}"/>
 						<State Name="Hard" ID="{8DA0A7E5-7DD8-4127-A33D-463F84CFB391}"/>
 					</ChildrenList>
 				</StateGroup>

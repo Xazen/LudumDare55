@@ -23,15 +23,46 @@
 									</PropertyList>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{BA3B782D-2FFD-4C4D-B011-7E4314797884}">
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{04132344-E187-4589-A659-237A05926433}">
 											<PropertyList>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Won" ID="{5374F788-47EE-4880-9389-5764B4C1C625}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												</Reference>
+											</ReferenceList>
 											<TransitionInfo>
 												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{B4AB0166-EC83-4ABF-AF84-51863922E7E7}">
+													<MusicFade Name="Source Fade-out" ID="{3F5FAD85-ECD9-473A-8D18-E50CC2CE79E1}">
 														<PropertyList>
-															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="2"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{968ED538-5B67-4708-B863-3A99AA8A9FDD}">
+											<PropertyList>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Lost" ID="{66A1A293-6F82-493F-B232-CF36EF0C3868}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{7150E40F-58C8-4578-A870-9538BFF81B98}">
+														<PropertyList>
 															<Property Name="FadeTime" Type="Real64" Value="1"/>
 															<Property Name="FadeType" Type="int16" Value="1"/>
 														</PropertyList>
@@ -39,61 +70,59 @@
 												</SourceFadeOut>
 											</TransitionInfo>
 										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{B6289422-2F03-43E8-82B4-5A14C7608CFB}">
-											<PropertyList>
-												<Property Name="DestinationContextType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="DestinationContextObject">
-													<ObjectRef Name="Lost" ID="{66A1A293-6F82-493F-B232-CF36EF0C3868}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
-												</Reference>
-											</ReferenceList>
-											<TransitionInfo/>
-										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{0ECB3470-F0B3-46AE-91BC-951683BC2570}">
-											<PropertyList>
-												<Property Name="DestinationContextType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="DestinationContextObject">
-													<ObjectRef Name="Won" ID="{5374F788-47EE-4880-9389-5764B4C1C625}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
-												</Reference>
-											</ReferenceList>
-											<TransitionInfo/>
-										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{845BB2FF-EEA6-4498-9416-75FA07468BBA}">
+										<MusicTransition Name="Transition" ID="{10A0F5A6-1112-4FCC-9803-6C2E368EC64C}">
 											<PropertyList>
 												<Property Name="DestinationContextType" Type="int16" Value="2"/>
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
-												<Property Name="SourceContextType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="DestinationContextObject">
 													<ObjectRef Name="MenuMusic" ID="{4B378872-6945-4ED2-AFA6-66E5C2D37628}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
 												</Reference>
-												<Reference Name="SourceContextObject">
-													<ObjectRef Name="LevelMusic" ID="{A416BF11-4A95-4A2B-9E53-31EED9A0EC5D}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
-												</Reference>
 											</ReferenceList>
 											<TransitionInfo>
 												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{7217C01F-7B7B-48AF-B126-E0D0A28D30DD}">
+													<MusicFade Name="Source Fade-out" ID="{ACC094CD-84F4-40FC-9F50-D7C92F82A185}">
 														<PropertyList>
-															<Property Name="FadeOffset" Type="Real64" Value="0.1"/>
-															<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
 															<Property Name="FadeType" Type="int16" Value="1"/>
 														</PropertyList>
 													</MusicFade>
 												</SourceFadeOut>
 												<DestinationFadeIn>
-													<MusicFade Name="Destination Fade-in" ID="{C1C90245-5E15-4D79-B593-60040292C36B}">
+													<MusicFade Name="Destination Fade-in" ID="{8BE6B7E8-B457-4CE1-B97D-0458FFBA7150}">
 														<PropertyList>
-															<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+															<Property Name="FadeTime" Type="Real64" Value="1"/>
 														</PropertyList>
 													</MusicFade>
 												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{FA0D992F-5DCE-4821-B5BB-95E0706D2919}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="LevelMusic" ID="{A416BF11-4A95-4A2B-9E53-31EED9A0EC5D}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="MenuMusic" ID="{4B378872-6945-4ED2-AFA6-66E5C2D37628}" WorkUnitID="{DE86C4CC-C130-43C3-8612-B7B5C80EBA2F}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{DAA343F3-29C7-4DCB-A60F-E1AD0D84805D}">
+														<PropertyList>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
 											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
@@ -760,20 +789,7 @@
 											</PropertyList>
 											<ChildrenList>
 												<MusicTransition Name="Transition" ID="{44F10D05-543D-4AC3-BE96-74CB72058396}">
-													<PropertyList>
-														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-														<Property Name="ExitSourceAt" Type="int16" Value="0"/>
-													</PropertyList>
-													<TransitionInfo>
-														<SourceFadeOut>
-															<MusicFade Name="Source Fade-out" ID="{5D82AA30-B512-40C2-B931-B72848DC1777}">
-																<PropertyList>
-																	<Property Name="FadeTime" Type="Real64" Value="1"/>
-																	<Property Name="FadeType" Type="int16" Value="1"/>
-																</PropertyList>
-															</MusicFade>
-														</SourceFadeOut>
-													</TransitionInfo>
+													<TransitionInfo/>
 												</MusicTransition>
 											</ChildrenList>
 											<TransitionInfo/>
@@ -870,7 +886,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MidiFileSource Name="easy" ID="{48F72746-24B7-475D-8F29-3FCBEC6F5F2C}" ShortID="893543122">
+												<MidiFileSource Name="easy_01" ID="{51F7BC81-D6E3-4A58-A345-0A19C68071F5}" ShortID="1048359317">
 													<Language>SFX</Language>
 													<MidiFile>easy.mid</MidiFile>
 													<MediaIDList>
@@ -887,12 +903,12 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClipMidi Name="easy" ID="{9CCC8BD5-651B-4F3A-8E35-C162FE690603}">
+																				<MusicClipMidi Name="easy_01" ID="{85B42A9E-9A97-4F50-B568-D6210AF2F6D8}">
 																					<PropertyList>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="235876.719808994"/>
 																						<Property Name="PlayAt" Type="Real64" Value="3106.79611650485"/>
 																					</PropertyList>
-																					<MidiSourceRef Name="easy" ID="{48F72746-24B7-475D-8F29-3FCBEC6F5F2C}"/>
+																					<MidiSourceRef Name="easy_01" ID="{51F7BC81-D6E3-4A58-A345-0A19C68071F5}"/>
 																				</MusicClipMidi>
 																			</Local>
 																		</Reference>
@@ -1023,7 +1039,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MidiFileSource Name="extrem" ID="{4DDCB949-AF7C-4CA9-8993-CA750D22F75F}" ShortID="512552807">
+												<MidiFileSource Name="extrem" ID="{F99C3466-6C24-4479-A07D-7569B8A9CC22}" ShortID="791372406">
 													<Language>SFX</Language>
 													<MidiFile>extrem.mid</MidiFile>
 													<MediaIDList>
@@ -1040,12 +1056,12 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClipMidi Name="extrem" ID="{F8BCB1BA-FF57-4373-8393-001D21DC985C}">
+																				<MusicClipMidi Name="extrem" ID="{FF6ED01C-46C1-48AF-8572-29B28856FF89}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="235876.719808994"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="300708.796068796"/>
 																						<Property Name="PlayAt" Type="Real64" Value="3106.79611650485"/>
 																					</PropertyList>
-																					<MidiSourceRef Name="extrem" ID="{4DDCB949-AF7C-4CA9-8993-CA750D22F75F}"/>
+																					<MidiSourceRef Name="extrem" ID="{F99C3466-6C24-4479-A07D-7569B8A9CC22}"/>
 																				</MusicClipMidi>
 																			</Local>
 																		</Reference>
@@ -1090,7 +1106,7 @@
 								</MusicSegment>
 								<MusicSegment Name="InGameMusic_Medium" ID="{2A68B69A-074F-45AF-A824-50CCFD8E8B93}" ShortID="965890619">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="256570.609263161"/>
+										<Property Name="EndPosition" Type="Real64" Value="248434.688531975"/>
 										<Property Name="MidiTempoSource" Type="int16" Value="1"/>
 										<Property Name="OverrideMidiTarget" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="154.5"/>
@@ -1176,7 +1192,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MidiFileSource Name="middle" ID="{85C91EC4-43F8-41BD-B4DE-234AB66D9A00}" ShortID="570239361">
+												<MidiFileSource Name="middle" ID="{9BCC8D4B-8471-4113-9EC9-7F435C3307FF}" ShortID="952764483">
 													<Language>SFX</Language>
 													<MidiFile>middle.mid</MidiFile>
 													<MediaIDList>
@@ -1193,12 +1209,12 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClipMidi Name="middle" ID="{D5E2D207-2FC7-41C1-9E1A-ED43861421B0}">
+																				<MusicClipMidi Name="middle" ID="{940BF4F2-4FAE-43BE-A768-E4065C8AD4B3}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="235876.719808994"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="95825.9287479661"/>
 																						<Property Name="PlayAt" Type="Real64" Value="3106.79611650485"/>
 																					</PropertyList>
-																					<MidiSourceRef Name="middle" ID="{85C91EC4-43F8-41BD-B4DE-234AB66D9A00}"/>
+																					<MidiSourceRef Name="middle" ID="{9BCC8D4B-8471-4113-9EC9-7F435C3307FF}"/>
 																				</MusicClipMidi>
 																			</Local>
 																		</Reference>
@@ -1314,7 +1330,7 @@
 												<ObjectLists>
 													<ObjectList Name="EntryPath">
 														<Reference>
-															<ObjectRef Name="Normal" ID="{305E7C15-9DE7-4655-8C49-347D6EAA9FCF}" WorkUnitID="{A91047D6-605D-4744-A761-2DDC43210B7A}"/>
+															<ObjectRef Name="Medium" ID="{305E7C15-9DE7-4655-8C49-347D6EAA9FCF}" WorkUnitID="{A91047D6-605D-4744-A761-2DDC43210B7A}"/>
 														</Reference>
 													</ObjectList>
 												</ObjectLists>

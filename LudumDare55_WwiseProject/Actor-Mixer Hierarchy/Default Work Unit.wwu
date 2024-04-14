@@ -56,13 +56,6 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="reflect_deflect" ID="{1D0BF4E2-6E14-453A-9ECE-8B8A06A93484}" ShortID="288275386">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-11</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
@@ -85,13 +78,6 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="hit" ID="{B29DA20A-107D-47CD-82AC-5A7719115A8F}" ShortID="505006963">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-22</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52917B49-C78A-445A-8DAA-5D21E858DBFB}"/>
