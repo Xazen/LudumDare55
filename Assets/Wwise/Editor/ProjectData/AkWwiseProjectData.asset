@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a880a669ad975348b22237f1dfee1322
     GuidInternal: 
-    m_lastTime: -8584884937438649845
+    m_lastTime: -8584884871730611274
     List:
     - name: DragonballTrigger
       guid: ec88d326dfecd447aad2504be5c54134
@@ -111,8 +111,8 @@ MonoBehaviour:
         guid: ec88d326dfecd447aad2504be5c54134
       Path: Events\Default Work Unit\DragonballTrigger
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.2713786
+      minDuration: 1.2713786
     - name: Pause
       guid: 6f5b35b589808d4fbdf3c73fcd07233e
       id: 3092587493
