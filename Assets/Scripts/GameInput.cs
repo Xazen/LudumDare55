@@ -6,6 +6,11 @@ namespace DefaultNamespace
     {
         private void Update()
         {
+            if (Singletons.PauseMenu.IsPaused)
+            {
+                return;
+            }
+
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 PlayNote(0);

@@ -7,13 +7,20 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Button startButton;
     [SerializeField] private Button exitButton;
+    [SerializeField] private Button settingsButton;
 
     private void Start()
     {
         startButton.onClick.AddListener(StartGame);
         exitButton.onClick.AddListener(ExitGame);
+        settingsButton.onClick.AddListener(OpenSettings);
 
         EventSystem.current.SetSelectedGameObject(startButton.gameObject);
+    }
+
+    private void OpenSettings()
+    {
+        SceneManager.LoadScene("Settings");
     }
 
     private void StartGame()

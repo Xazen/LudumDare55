@@ -4,7 +4,6 @@ namespace DefaultNamespace
 {
     public class GameManager : MonoBehaviour
     {
-        [SerializeField] private AudioManager.Difficulty difficulty;
         [SerializeField] private Balancing balancing;
 
         private void Awake()
@@ -20,7 +19,7 @@ namespace DefaultNamespace
 
         private void StartGame()
         {
-            Singletons.AudioManager.StartGameMusic(difficulty);
+            Singletons.AudioManager.StartGameMusic(GlobalSettings.Difficulty);
             Singletons.PauseMenu.OnPaused += OnPaused;
             Singletons.GameModel.OnHealthZero += OnHealthZero;
         }

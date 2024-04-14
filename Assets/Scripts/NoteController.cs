@@ -10,9 +10,9 @@ public class NoteController : MonoBehaviour
     private AudioManager audioManager;
 
     public Action<NoteView> OnNoteReachedEnd;
-    private Dictionary<NoteView, Tween> _noteTweens = new ();
+    private readonly Dictionary<NoteView, Tween> _noteTweens = new ();
 
-    private int dragonBallCount;
+    private int _dragonBallCount;
 
     private void Awake()
     {
@@ -21,14 +21,16 @@ public class NoteController : MonoBehaviour
 
     private void Start()
     {
-        dragonBallCount = 0;
+        _dragonBallCount = 0;
         audioManager.RhythmCallback += OnNoteReceived;
-        Singletons.GameModel.OnNotePlayed += OnNotePlayed;
+        var model = Singletons.GameModel;
+        if (model != null) model.OnNotePlayed += OnNotePlayed;
     }
 
     private void OnDestroy()
     {
-        Singletons.GameModel.OnNotePlayed -= OnNotePlayed;
+        var model = Singletons.GameModel;
+        if (model != null) model.OnNotePlayed -= OnNotePlayed;
     }
 
     private void OnNotePlayed(int trackIndex, NoteView note, ScoreType scoreType)
@@ -53,10 +55,10 @@ public class NoteController : MonoBehaviour
 
         note.SetTrack(trackIndex);
 
-        note.SetIsDragonBall(isDragonBall, dragonBallCount);
+        note.SetIsDragonBall(isDragonBall, _dragonBallCount);
         if (isDragonBall)
         {
-            dragonBallCount++;
+            _dragonBallCount++;
         }
         note.transform.position = Singletons.Balancing.GetNoteSpawnPosition(trackIndex);
         note.transform.localScale = Vector3.one;

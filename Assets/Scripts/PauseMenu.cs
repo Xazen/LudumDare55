@@ -14,6 +14,7 @@ namespace DefaultNamespace
         [SerializeField] private Button restartButton;
 
         public Action<bool> OnPaused;
+        public bool IsPaused { get; set; }
 
         private void Awake()
         {
@@ -49,6 +50,7 @@ namespace DefaultNamespace
                 {
                     EventSystem.current.SetSelectedGameObject(continueButton.gameObject);
                 }
+                IsPaused = pauseContainer.activeSelf;
                 OnPaused?.Invoke(pauseContainer.activeSelf);
             }
         }

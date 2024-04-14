@@ -20,7 +20,7 @@ MonoBehaviour:
   noteStartDistance: 13
   trackWidth: 5.4
   targetNoteAnimationDuration: 2.5
-  noteCalculationType: 0
+  noteCalculationType: 2
   scoreTypes:
   - TimingType: 0
     Distance: 0.1875
