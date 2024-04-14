@@ -446,7 +446,7 @@
 							<ChildrenList>
 								<MusicSegment Name="menumusic" ID="{489F4F01-E332-4CF8-9DB4-63E0AB28445C}" ShortID="922143166">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="25631.0833333333"/>
+										<Property Name="EndPosition" Type="Real64" Value="34064.7402912621"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -493,11 +493,72 @@
 																			<Local>
 																				<MusicClip Name="MenuMusic" ID="{77A47065-9493-4B78-B5C1-F5A2556FC108}">
 																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="667.58821457579"/>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="25631.0833333333"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-667.58821457579"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="MenuMusic" ID="{5BA09E48-531B-4D5F-915D-F8C22B76A972}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{0399710B-D538-4E0C-877E-10F31D151ED9}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.66759</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>25.6310833333333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{5DD04FB4-E248-4E52-A24D-7D99894731D3}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.66759</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>25.6310833333333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{1863496C-2AC9-4278-88B5-170D3B99C10D}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.66759</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>25.6310833333333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -825,7 +886,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<MidiFileSource Name="easy" ID="{1432C446-0DDA-400D-956F-B77BC63F2B4A}" ShortID="750141216">
+												<MidiFileSource Name="easy_01" ID="{51F7BC81-D6E3-4A58-A345-0A19C68071F5}" ShortID="1048359317">
 													<Language>SFX</Language>
 													<MidiFile>easy.mid</MidiFile>
 													<MediaIDList>
@@ -842,12 +903,12 @@
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClipMidi Name="easy" ID="{AEAD62DB-1711-4BA0-AA46-A490B1302E17}">
+																				<MusicClipMidi Name="easy_01" ID="{85B42A9E-9A97-4F50-B568-D6210AF2F6D8}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="300708.796068796"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="235876.719808994"/>
 																						<Property Name="PlayAt" Type="Real64" Value="3106.79611650485"/>
 																					</PropertyList>
-																					<MidiSourceRef Name="easy" ID="{1432C446-0DDA-400D-956F-B77BC63F2B4A}"/>
+																					<MidiSourceRef Name="easy_01" ID="{51F7BC81-D6E3-4A58-A345-0A19C68071F5}"/>
 																				</MusicClipMidi>
 																			</Local>
 																		</Reference>

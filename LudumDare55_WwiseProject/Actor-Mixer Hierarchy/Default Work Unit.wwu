@@ -23,7 +23,6 @@
 				</Sound>
 				<Sound Name="Dragonball Glow" ID="{78CF7EF8-9D00-4CD9-AF5E-DBB6D44FDF9C}" ShortID="385720159">
 					<PropertyList>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-5</Value>
@@ -40,6 +39,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="db_glowing" ID="{CC9F03E9-7BA4-4C35-95B2-8C148891824E}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.923807472989195"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.27137860144058"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>db_glowing.wav</AudioFile>
 							<MediaIDList>

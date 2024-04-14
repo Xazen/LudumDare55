@@ -128,10 +128,10 @@ public class AudioManager : MonoBehaviour
                 RhythmCallback?.Invoke(midiEvent.byParam1 - 36, false);
                 //Debug.Log("HIT: " + (midiEvent.byParam1 - 36));
             }
-            if (midiEvent.byParam1 >= 40 && midiEvent.byParam1 <= 43 && midiEvent.byParam2 == 127)
+            if (midiEvent.byParam1 >= 48 && midiEvent.byParam1 <= 51 && midiEvent.byParam2 == 127)
             {
-                RhythmCallback?.Invoke(midiEvent.byParam1 - 40, true);
-                //Debug.Log("HIT: " + (midiEvent.byParam1 - 40));
+                RhythmCallback?.Invoke(midiEvent.byParam1 - 48, true);
+                //Debug.Log("HIT: " + (midiEvent.byParam1 - 48));
             }
         }
         if (in_type == AkCallbackType.AK_MusicSyncUserCue)
@@ -140,25 +140,25 @@ public class AudioManager : MonoBehaviour
             {
                 bool won = Singletons.GameModel.HaveAllDragonBalls();
                 AkSoundEngine.SetState("GameState", won ? "Won" : "Lost");
-                GameEnded.Invoke(won);
+                GameEnded?.Invoke(won);
             }
             if (((AkMusicSyncCallbackInfo)in_info).userCueName == "WON")
             {
                 checkWonCues = true;
-                WonTrigger.Invoke(WonTriggers.MusicEnd);
+                WonTrigger?.Invoke(WonTriggers.MusicEnd);
             }
             if (checkWonCues && ((AkMusicSyncCallbackInfo)in_info).userCueName == "Shenlon")
             {
-                WonTrigger.Invoke(WonTriggers.Shenlon);
+                WonTrigger?.Invoke(WonTriggers.Shenlon);
             }
             if (checkWonCues && ((AkMusicSyncCallbackInfo)in_info).userCueName == "RIP")
             {
-                WonTrigger.Invoke(WonTriggers.RIP);
+                WonTrigger?.Invoke(WonTriggers.RIP);
             }
         }
         if(checkWonCues && in_type == AkCallbackType.AK_MusicSyncExit)
         {
-            WonTrigger.Invoke(WonTriggers.PointsScreen);
+            WonTrigger?.Invoke(WonTriggers.PointsScreen);
         }
     }
 }
