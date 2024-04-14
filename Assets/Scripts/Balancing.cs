@@ -26,7 +26,6 @@ namespace DefaultNamespace
         private float targetNoteAnimationDuration = 2.5f;
 
         [Header("Timings")]
-        [SerializeField] private NoteCalculationType noteCalculationType;
         [SerializeField] private List<ScoreType> scoreTypes;
 
         public int DragonBallCount => dragonBallCount;
@@ -45,11 +44,11 @@ namespace DefaultNamespace
         public float GetMaxNoteDistance()
         {
             var badType = scoreTypes.Find(type => type.TimingType == TimingType.Bad);
-            float result = noteCalculationType switch
+            float result = GlobalSettings.NoteTiming switch
             {
-                NoteCalculationType.MillisEasy => GetMaxNoteDistanceByMillis(badType.MillisEasy),
-                NoteCalculationType.MillisMid => GetMaxNoteDistanceByMillis(badType.MillisMid),
-                NoteCalculationType.MillisHard => GetMaxNoteDistanceByMillis(badType.MillisHard),
+                NoteCalculationType.Easy => GetMaxNoteDistanceByMillis(badType.MillisEasy),
+                NoteCalculationType.Normal => GetMaxNoteDistanceByMillis(badType.MillisMid),
+                NoteCalculationType.Hard => GetMaxNoteDistanceByMillis(badType.MillisHard),
                 NoteCalculationType.Distance => badType.Distance,
                 _ => badType.Distance
             };
@@ -69,21 +68,21 @@ namespace DefaultNamespace
 
         private void LogBalancing()
         {
-            Debug.Log($"Calculation Type: {noteCalculationType}");
+            Debug.Log($"Calculation Type: {GlobalSettings.NoteTiming}");
             foreach (var scoreType in scoreTypes)
             {
-                switch (noteCalculationType)
+                switch (GlobalSettings.NoteTiming)
                 {
                     case NoteCalculationType.Distance:
                         Debug.Log($"ScoreType: {scoreType.TimingType}: {(scoreType.Distance / GetNoteSpeed() * 1000):F2}ms ({scoreType.Distance})");
                         break;
-                    case NoteCalculationType.MillisEasy:
+                    case NoteCalculationType.Easy:
                         Debug.Log($"ScoreType: {scoreType.TimingType}: {GetMaxNoteDistanceByMillis(scoreType.MillisEasy):F2}u ({scoreType.MillisEasy})");
                         break;
-                    case NoteCalculationType.MillisMid:
+                    case NoteCalculationType.Normal:
                         Debug.Log($"ScoreType: {scoreType.TimingType}: {GetMaxNoteDistanceByMillis(scoreType.MillisMid):F2}u ({scoreType.MillisMid})");
                         break;
-                    case NoteCalculationType.MillisHard:
+                    case NoteCalculationType.Hard:
                         Debug.Log($"ScoreType: {scoreType.TimingType}: {GetMaxNoteDistanceByMillis(scoreType.MillisHard):F2}u ({scoreType.MillisHard})");
                         break;
                     default:
@@ -125,7 +124,7 @@ namespace DefaultNamespace
             var timing = distance / noteSpeed;
             var millisOff = timing * 1000;
             Debug.Log($"{millisOff:F2}ms {distance:F2}u");
-            switch (noteCalculationType)
+            switch (GlobalSettings.NoteTiming)
             {
                 case NoteCalculationType.Distance:
 
@@ -139,7 +138,7 @@ namespace DefaultNamespace
                         }
                     }
                     break;
-                case NoteCalculationType.MillisEasy:
+                case NoteCalculationType.Easy:
                     foreach (var scoreType in scoreTypes)
                     {
                         if (millisOff < scoreType.MillisEasy)
@@ -149,7 +148,7 @@ namespace DefaultNamespace
                         }
                     }
                     break;
-                case NoteCalculationType.MillisMid:
+                case NoteCalculationType.Normal:
                     foreach (var scoreType in scoreTypes)
                     {
                         if (millisOff < scoreType.MillisMid)
@@ -159,7 +158,7 @@ namespace DefaultNamespace
                         }
                     }
                     break;
-                case NoteCalculationType.MillisHard:
+                case NoteCalculationType.Hard:
                     foreach (var scoreType in scoreTypes)
                     {
                         if (millisOff < scoreType.MillisHard)
@@ -177,8 +176,8 @@ namespace DefaultNamespace
     public enum NoteCalculationType
     {
         Distance,
-        MillisEasy,
-        MillisMid,
-        MillisHard
+        Easy,
+        Normal,
+        Hard
     }
 }
