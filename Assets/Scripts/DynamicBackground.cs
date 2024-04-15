@@ -32,7 +32,6 @@ public class DynamicBackground : MonoBehaviour
 
         Singletons.AudioManager.WonTrigger += OnWonTrigger;
 
-
         // StartCoroutine(DebugSequence());
     }
 
@@ -83,25 +82,26 @@ public class DynamicBackground : MonoBehaviour
                 // 4.8
                 // Shengron appears 4.8 - 8.8
                 var shenlonAppearSequence = DOTween.Sequence();
-                shenlonAppearSequence.AppendCallback(() =>
+                shenlonAppearSequence.Append(booObject.transform.DOMoveY(-30, 1.8f).SetEase(Ease.OutCubic));
+                shenlonAppearSequence.InsertCallback(0, () =>
                 {
                     shengronObject.SetActive(true);
+                    shengronObject.transform.localScale = Vector3.zero;
                     shengronAppearShine.alpha = 0;
                     shengronAppearShine.gameObject.SetActive(true);
                 });
-                shenlonAppearSequence.Insert(0, booObject.transform.DOMoveY(-30, 1.8f).SetEase(Ease.OutCubic));
-                shenlonAppearSequence.AppendInterval(3.5f);
+                shenlonAppearSequence.Append(shengronObject.transform.DOScale(1, 0.5f).SetEase(Ease.OutCubic));
+                shenlonAppearSequence.AppendInterval(1.2f);
 
                 // 8.3
                 shenlonAppearSequence.Append(shengronAppearShine.DOFade(1, 0.4f).SetEase(Ease.InOutSine));
 
                 // 8.7
-                shenlonAppearSequence.AppendInterval(0.2f);
                 shenlonAppearSequence.AppendCallback(() =>
                 {
                     skyImage.sprite = nightSprite;
                 });
-                shenlonAppearSequence.AppendInterval(0.2f);
+                shenlonAppearSequence.AppendInterval(0.1f);
 
                 // 9.1
                 shenlonAppearSequence.Append(shengronAppearShine.DOFade(0, 0.2f).SetEase(Ease.InOutSine));
@@ -119,7 +119,7 @@ public class DynamicBackground : MonoBehaviour
                     ripCanvas.gameObject.SetActive(true);
                 });
                 ripSequence.Append(ripCanvas.DOFade(1, 1f).SetEase(Ease.InOutSine));
-                ripSequence.AppendInterval(3f);
+                ripSequence.AppendInterval(7.5f);
                 ripSequence.AppendCallback(() =>
                 {
                     ripCanvas2.alpha = 0;
