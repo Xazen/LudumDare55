@@ -123,16 +123,16 @@ public class Hud : MonoBehaviour
             _scoreTween.Kill(true);
         }
 
-        int currentScore = int.Parse(scoreText.text);
-        _scoreTween = DOTween.To(() => currentScore, x => scoreText.text = x.ToString(), score, scoreAnimDuration)
+        int currentScore = int.Parse(scoreText.text.Replace(",", ""));
+        _scoreTween = DOTween.To(() => currentScore, x => scoreText.text = x.ToString("N0"), score, scoreAnimDuration)
             .OnComplete(() =>
             {
-                scoreText.text = score.ToString();
+                scoreText.text = score.ToString("N0");
                 _scoreTween = null;
             });
 
         scoreDiffText.gameObject.SetActive(true);
-        scoreDiffText.text = "+"+diff;
+        scoreDiffText.text = "+" + diff.ToString("N0");
         PlayScaleAnimation(scoreDiffText.transform, () => scoreDiffText.gameObject.SetActive(false));
     }
 

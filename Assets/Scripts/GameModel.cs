@@ -57,6 +57,7 @@ namespace DefaultNamespace
         {
             SetHealth(Health - Singletons.Balancing.HealthDecrease);
             SetCombo(0);
+            timingNotesCount[TimingType.Miss] = timingNotesCount.GetValueOrDefault(TimingType.Miss) + 1;
         }
 
         public void PlayNote(int trackIndex)
