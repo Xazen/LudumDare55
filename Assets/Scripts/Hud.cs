@@ -123,7 +123,7 @@ public class Hud : MonoBehaviour
             _scoreTween.Kill(true);
         }
 
-        int currentScore = int.Parse(scoreText.text.Replace(",", ""));
+        int currentScore = Math.Max(score - diff, 0);
         _scoreTween = DOTween.To(() => currentScore, x => scoreText.text = x.ToString("N0"), score, scoreAnimDuration)
             .OnComplete(() =>
             {
