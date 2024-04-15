@@ -33,7 +33,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	63106106	extrem	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\extrem_99E7DAD1.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Hard\extrem		10014
 	245429244	Music	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\GameMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy\Music		3973664
-	256787006	Game Over	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Game Over_Stinger_15B593D3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Over		153692
+	256787006	Game Over	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Game Over_Stinger_0B66AAFD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Over		112153
 	364323461	middle	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\middle_71501FF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Medium\middle		5042
 	368359292	Winning_Points	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Winning_Points_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Won\Winning_Points\Winning_Points		757191
 	384659675	reflect_deflect	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\reflect_deflect_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\reflect_deflect		2768
@@ -42,5 +42,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	599029832	easy	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\easy_1939BFF3.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy\easy		3892
 	832335081	MenuMusic	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\MenuMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MenuMusic\menumusic\MenuMusic		449916
 	864535348	Lost_Cue	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\Lost_Cue_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Lost\Lost\Lost_Cue		67688
-	956268283	Dragonball Glow	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\db_glowing_0A5E057F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragonball Glow		12128
+	956268283	Dragonball Glow	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Windows\SFX\db_glowing_762456BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragonball Glow		12128
 

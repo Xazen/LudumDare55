@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{6B1A7C92-90CD-E0CD-1264-08CD5EFED936}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{C363BB91-963D-4B62-48F7-86D3B719F3D3}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -23,7 +23,7 @@
 				</File>
 				<File Id="256787006" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Game Over_Stinger.wav</ShortName>
-					<CachePath>SFX/Game Over_Stinger_15B593D3.wem</CachePath>
+					<CachePath>SFX/Game Over_Stinger_0B66AAFD.wem</CachePath>
 				</File>
 				<File Id="364323461" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>middle.mid</ShortName>
@@ -59,7 +59,7 @@
 				</File>
 				<File Id="956268283" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>db_glowing.wav</ShortName>
-					<CachePath>SFX/db_glowing_0A5E057F.wem</CachePath>
+					<CachePath>SFX/db_glowing_762456BC.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -74,7 +74,7 @@
 					</MediaRefs>
 				</Event>
 				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="725000905" Name="Play_Game_Over" DurationType="OneShot" DurationMin="13.59225" DurationMax="13.59225">
+				<Event Id="725000905" Name="Play_Game_Over" DurationType="OneShot" DurationMin="9.251867" DurationMax="9.251867">
 					<MediaRefs>
 						<MediaRef Id="256787006"/>
 					</MediaRefs>
@@ -546,5 +546,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8450B19A-F613-C0A8-7A82-D69674EBC901}</FileHash>
+	<FileHash>{49BAECED-7DE9-C0D3-97D7-76C2B4DE1614}</FileHash>
 </SoundBanksInfo>
