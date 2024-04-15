@@ -90,7 +90,7 @@ public class DynamicBackground : MonoBehaviour
                     shengronAppearShine.alpha = 0;
                     shengronAppearShine.gameObject.SetActive(true);
                 });
-                shenlonAppearSequence.Append(shengronObject.transform.DOScale(1, 0.5f).SetEase(Ease.OutCubic));
+                shenlonAppearSequence.Append(shengronObject.transform.DOScale(1, 0.2f).SetEase(Ease.OutCubic));
                 shenlonAppearSequence.AppendInterval(1.2f);
 
                 // 8.3

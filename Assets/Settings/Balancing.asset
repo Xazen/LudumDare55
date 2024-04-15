@@ -19,8 +19,7 @@ MonoBehaviour:
   minComboForHeal: 5
   noteStartDistance: 13
   trackWidth: 5.4
-  targetNoteAnimationDuration: 2.5
-  noteCalculationType: 2
+  targetNoteAnimationDuration: 1.5
   scoreTypes:
   - TimingType: 0
     Distance: 0.1875
@@ -45,9 +44,9 @@ MonoBehaviour:
     IsCombo: 1
   - TimingType: 3
     Distance: 1.5
-    MillisEasy: 250
-    MillisMid: 225
-    MillisHard: 200
+    MillisEasy: 225
+    MillisMid: 200
+    MillisHard: 180
     Score: 5
     IsCombo: 0
   - TimingType: 4
