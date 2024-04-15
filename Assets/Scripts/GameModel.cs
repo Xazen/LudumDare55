@@ -7,6 +7,7 @@ namespace DefaultNamespace
     {
         public int Score;
         public int Combo;
+        public int MaxCombo;
         public int Health;
         public int DragonBallFound;
 
@@ -115,6 +116,7 @@ namespace DefaultNamespace
                 return;
             }
             Combo = combo;
+            MaxCombo = Math.Max(MaxCombo, combo);
             if (combo >= Singletons.Balancing.MinComboForHeal)
             {
                 SetHealth(Math.Min(Singletons.Balancing.MaxHealth, Health + Singletons.Balancing.HealthIncrease));

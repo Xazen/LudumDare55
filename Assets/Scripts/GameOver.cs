@@ -15,6 +15,8 @@ public class GameOver : MonoBehaviour
     [SerializeField] private Button menuButton;
     [SerializeField] private Button restartButton;
 
+    [SerializeField] private TMP_Text totalScoreText;
+    [SerializeField] private TMP_Text maxComboText;
     [SerializeField] private TMP_Text perfectText;
     [SerializeField] private TMP_Text greatText;
     [SerializeField] private TMP_Text goodText;
@@ -58,6 +60,8 @@ public class GameOver : MonoBehaviour
 
         image.sprite = didWin ? wonSprite : lostSprite;
 
+        totalScoreText.text = Singletons.GameModel.Score.ToString("N0");
+        maxComboText.text = "x"+Singletons.GameModel.MaxCombo;
         UpdateText(TimingType.Perfect, perfectText);
         UpdateText(TimingType.Great, greatText);
         UpdateText(TimingType.Good, goodText);
