@@ -145,8 +145,8 @@ MonoBehaviour:
         guid: 591e50c2411d4148915629d789bf373c
       Path: Events\Default Work Unit\Play_Game_Over
       maxAttenuation: 0
-      maxDuration: 13.59225
-      minDuration: 13.59225
+      maxDuration: 9.251867
+      minDuration: 9.251867
     - name: Play_hit
       guid: 1af686c331af75448120b1da1737af7a
       id: 2960666077
