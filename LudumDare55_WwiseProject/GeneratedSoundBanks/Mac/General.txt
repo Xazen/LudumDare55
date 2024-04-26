@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	290942698	Difficulty			\Default Work Unit\Difficulty	
+	1906624039	TwoKeyMode			\Default Work Unit\TwoKeyMode	
 	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
@@ -18,6 +19,9 @@ State	ID	Name	State Group			Notes
 	748895195	None	Difficulty			
 	1160234136	Normal	Difficulty			
 	3599861390	Hard	Difficulty			
+	748895195	None	TwoKeyMode			
+	1169404525	TwoKeys	TwoKeyMode			
+	3025917178	Standard	TwoKeyMode			
 	221232711	Lost	GameState			
 	748895195	None	GameState			
 	1080430619	Won	GameState			
@@ -34,13 +38,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	63106106	extrem	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\extrem_99E7DAD1.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Hard\extrem		10014
 	245429244	Music	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\GameMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy\Music		3973664
 	256787006	Game Over	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\Game Over_Stinger_96EEE6CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Game Over		112153
+	312448907	extrem	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\extrem_2 keys_B8E2FC26.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Hard_2keys\extrem		9540
 	364323461	middle	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\middle_71501FF0.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Medium\middle		5042
 	368359292	Winning_Points	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\Winning_Points_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Won\Winning_Points\Winning_Points		757191
 	384659675	reflect_deflect	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\reflect_deflect_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\reflect_deflect		2768
 	506408390	hit	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\hit_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\hit		2772
 	532671255	Winning_Cue	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\Winning_Cue_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Won\Winning_Cue\Winning_Cue		378296
 	599029832	easy	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\easy_1939BFF3.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy\easy		3892
+	674767325	easy	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\easy_2 keys_16D8B651.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Easy_2keys\easy		3682
 	832335081	MenuMusic	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\MenuMusic_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\MenuMusic\menumusic\MenuMusic		449916
+	857565220	middle	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\middle_2 keys_0951BB04.wem		\Interactive Music Hierarchy\Default Work Unit\Music\LevelMusic\InGameMusic_Medium_2keys\middle		4622
 	864535348	Lost_Cue	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\Lost_Cue_56CEF360.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Lost\Lost\Lost_Cue		67688
 	956268283	Dragonball Glow	F:\GitForque\LudumDare55\LudumDare55_WwiseProject\.cache\Mac\SFX\db_glowing_762456BC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragonball Glow		12128
 

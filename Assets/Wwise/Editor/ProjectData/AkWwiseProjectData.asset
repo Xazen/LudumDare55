@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: e7c225b4fff91a4fa3dd596d675978fc
     GuidInternal: 
-    m_lastTime: -8584886484087257647
+    m_lastTime: -8584883086299116105
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ccacdac48f67754f89bb0cfd8df9ae3f
     GuidInternal: 
-    m_lastTime: -8584886484086559555
+    m_lastTime: -8584883086299016005
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: e72cc8e0dcbac349b7f08b0c170ec636
     GuidInternal: 
-    m_lastTime: -8584884978908511286
+    m_lastTime: -8584883086298710761
     List:
     - name: General
       guid: ef43457491949145b06983747ccfda57
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: a880a669ad975348b22237f1dfee1322
     GuidInternal: 
-    m_lastTime: -8584884846443103933
+    m_lastTime: -8584883086298270381
     List:
     - name: DragonballTrigger
       guid: ec88d326dfecd447aad2504be5c54134
@@ -261,7 +261,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a12da0b1c07e8d41afa5f590fb14b9f5
     GuidInternal: 
-    m_lastTime: -8584884831529667738
+    m_lastTime: -8584883086298750794
     List:
     - name: PitchModifier
       guid: f24d53f7c71ff84896b21955d8a6847c
@@ -289,7 +289,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: d64710a95d604447a7612ddc43210b7a
     GuidInternal: 
-    m_lastTime: -8584884862657922540
+    m_lastTime: -8584874863757152046
     List:
     - name: Difficulty
       guid: 9ad051eb9570884d9b11385354111907
@@ -471,6 +471,72 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: TwoKeyMode
+      guid: 9b6b30cf6b73ad41a3fd0a9da3d42245
+      id: 1906624039
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d64710a95d604447a7612ddc43210b7a
+      - ElementName: TwoKeyMode
+        ObjectType: 9
+        guid: 9b6b30cf6b73ad41a3fd0a9da3d42245
+      Path: States\Default Work Unit\TwoKeyMode
+      values:
+      - name: None
+        guid: ddbbe3800155874d882cb922a93ab181
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d64710a95d604447a7612ddc43210b7a
+        - ElementName: TwoKeyMode
+          ObjectType: 9
+          guid: 9b6b30cf6b73ad41a3fd0a9da3d42245
+        - ElementName: None
+          ObjectType: 8
+          guid: ddbbe3800155874d882cb922a93ab181
+      - name: Standard
+        guid: 0be711eb88ae7844adbf1f1a92ab40d3
+        id: 3025917178
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d64710a95d604447a7612ddc43210b7a
+        - ElementName: TwoKeyMode
+          ObjectType: 9
+          guid: 9b6b30cf6b73ad41a3fd0a9da3d42245
+        - ElementName: Standard
+          ObjectType: 8
+          guid: 0be711eb88ae7844adbf1f1a92ab40d3
+      - name: TwoKeys
+        guid: 70fb588972e74d43b43a69d9532b33a8
+        id: 1169404525
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: d64710a95d604447a7612ddc43210b7a
+        - ElementName: TwoKeyMode
+          ObjectType: 9
+          guid: 9b6b30cf6b73ad41a3fd0a9da3d42245
+        - ElementName: TwoKeys
+          ObjectType: 8
+          guid: 70fb588972e74d43b43a69d9532b33a8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -483,7 +549,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 9a5d7c667e86a245b9c31367c1fc4950
     GuidInternal: 
-    m_lastTime: -8584884831529737790
+    m_lastTime: -8584883086298925940
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -497,7 +563,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e0677c8c40c13d4d92f7bf6d0f902e66
     GuidInternal: 
-    m_lastTime: -8584886484087358125
+    m_lastTime: -8584883086298420511
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 

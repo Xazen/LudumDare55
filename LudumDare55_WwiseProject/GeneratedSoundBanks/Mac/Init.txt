@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	290942698	Difficulty			\Default Work Unit\Difficulty	
+	1906624039	TwoKeyMode			\Default Work Unit\TwoKeyMode	
 	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
@@ -7,6 +8,9 @@ State	ID	Name	State Group			Notes
 	748895195	None	Difficulty			
 	1160234136	Normal	Difficulty			
 	3599861390	Hard	Difficulty			
+	748895195	None	TwoKeyMode			
+	1169404525	TwoKeys	TwoKeyMode			
+	3025917178	Standard	TwoKeyMode			
 	221232711	Lost	GameState			
 	748895195	None	GameState			
 	1080430619	Won	GameState			

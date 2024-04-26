@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{77289ACC-1516-66C3-9CC5-2908A218AC34}">
+		<SoundBank Id="133642231" Type="User" Language="SFX" Hash="{8CC19D85-B123-1E55-A517-F6BBC65BFDB4}">
 			<ShortName>General</ShortName>
 			<Path>General.bnk</Path>
 			<Media>
@@ -24,6 +24,10 @@
 				<File Id="256787006" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Game Over_Stinger.wav</ShortName>
 					<CachePath>SFX/Game Over_Stinger_96EEE6CE.wem</CachePath>
+				</File>
+				<File Id="312448907" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>extrem_2 keys.mid</ShortName>
+					<CachePath>SFX/extrem_2 keys_B8E2FC26.wem</CachePath>
 				</File>
 				<File Id="364323461" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>middle.mid</ShortName>
@@ -49,9 +53,17 @@
 					<ShortName>easy.mid</ShortName>
 					<CachePath>SFX/easy_1939BFF3.wem</CachePath>
 				</File>
+				<File Id="674767325" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>easy_2 keys.mid</ShortName>
+					<CachePath>SFX/easy_2 keys_16D8B651.wem</CachePath>
+				</File>
 				<File Id="832335081" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>MenuMusic.wav</ShortName>
 					<CachePath>SFX/MenuMusic_56CEF360.wem</CachePath>
+				</File>
+				<File Id="857565220" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>middle_2 keys.mid</ShortName>
+					<CachePath>SFX/middle_2 keys_0951BB04.wem</CachePath>
 				</File>
 				<File Id="864535348" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Lost_Cue.wav</ShortName>
@@ -121,63 +133,241 @@
 							<Children>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="0"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
-									<MediaRefs>
-										<MediaRef Id="63106106"/>
-										<MediaRef Id="245429244"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="364323461"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="748895195"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="674767325"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="312448907"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="857565220"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
@@ -217,63 +407,241 @@
 							<Children>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="0"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
-									<MediaRefs>
-										<MediaRef Id="63106106"/>
-										<MediaRef Id="245429244"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="364323461"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="748895195"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="674767325"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="312448907"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="857565220"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
@@ -317,63 +685,241 @@
 							<Children>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="0"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
-									<MediaRefs>
-										<MediaRef Id="63106106"/>
-										<MediaRef Id="245429244"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="364323461"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="748895195"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="674767325"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="312448907"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="857565220"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
@@ -417,63 +963,241 @@
 							<Children>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="0"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
-									<MediaRefs>
-										<MediaRef Id="63106106"/>
-										<MediaRef Id="245429244"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="364323461"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 								<SwitchContainer>
 									<SwitchValue GroupType="State" GroupId="290942698" Id="748895195"/>
-									<MediaRefs>
-										<MediaRef Id="245429244"/>
-										<MediaRef Id="599029832"/>
-									</MediaRefs>
-									<PluginRefs>
-										<Custom>
-											<PluginRef Id="599441268"/>
-										</Custom>
-									</PluginRefs>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="0"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="674767325"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="312448907"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="3025917178"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="1169404525"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="857565220"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="529018163"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="599029832"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="3599861390"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="63106106"/>
+												<MediaRef Id="245429244"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="290942698" Id="1160234136"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1906624039" Id="748895195"/>
+											<MediaRefs>
+												<MediaRef Id="245429244"/>
+												<MediaRef Id="364323461"/>
+											</MediaRefs>
+											<PluginRefs>
+												<Custom>
+													<PluginRef Id="599441268"/>
+												</Custom>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
@@ -499,6 +1223,13 @@
 						<State Id="3599861390" Name="Hard"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="1906624039" Name="TwoKeyMode">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1169404525" Name="TwoKeys"/>
+						<State Id="3025917178" Name="Standard"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="4091656514" Name="GameState">
 					<States>
 						<State Id="221232711" Name="Lost"/>
@@ -510,7 +1241,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6294CC2A-0202-BADD-CD7F-1E2BBACF65EC}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{185A2554-4771-7D65-C3BE-80AEF3E51455}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -534,6 +1265,13 @@
 						<State Id="3599861390" Name="Hard"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="1906624039" Name="TwoKeyMode">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="1169404525" Name="TwoKeys"/>
+						<State Id="3025917178" Name="Standard"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="4091656514" Name="GameState">
 					<States>
 						<State Id="221232711" Name="Lost"/>
@@ -546,5 +1284,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{ADAE1967-0038-E7D5-C16B-455885535D7F}</FileHash>
+	<FileHash>{4FDEEFAD-9880-9873-05A8-66B8CCE3389C}</FileHash>
 </SoundBanksInfo>

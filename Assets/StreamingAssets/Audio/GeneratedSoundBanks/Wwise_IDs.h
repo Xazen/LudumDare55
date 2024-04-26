@@ -53,6 +53,18 @@ namespace AK
             } // namespace STATE
         } // namespace GAMESTATE
 
+        namespace TWOKEYMODE
+        {
+            static const AkUniqueID GROUP = 1906624039U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID STANDARD = 3025917178U;
+                static const AkUniqueID TWOKEYS = 1169404525U;
+            } // namespace STATE
+        } // namespace TWOKEYMODE
+
     } // namespace STATES
 
     namespace GAME_PARAMETERS

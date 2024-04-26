@@ -43,6 +43,7 @@ public class AudioManager : MonoBehaviour
     {
         Debug.Log("AudioManager Start");
         AkSoundEngine.SetState("GameState", "MainMenu");
+        Enable_2KeyMode(true);
         PostMusicEvent();
     }
 
@@ -121,6 +122,11 @@ public class AudioManager : MonoBehaviour
     {
         AkSoundEngine.SetRTPCValue("PitchModifier", arrowNumber, ArrowObjects[arrowNumber]);
         AkSoundEngine.PostEvent("Play_reflect_deflect", ArrowObjects[arrowNumber]);
+    }
+
+    public void Enable_2KeyMode(bool mode)
+    {
+        AkSoundEngine.SetState("TwoKeyMode", mode ? "TwoKeys" : "Standard");
     }
 
     private void PostMusicEvent()
