@@ -43,7 +43,7 @@ public class AudioManager : MonoBehaviour
     {
         Debug.Log("AudioManager Start");
         AkSoundEngine.SetState("GameState", "MainMenu");
-        Enable_2KeyMode(true);
+        Enable_2KeyMode(false);
         PostMusicEvent();
     }
 
