@@ -166,7 +166,7 @@
 							<ChildrenList>
 								<MusicSegment Name="Winning_Cue" ID="{DFF6D074-DFC3-4745-BBA2-275B339B2E35}" ShortID="813161813">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="24662"/>
+										<Property Name="EndPosition" Type="Real64" Value="77000.0208333333"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -242,7 +242,7 @@
 													<MusicCue Name="Exit Cue" ID="{7F74AA77-6A4A-4ADF-B294-809891BD137F}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="19372.7849824149"/>
+															<Property Name="TimeMs" Type="Real64" Value="20202.0580556147"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
